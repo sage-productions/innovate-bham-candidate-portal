@@ -1,4 +1,4 @@
-## The Innovate Birmingham Candidate Portal Project by Sage Productions
+## Innovate Birmingham Candidate Portal Project by Sage Productions
   
   
 #### Sage Productions is a final project team composed of candidates from Innovate Birmingham's Fall 2020 Cohort. 
