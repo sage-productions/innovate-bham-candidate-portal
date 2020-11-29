@@ -22,7 +22,7 @@ Team members include:
   
 - Andrew Traywick
     - Organization, Deployment, Front End Development & Routing, Back End & Database Support, UI/UX, Design & Content
-    - link to Andrew's github
+    - [github.com/jAndrew78](https://github.com/jAndrew78)
   
 ##### All members of Sage Productions contributed to the overall concept and organization of the project. Please visit our individual GitHub accounts (see links above) for more information and to view our personal projects.  
   
