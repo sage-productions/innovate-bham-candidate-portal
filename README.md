@@ -1,7 +1,7 @@
 ## The Innovate Birmingham Candidate Portal Project by Sage Productions
   
   
-#### Sage Productions is composed of candidates from Innovate Birmingham's Fall 2020 Cohort. 
+#### Sage Productions is a final project team composed of candidates from Innovate Birmingham's Fall 2020 Cohort. 
 Team members include:
   
 - Christopher Cobb
