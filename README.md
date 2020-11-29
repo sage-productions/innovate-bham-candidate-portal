@@ -10,7 +10,7 @@ Team members include:
   
 - Sparrow Estes
     - Front End Development, UI/UX, Design, Styling & Content
-    - link to Sparrow's github
+    - [github.com/sparrowestes](https://github.com/sparrowestes)
   
 - Rashad Gaston
     - Front End Development, UI/UX, Design, Styling & Photography Consultant
