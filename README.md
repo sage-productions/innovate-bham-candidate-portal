@@ -1,7 +1,8 @@
 ## The Innovate Birmingham Candidate Portal Project by Sage Productions
   
   
-#### Sage Productions is composed of candidates from Innovate Birmingham's Fall 2020 Cohort. Team members include:
+#### Sage Productions is composed of candidates from Innovate Birmingham's Fall 2020 Cohort. 
+Team members include:
   
 - Christopher Cobb
     - Back End Development, Authentication, Routing, Database Management, Front End Support & Content
@@ -23,11 +24,11 @@
     - Organization, Deployment, Front End Development & Routing, Back End & Database Support, UI/UX, Design & Content
     - link to Andrew's github
   
-#### All members of Sage Productions contributed to the overall concept and organization of the project. Please visit our individual GitHub accounts (see links above) for more information and to view our personal projects. 
+##### All members of Sage Productions contributed to the overall concept and organization of the project. Please visit our individual GitHub accounts (see links above) for more information and to view our personal projects.  
   
   
 ### CONCEPT
-#### As a final project for the Fall 2020 cohort and a way to thank Innovate Birmingham for the technical education, personal support and professional development training we have received over the past several months, our team has proposed to collaborate with the Innovate Birmingham staff to design, develop and implement a 'student' portal for use by future candidates of the program.
+#### As a final project for the Fall 2020 cohort and a way to thank Innovate Birmingham for the technical education, personal support and professional development training we have received over the past several months, our team has proposed to collaborate with the Innovate Birmingham staff to design, develop and implement a 'student' portal for use by future candidates of the program.  
   
   
 ### INTENT
@@ -35,7 +36,6 @@
   
   
 ### TECHNICAL
-#### The Candidate Portal is being developed via:
 - JavaScript
 - Bootstrap
 - Typescript
@@ -43,13 +43,13 @@
 - Express
 - Node
 - Sass
-- MySql
+- MySql  
   
   
 ### INNOVATE BIRMINGHAM
-#### Innovate Birmingham provides an exceptional service to the local tech community as a grant funded program with a mission to meet the needs of regional employers by harnessing the potential of local talent. By providing holistic support and career development training to aspiring tech professionals, Innovate Birmingham has positioned itself as an integral part of the local tech community for years to come.
+#### Innovate Birmingham provides exceptional services to the local tech community as a grant funded program with a mission to meet the needs of regional employers by harnessing the potential of local talent. By providing holistic support and career development training to aspiring tech professionals, Innovate Birmingham has positioned itself as an integral part of the local tech community for years to come.
   
 #### Innovate Birmingham's services are provided free of charge to aspiring tech professionals. 
   
-#### For more details on Innovate Birmingham and it's programs, please visit them on the web at [innovatebham.com](https://www.innovatebham.com/)
+#### For more details on Innovate Birmingham and it's programs, please visit them on the web at [innovatebham.com](https://www.innovatebham.com/)  
   
