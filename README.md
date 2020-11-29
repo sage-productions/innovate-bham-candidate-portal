@@ -42,7 +42,7 @@
 - React
 - Express
 - Node
-- Sass
+- SCSS
 - MySql  
   
   
