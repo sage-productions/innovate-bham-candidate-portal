@@ -1,63 +1,55 @@
 import * as React from 'react';
+import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 
-class App extends React.Component<IAppProps, IAppState> {
-	constructor(props: IAppProps) {
-		super(props);
-		this.state = {
-			name: null
-		};
-	}
 
-	async componentDidMount() {
-		try {
-			let r = await fetch('/api/hello');
-			let name = await r.json();
-			this.setState({ name });
-		} catch (error) {
-			console.log(error);
-		}
-	}
 
-	render() {
-		return (
-			<main className="container my-5">
-				<h1 className="text-primary text-center">Hello {this.state.name}!</h1>
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Login from './components/Login';
+import Home from './components/Home';
+import Profile from './components/Profile';
+import Resume from './components/Resume';
+import InterviewPrep from './components/InterviewPrep';
+import Flashcards from './components/Flashcards';
+
+// import Admin from './components/Admin';
+// import Resources from './components/Resources';
+// import HiddenInnovators from './components/HiddenInnovators';
+// import IntroToAgileMethods from './components/IntroToAgileMethods';
+
+
+const App: React.FC<IAppProps> = props => {
+	
+	return (
+		<Router>
+			
+			<Navbar />
+			
+			<main className="container-fluid">
+				
+				<Switch>
+					<Route exact path="/" component={Login} />
+					<Route exact path="/home" component={Home} />
+					<Route exact path="/profile/:id" component={Profile} />
+					<Route exact path="/resume/:id" component={Resume} />
+					<Route exact path="/interviewprep/:id" component={InterviewPrep} />
+					<Route exact path="/flashcards" component={Flashcards} />
+				</Switch>
+
 			</main>
-		);
-	}
+
+			<Footer />
+
+		</Router>
+	);
 }
+
+
 
 export interface IAppProps {}
 
-export interface IAppState {
-	name: string;
-}
+// export interface IAppState {
+// 	name: string;
+// }
 
 export default App;
-
-//
-// const App = (props: AppProps) => {
-// 	const [greeting, setGreeting] = React.useState<string>('');
-
-// 	React.useEffect(() => {
-// 		(async () => {
-// 			try {
-// 				const res = await fetch('/api/hello');
-// 				const greeting = await res.json();
-// 				setGreeting(greeting);
-// 			} catch (error) {
-// 				console.log(error);
-// 			}
-// 		})();
-// 	}, []);
-
-// 	return (
-// 		<div className="min-vh-100 d-flex justify-content-center align-items-center">
-// 			<h1 className="display-1">Hello {greeting}!</h1>
-// 		</div>
-// 	);
-// };
-
-// interface AppProps {}
-
-// export default App;

@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
 
 
-const Home: React.FC<HomeProps> = props => {
+const Template: React.FC<TemplateProps> = props => {
     return (
         <div className="row">
             <div className="col-10">
-                <h1 className="text-center">Home</h1>
+                <h1 className="text-center">Template</h1>
             </div>
         </div>
     )
 }
 
-interface HomeProps { }
+interface TemplateProps { }
 
-export default Home;
+export default Template;
