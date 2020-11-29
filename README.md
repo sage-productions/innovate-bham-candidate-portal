@@ -49,7 +49,7 @@ Team members include:
 ### INNOVATE BIRMINGHAM
 #### Innovate Birmingham provides exceptional services to the local tech community as a grant funded program with a mission to meet the needs of regional employers by harnessing the potential of local talent. By providing holistic support and career development training to aspiring tech professionals, Innovate Birmingham has positioned itself as an integral part of the local tech community for years to come.
   
-#### Innovate Birmingham's services are provided free of charge to aspiring tech professionals. 
+#### *Innovate Birmingham's services are provided free of charge to aspiring tech professionals.*
   
 #### For more details on Innovate Birmingham and it's programs, please visit them on the web at [innovatebham.com](https://www.innovatebham.com/)  
   
