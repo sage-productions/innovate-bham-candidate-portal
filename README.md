@@ -1,26 +1,26 @@
-## Innovate Birmingham Candidate Portal Project by Sage Productions
+## The Innovate Birmingham Candidate Portal Project
   
   
 #### Sage Productions is a final project team composed of candidates from Innovate Birmingham's Fall 2020 Cohort. 
-Team members include:
+#### Team members include the following:
   
-- Christopher Cobb
+- **Christopher Cobb**
     - Back End Development, Authentication, Routing, Database Management, Front End Support & Content
     - link to Chris's github
   
-- Sparrow Estes
+- **Sparrow Estes**
     - Front End Development, UI/UX, Design, Styling & Content
     - [github.com/sparrowestes](https://github.com/sparrowestes)
   
-- Rashad Gaston
+- **Rashad Gaston**
     - Front End Development, UI/UX, Design, Styling & Photography Consultant
     - link to Rashad's github
   
-- TJ Hacket
+- **TJ Hacket**
     - Back End Development, Authentication, Routing, Database Management, Front End Support & Deployment
     - link to TJ's github
   
-- Andrew Traywick
+- **Andrew Traywick**
     - Organization, Deployment, Front End Development & Routing, Back End & Database Support, UI/UX, Design & Content
     - [github.com/jAndrew78](https://github.com/jAndrew78)
   
