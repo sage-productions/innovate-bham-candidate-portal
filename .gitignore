@@ -7,3 +7,4 @@ sage-notes.txt
 
 # src/server/config
 src/server/config/development.ts
+.vscode
