@@ -6,3 +6,4 @@ public/js/app.js
 sage-notes.txt
 
 # src/server/config
+src/server/config/development.ts
