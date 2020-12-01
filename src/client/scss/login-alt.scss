@@ -6,14 +6,10 @@ body, html {
 }
 
 .bg-img {
-    /* The image used */
-    background-image: url("/public/assets/bham-skyline-railroad-park.jpg");
-  
-    /* Half height */
-    height: 100%;
-  
-    /* Center and scale the image nicely */
+    background-image: url(/public/assets/bham-skyline-railroad-park.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
- }
+  
+    height: 100%;
+}
