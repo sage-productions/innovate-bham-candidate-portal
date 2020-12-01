@@ -4,7 +4,7 @@ import config from "../config";
 //table query imports
 import Accesstokens from "./queries/accesstokens";
 import Users from "./queries/users";
-// import UserBio from "./queries/userbio";
+import UserBio from "./queries/userbio";
 import Resumes from "./queries/resumes";
 import ResumeFeedback from "./queries/resumefeedback";
 import ElevatorPitches from "./queries/elevatorpitches";
@@ -31,7 +31,7 @@ export default {
 
   Accesstokens,
   Users,
-  // UserBio,
+  UserBio,
   Resumes,
   ResumeFeedback,
   ElevatorPitches,
