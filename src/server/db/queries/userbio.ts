@@ -17,12 +17,12 @@ const one = async (id: number) =>
   Query(`SELECT * FROM userbio WHERE id = ?`, [id]);
 
 const update = (
-  id: number,
   city: string,
   bio: string,
   phone: string,
   linkedin: string,
-  github: string
+  github: string,
+  id: number
 ) =>
   Query(
     `
@@ -34,7 +34,7 @@ const update = (
     linkedin = ?,
     github = ?
   WHERE userbio.id = ?`,
-    [id, city, bio, phone, linkedin, github]
+    [city, bio, phone, linkedin, github, id]
   );
 
 const insert = async (
