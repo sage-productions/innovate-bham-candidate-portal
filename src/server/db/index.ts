@@ -1,7 +1,8 @@
 import * as mysql from 'mysql';
 import config from '../config';
-import Tokens from "./queries/tokens"
+import Accesstokens from "./queries/accesstokens"
 import Users from "./queries/users"
+import Resumes from "./queries/resumes"
 //table query imports
 
 //node - mysql connection pool
@@ -18,6 +19,8 @@ export const Query = (query: string, values?: any) => {
 };
 
 export default {
-    Tokens,
-    Users
+    Accesstokens,
+    Users,
+    Resumes,
+    
 };

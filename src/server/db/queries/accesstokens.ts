@@ -1,13 +1,13 @@
 import { Query } from "../index";
 
 const findOne = async (id: number, token: string) =>
-  Query(`SELECT * FROM tokens WHERE id = ${id} AND token = '${token}'`);
+  Query(`SELECT * FROM accesstokens WHERE id = ${id} AND token = '${token}'`);
 
 const insert = async (userid: number) =>
-  Query(`INSERT INTO tokens (userid) VALUES (${userid})`);
+  Query(`INSERT INTO accesstokens (userid) VALUES (${userid})`);
 
 const update = async (id: number, token: string) =>
-  Query(`UPDATE tokens SET token = '${token}' WHERE id = ${id}`);
+  Query(`UPDATE accesstokens SET token = '${token}' WHERE id = ${id}`);
 
 export default {
   findOne,
