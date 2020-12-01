@@ -22,30 +22,30 @@ import AdminResumeView from './components/AdminResumeView';
 // import IntroToAgileMethods from './components/IntroToAgileMethods';
 
 
-const App: React.FC<IAppProps> = props => {
+const App: React.FC<AppProps> = props => {
 	
 	return (
 		<Router>
 			
 			<Navbar />
 			
-			<main className="container-fluid">
+			<main className="container-fluid pt-5">
 				
 				<Switch>
 					
-					<Route exact path="/" component={Login} />
-					<Route exact path="/home" component={Home} />
-					<Route exact path="/profile/:id" component={Profile} />
-					<Route exact path="/resume/:id" component={Resume} />
-					<Route exact path="/interviewprep/:id" component={InterviewPrep} />
-					<Route exact path="/flashcards" component={Flashcards} />
+					<Route exact path="/" component={ Login } />
+					<Route exact path="/home" component={ Home } />
+					<Route exact path="/profile/:id" component={ Profile } />
+					<Route exact path="/resume/:id" component={ Resume } />
+					<Route exact path="/interviewprep/:id" component={ InterviewPrep } />
+					<Route exact path="/flashcards" component={ Flashcards } />
 					
-					<Route exact path="/adminresumeview" component={AdminResumeView} />
+					<Route exact path="/adminresumeview" component={ AdminResumeView } />
 
 				</Switch>
 
 			</main>
-
+			
 			<Footer />
 
 		</Router>
@@ -54,7 +54,7 @@ const App: React.FC<IAppProps> = props => {
 
 
 
-export interface IAppProps {}
+interface AppProps {}
 
 // export interface IAppState {
 // 	name: string;

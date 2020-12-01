@@ -18,20 +18,20 @@ const Navbar: React.FC<NavbarProps> = props => {
                         <li className="nav-item">
                             <Link to="/" className="nav-links">
                                 Home
-              </Link>
+                    </Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/about" className="nav-links">
                                 About
-              </Link>
+                    </Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/lorem" className="nav-links">
                                 Lorem
-                </Link>
+                    </Link>
                         </li>
                         <li className="nav-item">
-                        <button className="btn btn-warning" type="submit">Sign Up</button>
+                            <button className="btn btn-warning" type="submit">Sign Up</button>
                         </li>
                     </ul>
                 </div>
