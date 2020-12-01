@@ -1,5 +1,12 @@
 import { Query } from "../index";
 
+export interface IAccessTokens {
+  id?: number;
+  userid?: number;
+  token?: number;
+  _created?: number;
+}
+
 const findOne = async (id: number, token: string) =>
   Query(`SELECT * FROM accesstokens WHERE id = ${id} AND token = '${token}'`);
 
