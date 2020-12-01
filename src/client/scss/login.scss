@@ -1,0 +1,76 @@
+// Login Page
+
+.login-container {
+    background: url('/assets/bham-skyline-railroad-park.jpg') center center/cover no-repeat;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+  }
+  
+  .login-container > h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+    font-size: 60px;
+    margin-top: -450px;
+    text-align: center;
+  }
+  
+  .login-container > p {
+    font-size: 20px;
+    margin: 8px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+      text-align: center;
+  }
+
+  .input {
+    margin: 5px;
+  }
+
+  .btn {
+    margin: 5px;
+  }
+
+  .btn-mobile {
+    display: block;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .login-container > h1 {
+      padding: 10px;
+      font-size: 70px;
+      margin-top: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .login-container > h1 {
+      padding: 10px;
+      font-size: 50px;
+      margin-top: 20px;
+    }
+  }
+  
+
+    // .btn {
+    //   width: 100%;
+    //   padding: 8px 20px;
+    //   border-radius: 2px;
+    //   outline: none;
+    //   border: none;
+    //   cursor: pointer;
+    //   background-color: transparent;
+    //   color: #fff;
+    //   padding: 8px 20px;
+    //   border: 1px solid rgb(255, 207, 1);
+    //   transition: all 0.3s ease-out;
+    // }
