@@ -6,39 +6,33 @@ import "../scss/navbar";
 const Navbar: React.FC<NavbarProps> = props => {
     return (
         <>
-            <nav className="navbar">
-                <div className="navbar-container">
+            <div className="navbar">
+                <div className="container flex">
                     <Link to="https://www.innovatebham.com/" >
-                        <img src="/assets/InnovateBhamLogo.png" alt="Innovate Bham Logo" className="navbar-logo" />
+                        <img src="/assets/InnovateBhamLogo.png" alt="Innovate Bham Logo" className="logo" />
                     </Link>
-                    <div className="menu-icon">
-                        <i className="fas fa-bars" />
-                    </div>
-                    <ul className="nav-menu">
-                        <li className="nav-item">
-                            <Link to="/" className="nav-links">
+                    <nav>
+                        <ul>
+                            <li><Link to="/" className="nav-links" style={{textDecoration: 'none'}}>
                                 Home
-                    </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/about" className="nav-links">
+                            </Link>
+                            </li>
+                            <li><Link to="/" className="nav-links" style={{textDecoration: 'none'}}>
                                 About
-                    </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/lorem" className="nav-links">
+                            </Link>
+                            </li>
+                            <li><Link to="/" className="nav-links" style={{textDecoration: 'none'}}>
                                 Lorem
-                    </Link>
-                        </li>
-                        <li className="nav-item">
-                            <button className="btn btn-warning" type="submit">Sign Up</button>
-                        </li>
-                    </ul>
+                            </Link>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-            </nav>
+            </div>
         </>
     )
 }
+
 
 interface NavbarProps { }
 
