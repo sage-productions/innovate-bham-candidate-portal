@@ -5,15 +5,22 @@ import "../scss/login-alt";
 const Login: React.FC<LoginProps> = props => {
   return (
 
-    <div className="bg-img">
+    <div className="bg-img pt-5">
       
-      <div className="row justify-content-center">
-        <div className="col-md-8 text-center">
+      <div className="row justify-content-center text-light pt-5">
+        <div className="col-lg-10 text-center pt-5">
 
-          <h1>Welcome to your Future...</h1>
-          <p>Lorem ipsum dolor sit amet</p>
+          <h1>Innovate Birmingham</h1> 
+          <h1>Candidate Portal</h1>
+          <p>Welcome to your future...</p>
 
-          <form>
+        </div>
+      </div>
+
+      <div className="row justify-content-center text-light pt-5">
+        <div className="col-md-7 col-lg-5 text-center px-5">
+
+          <form className="px-5">
 
             <div className="form-group">
               <input type="text" className="form-control" name="user-name" placeholder="user name" />
