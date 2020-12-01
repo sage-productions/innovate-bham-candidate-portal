@@ -13,14 +13,14 @@ const all = async () => Query(`SELECT * FROM resumefeedback`);
 const one = async (id: number) =>
   Query(`SELECT * FROM resumefeedback WHERE id = ?`, [id]);
 
-const update = (content: string) =>
+const update = (content: string, id:number) =>
   Query(
     `
   UPDATE resumefeedback
   SET 
   content = ?  
   WHERE resumefeedback.id = ?`,
-    [content]
+    [content, id]
   );
 
 const insert = async (userid: number, resumeid: number, content: string) =>

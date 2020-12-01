@@ -10,14 +10,14 @@ export interface IProfilePictures {
 const one = async (id: number) =>
   Query(`SELECT * FROM profilepictures WHERE id = ?`, [id]);
 
-const update = (filename: string) =>
+const update = (filename: string, id:number ) =>
   Query(
     `
   UPDATE profilepictures
   SET 
   filename = ?  
   WHERE profilepictures.id = ?`,
-    [filename]
+    [filename, id]
   );
 
 

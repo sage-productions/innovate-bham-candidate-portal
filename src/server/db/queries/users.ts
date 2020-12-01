@@ -34,7 +34,7 @@ const insert = async (
   password: string
 ) =>
   Query(
-    `INSERT INTO users (firstname, lastname, preferredname, email, password) VALUES (?,?,?,?)`,
+    `INSERT INTO users (firstname, lastname, preferredname, email, password) VALUES (?,?,?,?,?)`,
     [firstname, lastname, preferredname, email, password]
   );
 
@@ -42,7 +42,8 @@ const update = (
   firstname: string,
   lastname: string,
   preferredname: string,
-  email: string
+  email: string,
+  id: number
 ) =>
   Query(
     `
@@ -53,7 +54,7 @@ lastname = ?,
 preferredname = ?, 
 email = ?, 
 WHERE users.id = ?`,
-    [firstname, lastname, preferredname, email]
+    [firstname, lastname, preferredname, email, id]
   );
 
 const destroy = (id: number) =>

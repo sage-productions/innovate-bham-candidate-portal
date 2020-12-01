@@ -8,19 +8,19 @@ export interface IUserBios {
   _created?: Date;
 }
 
-const all = async () => Query(`SELECT * FROM resumefeedback`);
+const all = async () => Query(`SELECT * FROM userbio`);
 
 const one = async (id: number) =>
-  Query(`SELECT * FROM resumefeedback WHERE id = ?`, [id]);
+  Query(`SELECT * FROM userbio WHERE id = ?`, [id]);
 
-const update = (content: string) =>
+const update = (content: string, id:number ) =>
   Query(
     `
-  UPDATE resumefeedback
+  UPDATE userbio
   SET 
   content = ?  
-  WHERE resumefeedback.id = ?`,
-    [content]
+  WHERE userbio.id = ?`,
+    [content, id]
   );
 
 const insert = async (userid: number, resumeid: number, content: string) =>

@@ -12,14 +12,14 @@ const all = () => Query(`Select * from resumes`);
 const one = async (id: number) =>
   Query(`SELECT * FROM resumes WHERE id = ${id}'`);
 
-  const update = (filename: string) =>
+  const update = (filename: string, id:number) =>
   Query(
     `
   UPDATE resumes
   SET 
   filename = ?  
   WHERE resumes.id = ?`,
-    [filename]
+    [filename, id]
   );
 
 
@@ -32,5 +32,6 @@ export default {
   all,
   one,
   insert,
+  update,
   destroy
 };
