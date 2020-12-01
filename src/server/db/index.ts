@@ -10,7 +10,7 @@ import ResumeFeedback from "./queries/resumefeedback";
 import ElevatorPitches from "./queries/elevatorpitches";
 import DevFlashCards from "./queries/devflashcards";
 import DataFlashCards from "./queries/dataflashcards";
-// import ProfilePictures from "./queries/profilepictures";
+import ProfilePictures from "./queries/profilepictures";
 
 
 
@@ -37,4 +37,5 @@ export default {
   ElevatorPitches,
   DevFlashCards,
   DataFlashCards,
+  ProfilePictures,
 };
