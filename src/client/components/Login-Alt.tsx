@@ -10,9 +10,9 @@ const Login: React.FC<LoginProps> = props => {
       <div className="row justify-content-center text-light pt-5">
         <div className="col-lg-10 text-center pt-5">
 
-          <h1>Innovate Birmingham</h1> 
-          <h1>Candidate Portal</h1>
-          <p>Welcome to your future...</p>
+          {/* <h1>Innovate Birmingham</h1> 
+          <h1>Candidate Portal</h1> */}
+          <h2>Welcome to your future...</h2>
 
         </div>
       </div>
