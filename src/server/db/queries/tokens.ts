@@ -1,17 +1,16 @@
-// import { Query } from "../index";
+import { Query } from "../index";
 
-// const findOne = async (id: number, token: string) =>
-//   Query(`SELECT * FROM tokens WHERE id = ${id} AND token = '${token}'`);
+const findOne = async (id: number, token: string) =>
+  Query(`SELECT * FROM tokens WHERE id = ${id} AND token = '${token}'`);
 
-// const insert = async (userid: number) =>
-//   Query(`INSERT INTO tokens (userid) VALUES (${userid})`);
+const insert = async (userid: number) =>
+  Query(`INSERT INTO tokens (userid) VALUES (${userid})`);
 
-// const update = async (id: number, token: string) =>
-//   Query(`UPDATE tokens SET token = '${token}' WHERE id = ${id}`);
+const update = async (id: number, token: string) =>
+  Query(`UPDATE tokens SET token = '${token}' WHERE id = ${id}`);
 
-// export default {
-//   findOne,
-//   insert,
-//   update,
-// };
-// 
+export default {
+  findOne,
+  insert,
+  update,
+};
