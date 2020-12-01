@@ -1,10 +1,7 @@
 //@ts-nocheck
 import * as express from 'express';
 import { RequestHandler} from 'express-serve-static-core';
-import * as multer from 'multer';
 import db from '../../db';
-
-let upload = multer({dest:'uploads/'})
 
 const router: express.Router = express.Router();
 
