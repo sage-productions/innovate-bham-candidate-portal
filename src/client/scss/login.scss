@@ -1,7 +1,7 @@
-
 // Login Page
-.hero-container {
-    // background: url('./bham-skyline-railroad-park.jpg') center center/cover no-repeat;
+
+.login-container {
+    background: url('/assets/bham-skyline-railroad-park.jpg') center center/cover no-repeat;
     height: 80vh;
     width: 100%;
     display: flex;
@@ -12,7 +12,7 @@
     object-fit: contain;
   }
   
-  .hero-container > h1 {
+  .login-container > h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
     color: #fff;
@@ -21,51 +21,56 @@
     text-align: center;
   }
   
-  .hero-container > p {
-    margin-top: 8px;
+  .login-container > p {
+    font-size: 20px;
+    margin: 8px;
     color: #fff;
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
       text-align: center;
   }
-  
-  .hero-btns {
-    margin-top: 32px;
+
+  .input {
+    margin: 5px;
   }
-  
-  .hero-btns .btn {
-    margin: 6px;
+
+  .btn {
+    margin: 5px;
   }
-  
-  .fa-play-circle {
-    margin-left: 4px;
+
+  .btn-mobile {
+    display: block;
+    text-decoration: none;
   }
-  
-  @media screen and (max-width: 960px) {
-    .hero-container > h1 {
+
+  @media screen and (max-width: 1200px) {
+    .login-container > h1 {
+      padding: 10px;
       font-size: 70px;
-      margin-top: -150px;
+      margin-top: 20px;
     }
   }
   
   @media screen and (max-width: 768px) {
-    .hero-container > h1 {
+    .login-container > h1 {
+      padding: 10px;
       font-size: 50px;
-      margin-top: -100px;
-    }
-  
-    .hero-container > p {
-      font-size: 20px;
-    }
-  
-    .btn-mobile {
-      display: block;
-      text-decoration: none;
-    }
-  
-    .btn {
-      width: 100%;
+      margin-top: 20px;
     }
   }
+  
 
+    // .btn {
+    //   width: 100%;
+    //   padding: 8px 20px;
+    //   border-radius: 2px;
+    //   outline: none;
+    //   border: none;
+    //   cursor: pointer;
+    //   background-color: transparent;
+    //   color: #fff;
+    //   padding: 8px 20px;
+    //   border: 1px solid rgb(255, 207, 1);
+    //   transition: all 0.3s ease-out;
+    // }
