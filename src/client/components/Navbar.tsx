@@ -6,7 +6,18 @@ import "../scss/navbar";
 const Navbar: React.FC<NavbarProps> = props => {
     return (
         <>
-            <div className="navbar">
+    <nav className="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div className="container-fluid">
+        <a className="navbar-brand" href="/assets/innovate-logo-med.png"></a>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        </button>
+        </div>
+    </nav>
+
+
+
+
+            {/* <div className="navbar">
                 <div className="container flex">
                     <Link to="https://www.innovatebham.com/" >
                         <img src="/assets/InnovateBhamLogo.png" alt="Innovate Bham Logo" className="logo" />
@@ -28,7 +39,7 @@ const Navbar: React.FC<NavbarProps> = props => {
                         </ul>
                     </nav>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }

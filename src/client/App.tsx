@@ -44,7 +44,7 @@ const App: React.FC<AppProps> = props => {
 
 				</Switch>
 
-			</main>
+			</main> */
 			
 			<Footer />
 
