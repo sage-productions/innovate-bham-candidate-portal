@@ -9,7 +9,18 @@ $theme-colors: (
 
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 
+.container {
+  margin-top: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
 
+#paris-image {
+  margin-left: 2em;
+  border-radius: 100%;
+}
 
 .bg-img {
   background-image: url('/assets/bham-skyline-railroad-park.jpg');
@@ -19,11 +30,18 @@ $theme-colors: (
 
   position: absolute;
   z-index: -10;
-  top: -40;
+  top: -60;
 
-  height: 80%;
+  height: 60%;
   min-height: 750px;
   width: 100%;
+}
+
+.infoContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 // Resets All PreStyled Items
