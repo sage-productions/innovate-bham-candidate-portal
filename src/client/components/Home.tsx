@@ -35,19 +35,20 @@ const Home: React.FC<HomeProps> = props => {
 
                             <div className="link-row flex-column">
                             
-                                <Link className="link" to="/interviewprep/:id" onMouseOver={(e) => e.preventDefault()}>
-                                    <div className="link-boxes mx-1 text-midnight">
-                                        <h6><strong>Interview Prep</strong></h6>
-                                        <p className="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore illo sed animi velitoam!</p>
-                                    </div>
-                                </Link>
-                                
                                 <Link className="link" to="/resume/:id" onMouseOver={(e) => e.preventDefault()}>
-                                    <div className="link-boxes mx-1 my-5 text-midnight">
+                                    <div className="link-boxes mx-1 text-midnight">
                                         <h6><strong>Resume</strong></h6>
                                         <p className="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore illo sed animi velitoam!</p>
                                     </div>
                                 </Link>
+                                
+                                <a className="href" href="https://hiddeninnovators.co/" target="_blank"
+                                    onMouseOver={(e) => e.preventDefault()}>
+                                    <div className="link-boxes mx-1 my-5 text-midnight">
+                                        <h6><strong>Hidden Innovators</strong></h6>
+                                        <p className="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore illo sed animi velitoam!</p>
+                                    </div>
+                                </a>
 
                             </div>
                             
@@ -60,27 +61,28 @@ const Home: React.FC<HomeProps> = props => {
                                     </div>
                                 </Link>
                                 
-                                <Link className="link" to="/resume/:id" onMouseOver={(e) => e.preventDefault()}>
+                                <a className="href" href="https://sigao.io/" target="_blank"
+                                    onMouseOver={(e) => e.preventDefault()}>
                                     <div className="link-boxes mx-1 my-5 text-midnight">
-                                        <h6><strong>Resume</strong></h6>
+                                        <h6><strong>Sigao Studios</strong></h6>
                                         <p className="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore illo sed animi velitoam!</p>
                                     </div>
-                                </Link>
+                                </a>
 
                             </div>
 
                             <div className="link-row flex-column">
                                 
-                                <Link className="link" to="/interviewprep/:id" onMouseOver={(e) => e.preventDefault()}>
+                                <Link className="link" to="/flashcards" onMouseOver={(e) => e.preventDefault()}>
                                     <div className="link-boxes mx-1 text-midnight">
-                                        <h6><strong>Interview Prep</strong></h6>
+                                        <h6><strong>Flashcards</strong></h6>
                                         <p className="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore illo sed animi velitoam!</p>
                                     </div>
                                 </Link>
                                 
-                                <Link className="link" to="/resume/:id" onMouseOver={(e) => e.preventDefault()}>
+                                <Link className="link" to="/resources" onMouseOver={(e) => e.preventDefault()}>
                                     <div className="link-boxes mx-1 my-5 text-midnight">
-                                        <h6><strong>Resume</strong></h6>
+                                        <h6><strong>Resources</strong></h6>
                                         <p className="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore illo sed animi velitoam!</p>
                                     </div>
                                 </Link>
