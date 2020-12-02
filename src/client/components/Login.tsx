@@ -5,27 +5,39 @@ import "../scss/login";
 const Login: React.FC<LoginProps> = props => {
   return (
 
-    <div className="login-container">
-      
-      <h1>INNOVATE BHAM CANDIDATE PORTAL</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-  
-      <form>
+    
+    
+      <div className="row justify-content-center text-light pt-1">
+        <div className="col-lg-10 text-center">
 
-        <div className="input">
-          <input type="text" placeholder="user name" />
+          {/* <h4>Fueling Tech Talent</h4> 
+          <h4>in the Heart of the Magic City</h4> */}
+
         </div>
-    
-        <div className="input">
-          <input type="password" placeholder="password" />
-        </div>
-    
-        <button className="btn btn-warning btn-sm" type="submit">Login</button>
-        
-      </form>
-    </div>
+      </div>
+      
   )
 }
+
+      {/* <div className="row justify-content-center text-light pt-5">
+        <div className="col-md-7 col-lg-5 text-center px-5">
+
+          <form className="px-5">
+
+            <div className="form-group">
+              <input type="text" className="form-control" name="user-name" placeholder="user name" />
+            </div>
+            
+            <div className="form-group">
+              <input type="password" className="form-control" name="password" placeholder="password" />
+            </div>
+
+            <button type="submit" className="btn btn-warning btn-sm">Submit</button>
+
+          </form>
+
+        </div>
+      </div> */}
 
 interface LoginProps { }
 

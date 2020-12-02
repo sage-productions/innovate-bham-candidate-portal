@@ -1,76 +1,13 @@
+.logo-sm {
+    height: 50px;
+    width: 50px;
+}
 
+.negative-margin {
+    margin-top: -8px;
+    margin-left: -3px;
+}
 
-
-
-// // Resets Overall Default Styles
-// * {
-//   box-sizing: border-box;
-//   padding: 0;
-//   margin: 0;
-// }
-
-// // Style of horizontal bar of Navbar
-// .navbar {
-//     background-color: #FFFFFF;
-//     box-shadow: 4px 6px 4px 1px rgba(102,102,102,0.61);
-//     height: 90px;
-//     overflow: hidden;
-//   }
-
-//   // Position of logo
-// .logo {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     transform: translate(10%, 20%);
-//     }
-
-// // Styling for Nav Links
-// .nav-links {
-//     font-family: "Helvetica Neue", sans-serif;
-//     color: #FFCF2B;
-//     line-height: 1.6;
-//     padding: 15px;
-//     top: 0;
-//     right: 0;
-//     text-decoration: none;
-// }
-
-// // Adds line under Nav link items when hovered over
-// .nav-links:hover {
-//     border-bottom: 2px #242135 solid;
-//     color: #242424;
-//     border-radius: 0;
-//     }
-
-// // Aligns Nav Links Horizontally
-// .navbar ul {
-//     display: flex;
-// }
-
-// // Takes away default style of bullets for list items
-// ul {
-//     list-style-type: none;
-//   }
-
-// // Takes away default style of links !!COULD NOT GET TO WORK HERE - USED INLINE STYLING IN COMPONENT!!
-// // a {
-// //   text-decoration: none;
-// //   color: #FFCF2B;
-// // }
-
-// /* Mobile */
-// @media (max-width: 500px) {
-//     .navbar {
-//       height: 200px;
-//     }
-  
-//     .navbar .flex {
-//       flex-direction: column;
-//     }
-  
-//     .navbar ul {
-//       padding: 5px;
-//       background-color: #242135;
-//     }
-//   }
+.negative-margin-top {
+    margin-top: -8px;
+}

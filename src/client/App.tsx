@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 
 
 
-import Navbar from './components/Navbar-Alt';
-import Footer from './components/Footer-Alt';
-import Login from './components/Login-Alt';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Login from './components/Login';
 import Home from './components/Home';
 import Profile from './components/Profile';
 
@@ -16,7 +16,6 @@ import Flashcards from './components/Flashcards';
 import AdminResumeView from './components/AdminResumeView';
 
 
-// import Admin from './components/Admin';
 // import Resources from './components/Resources';
 // import HiddenInnovators from './components/HiddenInnovators';
 // import IntroToAgileMethods from './components/IntroToAgileMethods';
@@ -57,9 +56,5 @@ const App: React.FC<AppProps> = props => {
 
 
 interface AppProps {}
-
-// export interface IAppState {
-// 	name: string;
-// }
 
 export default App;
