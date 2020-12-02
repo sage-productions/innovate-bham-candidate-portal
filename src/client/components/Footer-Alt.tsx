@@ -1,17 +1,3 @@
-<<<<<<< HEAD:src/client/components/Footer-Alt.tsx
-import React, { useState, useEffect } from 'react';
-import "../scss/footer-alt";
-
-
-
-const Footer: React.FC<FooterProps> = props => {
-    return (
-        <div className="row">
-            <div className="col-12">
-                <div className="gold"></div>
-                <div className="blue"></div>
-            </div>
-=======
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../scss/footer";
@@ -50,7 +36,6 @@ const Footer: React.FC<FooterProps> = (props) => {
               <i className="fab fa-linkedin"></i>
             </a>
           </div>
->>>>>>> 1215475faca34403d739328ec3127e30b249d2b9:src/client/components/Footer.tsx
         </div>
       </div>
       <div className="bottom-footer">
