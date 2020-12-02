@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import "../scss/footer-alt";
+
 
 
 const Footer: React.FC<FooterProps> = props => {
     return (
         <div className="row">
-            <div className="col-10">
-                {/* <h1 className="text-center">Footer</h1> */}
+            <div className="col-12">
+                <div className="gold"></div>
+                <div className="blue"></div>
             </div>
         </div>
     )

@@ -7,17 +7,18 @@ const Login: React.FC<LoginProps> = props => {
 
     <div className="bg-img pt-5">
       
-      <div className="row justify-content-center text-light pt-5">
-        <div className="col-lg-10 text-center pt-5">
+      <div className="row justify-content-center text-light pt-1">
+        <div className="col-lg-10 text-center">
 
           {/* <h1>Innovate Birmingham</h1> 
           <h1>Candidate Portal</h1> */}
-          <h2>Welcome to your future...</h2>
+          {/* <h1 className="welcome-msg-1">Welcome to</h1>
+          <h1 className="welcome-msg-2">your Future...</h1> */}
 
         </div>
       </div>
 
-      <div className="row justify-content-center text-light pt-5">
+      {/* <div className="row justify-content-center text-light pt-5">
         <div className="col-md-7 col-lg-5 text-center px-5">
 
           <form className="px-5">
@@ -35,7 +36,7 @@ const Login: React.FC<LoginProps> = props => {
           </form>
 
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

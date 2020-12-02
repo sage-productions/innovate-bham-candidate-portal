@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 
 
 import Navbar from './components/Navbar-Alt';
-import Footer from './components/Footer';
+import Footer from './components/Footer-Alt';
 import Login from './components/Login-Alt';
 import Home from './components/Home';
 import Profile from './components/Profile';
