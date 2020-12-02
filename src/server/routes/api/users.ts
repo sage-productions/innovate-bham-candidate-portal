@@ -1,58 +1,55 @@
-import * as express from "express";
-// import db from "../../db"
+//@ts-nocheck
+import * as express from 'express';
+import { RequestHandler} from 'express-serve-static-core';
+import db from '../../db';
 
-const router = express.Router();
+const router: express.Router = express.Router();
 
+const isAdmin: RequestHandler = (req, res, next) => {
+    if(!req.user || req.user.role !== 'admin') {
+        return res.sendStatus(401);
+    } else {
+        return next();
+    }
+};
 
-
-router.get("/", async (req, res) => {
-  try {
-    res.json({ msg: "get all test" });
-  } catch (error) {
-    console.log(error);
-    res.status(500).json({ msg: "my code sucks, let me know!", error });
-  }
-});
-
-router.get("/:id", async (req, res) => {
-    const id = Number(req.params.id);
-  try {
-    res.json({id, msg: "get one test" });
-  } catch (error) {
-    console.log(error);
-    res.status(500).json({ msg: "my code sucks, let me know!", error });
-  }
-});
-
-router.post("/", async (req, res) => {
-    const newBody = { ...req.body };
-  try {
-    res.json({ msg: "post test", bodyTest: newBody});
-  } catch (error) {
-    console.log(error);
-    res.status(500).json({ msg: "my code sucks, let me know!", error });
-  }
-});
-
-router.put("/:id", async (req, res) => {
-  const id = Number(req.params.id);
-  const editBody = { ...req.body };
+router.get('/', async (req: express.Request, res: express.Response) => {
     try {
-    res.json({id, msg: "put test", testbody: editBody});
-  } catch (error) {
-    console.log(error);
-    res.status(500).json({ msg: "my code sucks, let me know!", error });
-  }
+        const users = await db.Users.all()
+        res.json(users);
+    } catch (err) {
+      console.log(err);
+      res.status(500).send(err);
+    }
 });
 
-router.delete("/:id", async (req, res) => {
-  const id = Number(req.params.id);
-  try {
-    res.json({ id, msg: "delete test" });
-  } catch (error) {
-    console.log(error);
-    res.status(500).json({ msg: "my code sucks, let me know!", error });
-  }
+router.put('/:id', async (req: express.Request, res: express.Response) => {
+    try {
+        const id = Number(req.params.id);
+        const user = req.body.user;
+
+        await db.Users.update(user.firstname, user.lastname, user.preferredname, user.email, id);
+
+        res.json({message: 'User!'});
+        res.status(200).send(`User edited at id: ${id}`);
+    } catch (err) {
+      console.log(err);
+      res.status(500).send(err);
+    }
+});
+
+router.delete('/:id', async (req: express.Request, res: express.Response) => {
+    try {
+        const id = Number(req.params.id);
+
+        await db.Users.destroy(id);
+
+        res.json({message: 'User!'});
+        res.status(200).send(`User deleted at id: ${id}`);
+    } catch (err) {
+      console.log(err);
+      res.status(500).send(err);
+    }
 });
 
 export default router;

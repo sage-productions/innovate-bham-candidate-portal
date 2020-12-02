@@ -7,6 +7,7 @@ import elevatorpitchesRouter from './elevatorpitches';
 import profilepicturesRouter from './profilepictures';
 import resumefeedbackRouter from './resumefeedback';
 import resumesRouter from './resumes';
+import userbioRouter from './userbio';
 
 const router = express.Router();
 
@@ -17,6 +18,8 @@ router.use("/elevatorpitches", elevatorpitchesRouter);
 router.use("/profilepictures", profilepicturesRouter);
 router.use("/resumefeedback", resumefeedbackRouter);
 router.use("/resumes", resumesRouter);
+router.use("/userbio", userbioRouter);
+
 
 
 
