@@ -28,8 +28,8 @@ const App: React.FC<AppProps> = props => {
 			
 			<Navbar />
 
-			<div className="bg-img">
-				<main className="container-fluid">
+			{/* <div className="bg-img"> */}
+				{/* <main className="container-fluid"> */}
 
 						<Switch>
 						
@@ -44,8 +44,8 @@ const App: React.FC<AppProps> = props => {
 
 						</Switch>
 
-				</main> 
-			</div>
+				{/* </main>  */}
+			{/* </div> */}
 			
 			<Footer />
 

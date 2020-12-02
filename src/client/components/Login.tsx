@@ -5,16 +5,21 @@ import "../scss/login";
 const Login: React.FC<LoginProps> = props => {
   return (
 
-    
-    
-      <div className="row justify-content-center text-light pt-1">
-        <div className="col-lg-10 text-center">
+    <div className="bg-img">
+      <main className="container-fluid">
+        <div className="row justify-content-center text-light pt-1">
+          <div className="col-lg-10 text-center">
 
-          {/* <h4>Fueling Tech Talent</h4> 
-          <h4>in the Heart of the Magic City</h4> */}
+            {/* <h4>Fueling Tech Talent</h4> 
+            <h4>in the Heart of the Magic City</h4> */}
 
+          </div>
         </div>
-      </div>
+      </main>
+      
+    </div>
+    
+      
       
   )
 }
