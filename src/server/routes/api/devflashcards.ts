@@ -15,9 +15,9 @@ const isAdmin: RequestHandler = (req, res, next) => {
 
 router.get('/', async (req: express.Request, res: express.Response) => {
     try {
-        const elevatorPitches = await db.ElevatorPitches.all();
-        res.json(elevatorPitches);
-    } catch (err) {
+        const devFlashCards = await db.DevFlashCards.all();
+        res.json(devFlashCards);
+    } catch(err) {
         console.log(err);
         res.status(500).send(err)
     }
@@ -26,9 +26,9 @@ router.get('/', async (req: express.Request, res: express.Response) => {
 router.get('/:id', async (req: express.Request, res: express.Response) => {
     try{
         const id = Number(req.params.id);
-        const elevatorPitch = await db.ElevatorPitches.one(id);
-        res.json(elevatorPitch[0]);
-    } catch (err) {
+        const devFlashCard = await db.DevFlashCards.one(id);
+        res.json(devFlashCard[0]);
+    } catch(err) {
         console.log(err);
         res.status(500).send(err);
     }
@@ -36,26 +36,28 @@ router.get('/:id', async (req: express.Request, res: express.Response) => {
 
 router.post('/', async (req: express.Request, res: express.Response) => {
     try{
-        const elevatorPitch = req.body.elevatorPitch;
+        const devFlashCard = req.body.devFlashCard;
 
-        const newElevatorPitch = await db.ElevatorPitches.insert(elevatorPitch.userid, elevatorPitch.content);
+        const newDevFlashCard = await db.DevFlashCards.insert(devFlashCard.question, devFlashCard.answer);
 
-        res.json({message: 'Pitched!'});
-        res.status(200).send(`Pitch created with id: ${newElevatorPitch.insertId}`)
-    } catch (err) {
+        res.json({message: 'Flashed!'})
+        res.status(200).send(`
+            data flash card created with id: ${newDevFlashCard.insertId}
+        `)
+    } catch(err) {
         console.log(err);
         res.status(500).send(err);
     }
 });
 
 router.delete('/:id', async (req: express.Request, res: express.Response) => {
-    try{
+    try {
         const id = Number(req.params.id);
 
-        await db.ElevatorPitches.destroy(id);
+        await db.DevFlashCards.destroy(id);
 
-        res.json({message: 'Pitched!'});
-        res.status(200).send(`Pitch deleted at id: ${id}`);
+        res.json({message: 'Flashed!'});
+        res.status(200).send(`flashcard deleted at id: ${id}`)
     } catch (err) {
         console.log(err);
         res.status(500).send(err);
