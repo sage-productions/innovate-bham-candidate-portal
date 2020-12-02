@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Document } from 'react-pdf';
 
 
 const Resume: React.FC<ResumeProps> = props => {
