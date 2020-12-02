@@ -5,7 +5,7 @@ import "../scss/login";
 const Login: React.FC<LoginProps> = props => {
   return (
 
-    <div className="bg-img">
+    <div className="bg-img"> 
       <main className="container-fluid">
         <div className="row justify-content-center text-light pt-1">
           <div className="col-lg-10 text-center">
