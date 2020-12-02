@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import '../scss/elevatorpitch.scss'
+import '../scss/elevator-pitch.scss'
 
 
-const ElevatorPitch: React.FC<InterviewProps> = props => {
+const ElevatorPitch: React.FC<ElevatorProps> = props => {
     return (
         <div className="bg-midnight">
 
@@ -50,6 +50,6 @@ const ElevatorPitch: React.FC<InterviewProps> = props => {
     )
 }
 
-interface InterviewProps { }
+interface ElevatorProps { }
 
 export default ElevatorPitch;
