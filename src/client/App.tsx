@@ -10,10 +10,10 @@ import Home from './components/Home';
 import Profile from './components/Profile';
 
 import Resume from './components/Resume';
-import InterviewPrep from './components/InterviewPrep';
 import Flashcards from './components/Flashcards';
 
 import AdminResumeView from './components/AdminResumeView';
+import ElevatorPitch from './components/ElevatorPitch';
 
 
 // import Resources from './components/Resources';
@@ -37,7 +37,7 @@ const App: React.FC<AppProps> = props => {
 							<Route exact path="/home" component={ Home } />
 							<Route exact path="/profile/:id" component={ Profile } />
 							<Route exact path="/resume/:id" component={ Resume } />
-							<Route exact path="/interviewprep/:id" component={ InterviewPrep } />
+							<Route exact path="/interviewprep/:id" component={ ElevatorPitch } />
 							<Route exact path="/flashcards" component={ Flashcards } />
 							
 							<Route exact path="/adminresumeview" component={ AdminResumeView } />
