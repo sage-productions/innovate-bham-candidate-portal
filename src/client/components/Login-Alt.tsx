@@ -5,18 +5,19 @@ import "../scss/login-alt";
 const Login: React.FC<LoginProps> = props => {
   return (
 
-    <div className="bg-img pt-5">
-      
+    
+    
       <div className="row justify-content-center text-light pt-1">
         <div className="col-lg-10 text-center">
 
-          {/* <h1>Innovate Birmingham</h1> 
-          <h1>Candidate Portal</h1> */}
-          {/* <h1 className="welcome-msg-1">Welcome to</h1>
-          <h1 className="welcome-msg-2">your Future...</h1> */}
+          {/* <h4>Fueling Tech Talent</h4> 
+          <h4>in the Heart of the Magic City</h4> */}
 
         </div>
       </div>
+      
+  )
+}
 
       {/* <div className="row justify-content-center text-light pt-5">
         <div className="col-md-7 col-lg-5 text-center px-5">
@@ -37,9 +38,6 @@ const Login: React.FC<LoginProps> = props => {
 
         </div>
       </div> */}
-    </div>
-  )
-}
 
 interface LoginProps { }
 

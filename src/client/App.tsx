@@ -28,23 +28,25 @@ const App: React.FC<AppProps> = props => {
 		<Router>
 			
 			<Navbar />
-			
-			<main className="container-fluid pt-5">
-				
-				<Switch>
-					
-					<Route exact path="/" component={ Login } />
-					<Route exact path="/home" component={ Home } />
-					<Route exact path="/profile/:id" component={ Profile } />
-					<Route exact path="/resume/:id" component={ Resume } />
-					<Route exact path="/interviewprep/:id" component={ InterviewPrep } />
-					<Route exact path="/flashcards" component={ Flashcards } />
-					
-					<Route exact path="/adminresumeview" component={ AdminResumeView } />
 
-				</Switch>
+			<div className="bg-img">
+				<main className="container-fluid">
 
-			</main> 
+						<Switch>
+						
+							<Route exact path="/" component={ Login } />
+							<Route exact path="/home" component={ Home } />
+							<Route exact path="/profile/:id" component={ Profile } />
+							<Route exact path="/resume/:id" component={ Resume } />
+							<Route exact path="/interviewprep/:id" component={ InterviewPrep } />
+							<Route exact path="/flashcards" component={ Flashcards } />
+							
+							<Route exact path="/adminresumeview" component={ AdminResumeView } />
+
+						</Switch>
+
+				</main> 
+			</div>
 			
 			<Footer />
 
