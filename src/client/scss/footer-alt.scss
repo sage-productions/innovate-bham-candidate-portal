@@ -9,7 +9,13 @@ $theme-colors: (
     'warning': #FFCF2B
 );
 
-.container-fluid {
-    align-items: center;
-    justify-content: center;
+
+.page-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .fab {
+    color: #161929;
 }
