@@ -6,7 +6,12 @@
     width: 80vw;
 }
 
+.page-row {
+    margin-bottom: -650px;
+}
+
 .profile-pic {
+    border: 3px solid #161929;
     border-radius: 50%;
 }
 
@@ -14,10 +19,18 @@
     margin-top: -6px;
 }
 
-.link-box {
-    height: 7em;
-    width: 7em;
+// a {
+//     text-decoration: none;
+//     color: #FFFFFF;
+// }
 
-    border: 2px solid white;
+.link-boxes {
+    position: relative;
+    top: 5px;
+
+    height: 10em;
+    width: 15em;
+
+    border: 2px solid #161929;
     border-radius: 10px;
 }

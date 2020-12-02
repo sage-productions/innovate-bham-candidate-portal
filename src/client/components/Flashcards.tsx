@@ -1,18 +1,20 @@
 import React, { useState, useEffect } from "react";
 import "../scss/flashcards";
-import text from "./utilities/types"
+import text from "./utilities/types";
 
 const Flashcards: React.FC<FlashcardsProps> = (props) => {
   const sampleFlashcards = [
     {
       id: 1,
       question: "What is JavaScript?",
-      answer: "JavaScript is a lightweight, interpreted programming language with object-oriented capabilities that allows you to build interactivity into otherwise static HTML pages.",
+      answer:
+        "JavaScript is a lightweight, interpreted programming language with object-oriented capabilities that allows you to build interactivity into otherwise static HTML pages.",
     },
     {
       id: 2,
       question: "What is Callback?",
-      answer: "A callback is a plain JavaScript function passed to some method as an argument or option. It is a function that is to be executed after another function has finished executing, hence the name ‘call back‘.",
+      answer:
+        "A callback is a plain JavaScript function passed to some method as an argument or option. It is a function that is to be executed after another function has finished executing, hence the name ‘call back‘.",
     },
     {
       id: 3,
@@ -31,7 +33,6 @@ const Flashcards: React.FC<FlashcardsProps> = (props) => {
     },
   ];
 
-  
   const [question, nextQuestion] = React.useState({} as text);
 
   const [index, changeIndex] = React.useState(0);
@@ -39,7 +40,7 @@ const Flashcards: React.FC<FlashcardsProps> = (props) => {
   const [answer, showAnswer] = React.useState(false);
 
   useEffect(() => {
-    nextQuestion(sampleFlashcards[index])
+    nextQuestion(sampleFlashcards[index]);
   }, [index]);
 
   const seeAnswer = () => {
@@ -47,12 +48,12 @@ const Flashcards: React.FC<FlashcardsProps> = (props) => {
   };
 
   const nextCard = () => {
-    console.log(index)
+    console.log(index);
     showAnswer(false);
-    if (index >= sampleFlashcards.length - 1){
-      changeIndex(0)
+    if (index >= sampleFlashcards.length - 1) {
+      changeIndex(0);
     } else {
-      changeIndex(index + 1)
+      changeIndex(index + 1);
     }
   };
 
@@ -73,11 +74,14 @@ const Flashcards: React.FC<FlashcardsProps> = (props) => {
           </p>
           <button
             onClick={seeAnswer}
-            className="btn btn-sm m-2 btn-gold float-right">
+            className="btn btn-sm m-2 btn-gold float-right"
+          >
             See Answer
           </button>
-          <button 
-          onClick={nextCard} className="btn btn-sm m-2 btn-navy float-right">
+          <button
+            onClick={nextCard}
+            className="btn btn-sm m-2 btn-navy float-right"
+          >
             Next Card
           </button>
         </div>
@@ -87,22 +91,15 @@ const Flashcards: React.FC<FlashcardsProps> = (props) => {
       <div className="col-12 card border-gold mb-3 shadow style={{max-width: 18rem}}">
         <div className="card-header">Data Analytics Flashcard</div>
         <div className="card-body text-navy">
-          <p className="card-text">
-            What is Data Analytics?
-          </p>
-          <button
-            className="btn btn-sm m-2 btn-gold float-right">
+          <p className="card-text">What is Data Analytics?</p>
+          <button className="btn btn-sm m-2 btn-gold float-right">
             See Answer
           </button>
-          <button 
-          className="btn btn-sm m-2 btn-navy float-right">
+          <button className="btn btn-sm m-2 btn-navy float-right">
             Next Card
           </button>
         </div>
       </div>
-
-
-
     </main>
   );
 };

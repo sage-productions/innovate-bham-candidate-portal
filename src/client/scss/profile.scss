@@ -1,5 +1,27 @@
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 
+
+
+.container {
+  margin-top: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+#paris-image {
+  margin-left: 2em;
+  border-radius: 100%;
+}
+
+.infoContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .button1 {
   background-color: white; 
   color: black; 
@@ -22,5 +44,9 @@
   color:black;
 }
 
+
+.profile-pic {
+  border-radius:25%;
+}
 
 
