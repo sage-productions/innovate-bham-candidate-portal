@@ -1,3 +1,4 @@
+//@ts-nocheck
 import React from 'react'
 import VideoRecorder from 'react-video-recorder'
 

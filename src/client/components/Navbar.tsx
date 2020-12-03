@@ -13,7 +13,7 @@ const Navbar: React.FC<NavbarProps> = props => {
                 <img src="/assets/innovate-logo-med.png" alt="Innovate Bham Logo" className="logo-sm" />
 
                 <div className="d-none d-sm-flex flex-column text-center">
-                    <h5 className="text-dark">Innovate Birmingham</h5>
+                    <h5 className="text-dark p-2">Innovate Birmingham</h5>
                     <h5 className="text-dark negative-margin">Candidate Portal</h5>
                 </div>
 
