@@ -7,16 +7,20 @@ const Resume: React.FC<ResumeProps> = (props) => {
     const [file, setFile] = useState("/assets/CombinationResume.pdf");
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
-    const [comment, setComment] = useState({
-        commentName: "",
-        commentMessage: "",
-        comments: [
-            {
-                name: "",
-                comment: ""
-            },
-        ]
-    })
+
+    const sampleComments = [
+        {
+            id: 1,
+            name: "TJ",
+            message: "Looks great!"
+        },
+        {
+            id: 2,
+            name: "Andrew",
+            message: "That's bomb yo!"
+        }
+    ]
+
 
     let onDocumentLoadSuccess = ({ numPages }) => {
         setNumPages(numPages);
@@ -73,7 +77,7 @@ const Resume: React.FC<ResumeProps> = (props) => {
                     onClick={previousPage}
                 >
                     Previous
-            </button>
+                </button>
                 <button
                     className="btn btn-outline-dark mx-2"
                     type="button"
@@ -81,12 +85,38 @@ const Resume: React.FC<ResumeProps> = (props) => {
                     onClick={nextPage}
                 >
                     Next
-            </button>
+                </button>
             </div>
 
-            <div className="row">
-                
+
+            <div className="container border p-3 mt-3">
+                <div className="container">
+                    {sampleComments.map(comment => (
+                        <div className="row mt-3 mb-3">
+                            <div className="card shadow" style={{ width: '18rem' }}>
+                                <div className="card-body mt-3">
+                                    <h5 className="card-title">{comment.name}</h5>
+                                    <p className="card-text">{comment.message}</p>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+
+                <div className="container-sm mt-3">
+                    <div className="row">
+                        <div className="input-group">
+                            <input type="text" className="form-control" placeholder="Leave and comment?" />
+                            <div className="input-group-append">
+                                <button className="btn btn-outline-dark inputBtn">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+
 
         </main>
     );
