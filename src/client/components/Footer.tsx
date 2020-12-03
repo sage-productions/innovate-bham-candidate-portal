@@ -64,15 +64,15 @@ const Footer: React.FC<FooterProps> = (props) => {
             <hr className="bg-dark mb-4 mt-0 d-inline block mx-auto style={{width: 75px; height: 2px}}" />
 
             <ul className="list-unstyled ml-4">
-              <li className="mt-2 mb-0 text-muted"><i className="fas fa-home"></i> 1500 1st Ave North</li>
-              <li className="mt-0 ml-4 text-muted">Birmingham, AL 35203</li>
+              <li className="mt-2 mb-0 text-muted"><i className="fas fa-home"></i> 1500 1st Ave N</li>
+              <li className="mt-0 ml-4 text-muted">Bham, AL 35203</li>
               <li className="my-2 text-muted"><i className="fas fa-envelope"></i> info@innovatebham.com</li>
               <li className="my-2 text-muted"><i className="fas fa-phone"></i> 205.555.5555</li> 
             </ul>
           </div>
           
           <div className="col-md-3 mx-auto mb-4">
-            <h6 className="underline text-uppercase text-center font-weight-bold text-white mr-5">Production Note</h6>
+            <h6 className="underline text-uppercase text-center font-weight-bold text-white mr-5">Developer Notes</h6>
             <hr className="bg-dark mb-4 mt-0 d-inline block mx-auto style={{width: 125px; height: 2px}}" />
             <p className="mt-2 text-muted">The Innovate Birmingham Candidate Portal was designed, developed and deployed as a final project by software development candidates in the Fall of 2020. All the best from Cohort 12!</p>
           </div>
