@@ -1,0 +1,30 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid black;
+}
+
+.button1:hover {
+  background-color:#eeeb22;
+  color:black;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid Black;
+}
+
+.button2:hover {
+  background-color: #eeeb22;
+  color:black;
+}
+
+
+.profile-pic {
+  border-radius:25%;
+}
+
+
