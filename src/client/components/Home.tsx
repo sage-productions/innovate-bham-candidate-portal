@@ -12,7 +12,7 @@ const Home: React.FC<HomeProps> = props => {
 
                     <div className="row title-row">
                         <div className="col-12 text-center bg-midnight">
-                            <h2 className="text-gold text-center"><u>Home</u></h2>
+                            <h2 className="text-white text-center">Home</h2>
                         </div>
                     </div>
 
@@ -20,7 +20,7 @@ const Home: React.FC<HomeProps> = props => {
 
                         <div className="col-sm-4 text-center text-midnight py-2">
                             <Link to="/profile/1">
-                                <img className="profile-pic" src="/assets/josh.jpg" alt=""/>
+                                <img className="home-profile-pic" src="/assets/josh.jpg" alt=""/>
                             </Link>
                             
                             <p className="click-to-edit text-muted">(click to edit profile)</p>
@@ -57,7 +57,7 @@ const Home: React.FC<HomeProps> = props => {
                             
                             <div className="link-row flex-column">
                                 
-                                <Link className="link" to="/interviewprep/:id" onMouseOver={(e) => e.preventDefault()}>
+                                <Link className="link" to="/elevatorpitch/1" onMouseOver={(e) => e.preventDefault()}>
                                     <div className="link-boxes mx-1">
                                         <h5><strong>Interview Prep</strong></h5>
                                         <p className="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore illo sed animi velitoam!</p>

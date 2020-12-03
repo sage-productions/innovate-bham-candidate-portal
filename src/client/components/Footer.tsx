@@ -66,8 +66,8 @@ const Footer: React.FC<FooterProps> = (props) => {
             <ul className="list-unstyled ml-4">
               <li className="mt-2 mb-0 text-muted"><i className="fas fa-home"></i> 1500 1st Ave N</li>
               <li className="mt-0 ml-4 text-muted">Bham, AL 35203</li>
-              <li className="my-2 text-muted"><i className="fas fa-envelope"></i> info@innovatebham.com</li>
-              <li className="my-2 text-muted"><i className="fas fa-phone"></i> 205.555.5555</li> 
+              <li className="my-2 text-muted"><i className="fas fa-envelope"></i>info@innovatebham.com</li>
+              <li className="my-2 text-muted"><i className="fas fa-phone"></i>205.555.5555</li> 
             </ul>
           </div>
           
