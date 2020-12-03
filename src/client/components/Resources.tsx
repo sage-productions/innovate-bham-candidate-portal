@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react';
 
 
-const Template: React.FC<TemplateProps> = props => {
+const Resources: React.FC<ResourcesProps> = props => {
     return (
         <main className="container-fluid text-midnight">
 
             <div className="row title-row">
                 <div className="col-12 text-center bg-midnight">
-                    <h2 className="text-gold text-center"><u>Template</u></h2>
+                    <h2 className="text-gold text-center"><u>Resources</u></h2>
                 </div>
             </div>
 
             
-            {/* Start Coding Here */}
+
 
 
 
@@ -26,6 +26,6 @@ const Template: React.FC<TemplateProps> = props => {
     )
 }
 
-interface TemplateProps { }
+interface ResourcesProps { }
 
-export default Template;
+export default Resources;

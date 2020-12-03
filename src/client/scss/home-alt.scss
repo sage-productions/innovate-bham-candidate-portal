@@ -1,0 +1,80 @@
+
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+$theme-colors: (
+    'midnight': #161929,
+    'stone': #8A8A8D,
+    'navy': #242135,
+    'aqua': #43B7E8,
+    'gold': #FFCF2B,
+    'warning': #FFCF2B
+);
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+  }
+
+
+  .page-container {
+    padding-top: 5rem;
+    height: 80vh;
+    width: 80vw;
+}
+
+.page-row {
+    margin-bottom: -650px;
+}
+
+.neg-top-margin {
+    margin-top: -6px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.mt-3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.link-boxes {
+    position: relative;
+    top: 5px;
+    height: 12em;
+    width: 15em;
+    // border: 2px solid #161929;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    color: #242135;
+    background-color: #FFCF2B;
+    padding: 20px;
+    margin: 10px;
+  }
+
+.link-boxes:hover {
+    background-color: #161929;
+    color: white;
+  }
+
+.header-text {
+    font-size: 20px;
+}
+
+.href:hover {
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+.name-text {
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #43B7E8;
+    font-weight: 1000;
+}

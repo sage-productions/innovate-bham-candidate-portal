@@ -1,35 +1,73 @@
 //@ts-nocheck
-import React, { useState, useEffect } from 'react';
-import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack';
-import sampleResume from './assets/Combination-Resume.pdf'
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+import React, { useState, useEffect } from "react";
+import { pdfjs, Document, Page } from "react-pdf";
+pdfjs.GlobalWorkerOptions.workerSrc = `/js/app.worker.js`;
 
+const Resume: React.FC<ResumeProps> = (props) => {
+  const [file, setFile] = useState("/assets/CombinationResume.pdf");
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
 
-const Resume: React.FC<ResumeProps> = props => {
-    const [numPages, setNumPages] = useState(null);
-    const [pageNumber, setPageNumber] = useState(1);
+  let onDocumentLoadSuccess = ({ numPages }) => {
+    setNumPages(numPages);
+  };
 
-    let onDocumentLoadSuccess = ({ numPages }) => {
-        setNumPages(numPages);
-    }
+  let changePage = (offset) => {
+    setPageNumber((prevPageNumber) => prevPageNumber + offset);
+  };
 
-    return (
-        <main className="container-fluid">
-            <div className="row">
-                <Document
-                    file={sampleResume}
-                    onLoadSuccess={onDocumentLoadSuccess}
-                    onLoadError={console.error}
+  let previousPage = () => {
+    changePage(-1);
+  };
+
+  let nextPage = () => {
+    changePage(1);
+  };
+
+  return (
+    <div className="container  ">
+      <div className="row shadow">
+        <Document
+          file={file}
+          onLoadSuccess={onDocumentLoadSuccess}
+          onLoadError={console.error}
+          options={{
+            cMapUrl: `//cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjs.version}/cmaps/`,
+            cMapPacked: true,
+          }}
+        >
+          <Page pageNumber={pageNumber} />
+        </Document>
+        <div className="row">
+            <p>
+            Page {pageNumber || (numPages ? 1 : "--")} of {numPages || "--"}
+            </p>
+        </div>
+        <div className="row">
+            <button
+                className="btn btn-outline-dark mx-2"
+                type="button"
+                disabled={pageNumber <= 1}
+                onClick={previousPage}
+            >
+            Previous
+            </button>
+            <button
+                className="btn btn-outline-dark mx-2"
+                type="button"
+                disabled={pageNumber >= numPages}
+                onClick={nextPage}
                 >
-                    <Page pageNumbers={pageNumber} />
-                </Document>
-                <p>Page {pageNumber} of {numPages}</p>
-            </div>
-        </main>
+            Next
+            </button>
+        </div>
         
-    )
-}
+        
+      </div>
+    </div>
+  );
+};
 
-interface ResumeProps { }
+interface ResumeProps {}
 
 export default Resume;

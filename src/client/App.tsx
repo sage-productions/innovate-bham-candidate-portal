@@ -16,7 +16,7 @@ import AdminResumeView from './components/AdminResumeView';
 import ElevatorPitch from './components/ElevatorPitch';
 
 
-// import Resources from './components/Resources';
+import Resources from './components/Resources';
 // import HiddenInnovators from './components/HiddenInnovators';
 // import IntroToAgileMethods from './components/IntroToAgileMethods';
 
@@ -39,6 +39,8 @@ const App: React.FC<AppProps> = props => {
 							<Route exact path="/resume/:id" component={ Resume } />
 							<Route exact path="/elevatorpitch/:id" component={ ElevatorPitch } />
 							<Route exact path="/flashcards" component={ Flashcards } />
+
+							<Route exact path="/resources" component={ Resources } />
 							
 							<Route exact path="/adminresumeview" component={ AdminResumeView } />
 
