@@ -1,10 +1,10 @@
 //@ts-nocheck
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import { pdfjs, Document, Page } from "react-pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `/js/app.worker.js`;
 
 const Resume: React.FC<ResumeProps> = (props) => {
-    const [file, setFile] = useState("/assets/CombinationResume.pdf");
+    const [file, setFile] = useState("/assets/samplepdfv2.pdf");
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
 
@@ -39,6 +39,7 @@ const Resume: React.FC<ResumeProps> = (props) => {
     };
 
     return (
+        <Fragment>
         <main className="container-fluid">
 
             <div className="row title-row">
@@ -119,6 +120,7 @@ const Resume: React.FC<ResumeProps> = (props) => {
 
 
         </main>
+        </Fragment>
     );
 };
 
