@@ -109,7 +109,7 @@ const Resume: React.FC<ResumeProps> = (props) => {
                 <div className="container-sm mt-3">
                     <div className="row">
                         <div className="input-group">
-                            <input type="text" className="form-control" placeholder="Leave and comment?" />
+                            <input type="text" className="form-control" placeholder="Leave a comment?" />
                             <div className="input-group-append">
                                 <button className="btn btn-outline-dark inputBtn">Send</button>
                             </div>
