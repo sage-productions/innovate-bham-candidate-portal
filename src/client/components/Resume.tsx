@@ -16,7 +16,7 @@ const Resume: React.FC<ResumeProps> = (props) => {
         },
         {
             id: 2,
-            name: "Andrew",
+            name: "Garrett",
             message: "That's bomb yo!"
         }
     ]
