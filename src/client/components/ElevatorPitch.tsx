@@ -1,76 +1,127 @@
 import React, { useState, useEffect } from "react";
 // import Sidebar from "./Sidebar"
-import Timer from "./Timer";
-import "../scss/elevator-pitch.scss"
-
+// import Timer from "./Timer";
+import "../scss/elevator-pitch.scss";
+import Recorder from "./recorder";
 
 const ElevatorPitch: React.FC<ElevatorProps> = (props) => {
-    
   return (
-   
-<React.Fragment>
-
-  
-    <div className="top-box bg-midnight">
-      <main className="container-fluid">
-        {/* <div className="page-container"> */}
-
-        <div className="row">
-          <div className="col-12 text-center">
-            <h1 className="text-gold text-center">
-              Let's Work On Our Elevator Pitch
-            </h1>
-          </div>
-        </div>
-
-        <div className="row d-flex justify-content-center bg-navy py-5">
-          <div className="col-4 text-center text-light pb-5">
-            {/* <div className="row d-flex justify-content-center bg-navy py-5"></div> */}
-
-            <img className="profile-pic" src="/assets/josh.jpg" alt="josh" />
-            <h6>Student Studentson</h6>
-            <h6 className="neg-top-margin"></h6>
-
-            <h6></h6>
+    <React.Fragment>
+      <div className="top-box bg-midnight">
+        <main className="container-fluid">
+          <div className="row">
+            <div className="col-12 text-center">
+              <h1 className="text-light text-center">
+                Let's Work On Our Elevator Pitch
+              </h1>
+            </div>
           </div>
 
-          <div className="elevator-div col-8 d-flex text-center text-light">
-            <img
-              className="elevator-pic"
-              src="/assets/elevator_pitch.jpg"
-              alt="elevator"
-            />
+          <div className="row d-flex justify-content-center bg-navy py-5">
+            <div className="col-4 text-center text-light">
+              <img
+                className="profile-pic"
+                src="/assets/christopher.jpg"
+                alt="chris"
+              />
+              <h6>Chris Cobb</h6>
+              <h6>Web Development Candidate</h6>
+              <h6>Cohort 12</h6>
+              <h6 className="neg-top-margin"></h6>
+
+              <h6></h6>
+            </div>
+
+            <div className="elevator-div col-8 d-flex text-center text-light">
+              <img
+                className="elevator-pic"
+                src="/assets/elevator_pitch.jpg"
+                alt="elevator"
+              />
+            </div>
           </div>
-        </div>
 
-        <div className="body display-flex justify-content-center align-items-center text-light bg-navy m-6 p-5">
-          <h2 className="elevator-heading">What is an Elevator Pitch?</h2>
-          <p>
-            So what exactly is an elevator pitch? In
-            a nutshell it’s just what it sounds like: a short, 30-60 second well
-            crafted business pitch telling someone who you are and why they
-            should want to hire you. It’s called the elevator pitch because it’s
-            meant to represent the amount of time you’d have if you were stuck
-            in an elevator with someone riding from the bottom of the building
-            to the top. A solid elevator pitch will allow you to distill
-            down to the most pure form exactly who you are and what you can offer.
-            That focus can help to set you apart from all the other
-            candidates who are vying for the same job. Think of it as a
-            commercial and you’re the product. You’ve got 30 seconds to market
-            yourself and convince whoever is listening to not only NOT change
-            the channel, but to buy what you’re selling...YOU as the Perfect
-            Candidate!
-          </p>
-        </div>
+          <div className="body row display-flex justify-content-center align-items-center bg-navy m-6 p-5">
+            <div className="col-12">
+              <h2 className="p1 bg-light text-dark">
+                What is an Elevator Pitch?
+              </h2>
+              <p className="text-light">
+                A candidate elevator pitch is a professional summary of who you
+                are and what you do in a nutshell. It’s listing your values,
+                experiences, skills, and career goals in about 30-60 seconds.
+                Even though this is short pitch, it should be compelling enough
+                to grab someone’s attention and interest. Having an elevator
+                pitch is a great way to give a quick introduction of yourself to
+                hiring managers. This article gives key points on how to
+                construct your candidate elevator pitch and use it successfully.
+              </p>
 
-        <div className="link-box">
-          <Timer />
-        </div>
-        {/* </div> */}
-      </main></div></React.Fragment>
+              <h2 className="p2 bg-light text-dark">
+                Elements You Should Include{" "}
+              </h2>
+              <p className="text-light">
+                In your candidate elevator pitch, you want to get the main point
+                across about who you are in your career. You don’t want to list
+                your entire resume and long-term career goals, but a very
+                shortened version of that. Think about being in an elevator; you
+                have a very limited amount of time before you reach the next
+                floor and the hiring manager your talking to steps out. As a
+                Java Developer, your pitch should include a quick overview of
+                your technology skills and qualifications, notable companies and
+                roles you were/are involved in, tenure (if it applies),
+                significant accomplishments, and your next career move. You
+                don’t need to go too in depth, but give enough information to
+                make your point. You never know where a 60 second conversation
+                leads you.
+              </p>
+
+              <h2 className="p3 bg-light text-dark">
+                Constructing Your Candidate Elevator Pitch
+              </h2>
+
+              <p className="text-light">
+                When constructing your elevator pitch as a Software Developer,
+                you should begin by writing it out. Don’t try to do it in your
+                head, because you are never going to get it the same every time.
+                Writing it out gives you a clear path of what to say and allows
+                for easy memorization. As a technology candidate, you want to go
+                into interviews or networking events able to highlight the
+                successes you’ve had that are relevant to the position you are
+                interviewing for. Once you have your pitch written down,
+                practice saying it out loud. I recommend you practice it in
+                front of a mirror. You want to practice it so it sounds like it
+                comes naturally. Doing this makes it much easier to deliver
+                during a phone screen, job interview, or networking event.
+              </p>
+            </div>
+            <div className="row d-flex justify-content-center bg-navy py-5">
+              <div className="recorder-div">
+                <Recorder />
+              </div>
+            </div>
+
+            <div className="input-group"></div>
+            <input
+              type="text"
+              className="form-control text-center"
+              style={{ height: 200, width: 500 }}
+              placeholder="Type Practice Pitch Here"
+              aria-label="Large"
+              aria-describedby="inputGroup-sizing-sm"
+            ></input>
+          </div>
+
+          {/* <div className="link-box">
+            <Timer />
+          </div> */}
+          {/* </div> */}
+        </main>
+      </div>
+    </React.Fragment>
   );
 };
 
 interface ElevatorProps {}
-``
+
 export default ElevatorPitch;
