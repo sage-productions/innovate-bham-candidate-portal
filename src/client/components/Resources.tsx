@@ -37,8 +37,8 @@ const Resources: React.FC<ResourcesProps> = props => {
                     </div>
                     <div className="col-sm-4 text-center pb-5">
 
-                        <h4>Jake lovett</h4>
-                        <h5 className="neg-top-margin">Web dev TA</h5>
+                        <h4>Jake Lovett</h4>
+                        <h5 className="neg-top-margin">Web Dev TA</h5>
                         
                             
                         <h6>linkedin.com/in/jake-lovett</h6>
