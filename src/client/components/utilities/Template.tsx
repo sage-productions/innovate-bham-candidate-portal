@@ -3,11 +3,26 @@ import React, { useState, useEffect } from 'react';
 
 const Template: React.FC<TemplateProps> = props => {
     return (
-        <div className="row">
-            <div className="col-10">
-                <h1 className="text-center">Template</h1>
+        <main className="container-fluid text-midnight">
+
+            <div className="row title-row">
+                <div className="col-12 text-center bg-midnight">
+                    <h2 className="text-gold text-center"><u>Template</u></h2>
+                </div>
             </div>
-        </div>
+
+            
+            {/* Start Coding Here */}
+
+
+
+
+
+
+
+
+
+        </main>
     )
 }
 
