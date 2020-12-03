@@ -7,6 +7,16 @@ const Resume: React.FC<ResumeProps> = (props) => {
     const [file, setFile] = useState("/assets/CombinationResume.pdf");
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
+    const [comment, setComment] = useState({
+        commentName: "",
+        commentMessage: "",
+        comments: [
+            {
+                name: "",
+                comment: ""
+            },
+        ]
+    })
 
     let onDocumentLoadSuccess = ({ numPages }) => {
         setNumPages(numPages);
