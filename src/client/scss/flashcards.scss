@@ -13,3 +13,31 @@ $theme-colors: (
     align-items: center;
     justify-content: center;
 }
+
+// .bottom-row {
+//     margin-bottom: -650px;
+// }
+
+.card-container {
+    align-items: center;
+    justify-content: center;
+    max-width: 18rem;
+    height: 412px;
+    margin-bottom: -400px
+}
+
+.text-header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    // text-align: right;
+    color: midnight;
+}
+
+.card-text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.btn:hover {
+    color: white;
+    background-color: navy;
+}

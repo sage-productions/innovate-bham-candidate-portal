@@ -1,0 +1,51 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+$theme-colors: (
+    'midnight': #161929,
+    'stone': #8A8A8D,
+    'navy': #242135,
+    'aqua': #43B7E8,
+    'gold': #FFCF2B,
+    'warning': #FFCF2B
+);
+
+
+.container-fluid {
+    align-items: center;
+    justify-content: center;
+}
+
+// .bottom-row {
+//     margin-bottom: -650px;
+// }
+
+// .middle-row {
+//     margin-top: 650px;
+// }
+
+.card-container {
+    position: relative;
+    max-width: 18rem;
+    perspective: 200rem;
+    height: 412px;
+}
+
+.card-container:hover .card-front {
+    transform: rotateY(180deg);
+}
+
+.card-container:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.card {
+    position: absolute;
+    transition: all 0.9s;
+    height: 50%;
+    width: 100%;
+    backface-visibility: hidden;
+}
