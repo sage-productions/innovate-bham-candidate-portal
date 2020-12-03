@@ -41,7 +41,7 @@ const Home: React.FC<HomeProps> = props => {
                                 <Link className="link" to="/resume/:id" onMouseOver={(e) => e.preventDefault()}>
                                     <div className="link-boxes mx-1">
                                         <h5><strong>Resume</strong></h5>
-                                        <p className="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore illo sed animi velitoam!</p>
+                                        <p className="mt-3">Upload your resumes to keep them all in one place and receive feedback from PD staff members</p>
                                     </div>
                                 </Link>
                                 
@@ -49,7 +49,7 @@ const Home: React.FC<HomeProps> = props => {
                                     onMouseOver={(e) => e.preventDefault()}>
                                     <div className="link-boxes mx-1 my-5">
                                         <h5><strong>Hidden Innovators</strong></h5>
-                                        <p className="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore illo sed animi velitoam!</p>
+                                        <p className="mt-3">Hidden Innovators is on a mission to build a more creative, innovative world. Click here to learn more</p>
                                     </div>
                                 </a>
 
@@ -60,7 +60,7 @@ const Home: React.FC<HomeProps> = props => {
                                 <Link className="link" to="/elevatorpitch/1" onMouseOver={(e) => e.preventDefault()}>
                                     <div className="link-boxes mx-1">
                                         <h5><strong>Interview Prep</strong></h5>
-                                        <p className="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore illo sed animi velitoam!</p>
+                                        <p className="mt-3">Work on your elevator pitch and review common interview questions</p>
                                     </div>
                                 </Link>
                                 
@@ -68,7 +68,7 @@ const Home: React.FC<HomeProps> = props => {
                                     onMouseOver={(e) => e.preventDefault()}>
                                     <div className="link-boxes mx-1 my-5">
                                         <h5><strong>Sigao Studios</strong></h5>
-                                        <p className="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore illo sed animi velitoam!</p>
+                                        <p className="mt-3">Sigao Studios is an Agile coaching and software development firm</p>
                                     </div>
                                 </a>
 
@@ -79,14 +79,14 @@ const Home: React.FC<HomeProps> = props => {
                                 <Link className="link" to="/flashcards" onMouseOver={(e) => e.preventDefault()}>
                                     <div className="link-boxes mx-1">
                                         <h5><strong>Flashcards</strong></h5>
-                                        <p className="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore illo sed animi velitoam!</p>
+                                        <p className="mt-3">Brush up on your technical knowledge so that you can speak the langueage with potential employers</p>
                                     </div>
                                 </Link>
                                 
                                 <Link className="link" to="/resources" onMouseOver={(e) => e.preventDefault()}>
                                     <div className="link-boxes mx-1 my-5">
                                         <h5><strong>Resources</strong></h5>
-                                        <p className="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore illo sed animi velitoam!</p>
+                                        <p className="mt-3">Staff contact information and links to other helpful sites around the web</p>
                                     </div>
                                 </Link>
 
