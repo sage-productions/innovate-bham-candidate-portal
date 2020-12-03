@@ -1,10 +1,10 @@
 //@ts-nocheck
 import React, { useState, useEffect } from "react";
-import { pdfjs } from "react-pdf";
-import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
+import { pdfjs, Document, Page } from "react-pdf";
+pdfjs.GlobalWorkerOptions.workerSrc = `/js/app.worker.js`;
 
 const Resume: React.FC<ResumeProps> = (props) => {
-  const [file, setFile] = useState("./assets/CombinationResume.pdf");
+  const [file, setFile] = useState("/assets/CombinationResume.pdf");
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
 
@@ -25,8 +25,8 @@ const Resume: React.FC<ResumeProps> = (props) => {
   };
 
   return (
-    <main className="container-fluid">
-      <div className="row">
+    <div className="container  ">
+      <div className="row shadow">
         <Document
           file={file}
           onLoadSuccess={onDocumentLoadSuccess}
@@ -36,29 +36,35 @@ const Resume: React.FC<ResumeProps> = (props) => {
             cMapPacked: true,
           }}
         >
-          <Page pageNumbers={pageNumber} />
+          <Page pageNumber={pageNumber} />
         </Document>
-        <p>
-          Page {pageNumber || (numPages ? 1 : "--")} of {numPages || "--"}
-        </p>
-        <button
-          className="btn btn-outline-dark mx-2"
-          type="button"
-          disabled={pageNumber <= 1}
-          onClick={previousPage}
-        >
-          Previous
-        </button>
-        <button
-          className="btn btn-outline-dark mx-2"
-          type="button"
-          disabled={pageNumber >= numPages}
-          onClick={nextPage}
-        >
-          Next
-        </button>
+        <div className="row">
+            <p>
+            Page {pageNumber || (numPages ? 1 : "--")} of {numPages || "--"}
+            </p>
+        </div>
+        <div className="row">
+            <button
+                className="btn btn-outline-dark mx-2"
+                type="button"
+                disabled={pageNumber <= 1}
+                onClick={previousPage}
+            >
+            Previous
+            </button>
+            <button
+                className="btn btn-outline-dark mx-2"
+                type="button"
+                disabled={pageNumber >= numPages}
+                onClick={nextPage}
+                >
+            Next
+            </button>
+        </div>
+        
+        
       </div>
-    </main>
+    </div>
   );
 };
 
