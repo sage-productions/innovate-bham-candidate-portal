@@ -20,7 +20,7 @@ const Home: React.FC<HomeProps> = props => {
 
                         <div className="col-sm-4 text-center text-midnight py-2">
                             <Link to="/profile/1">
-                                <img className="home-profile-pic" src="/assets/josh.jpg" alt=""/>
+                                <img className="home-profile-pic" src="/assets/josh.jpg" alt="profile picture"/>
                             </Link>
                             
                             <p className="click-to-edit text-muted">(click to edit profile)</p>

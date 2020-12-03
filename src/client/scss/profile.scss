@@ -15,11 +15,15 @@
   border-radius: 100%;
 }
 
-.infoContainer{
+.info-container{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.page-row-fix {
+  margin-bottom: -600px;
 }
 
 .button1 {
