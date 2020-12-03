@@ -2,6 +2,7 @@
 import React, { useState, useEffect, Fragment } from "react";
 import { pdfjs, Document, Page } from "react-pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `/js/app.worker.js`;
+import '../scss/resume.scss'
 
 const Resume: React.FC<ResumeProps> = (props) => {
     const [file, setFile] = useState("/assets/samplepdfv2.pdf");
@@ -90,7 +91,7 @@ const Resume: React.FC<ResumeProps> = (props) => {
             </div>
 
 
-            <div className="container border p-3 mt-3">
+            <div className="container border p-3 mt-3 page-row">
                 <div className="container">
                     {sampleComments.map(comment => (
                         <div className="row mt-3 mb-3">
