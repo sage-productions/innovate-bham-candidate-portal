@@ -10,6 +10,7 @@ router.post('/', async (req, res, next) => {
     try {
         let user = req.body;
         user.password = HashPassword(req.body.password);
+        console.log(user);
         // let columns = Object.keys(user).join(', ');
         // let values = Object['values'](user);
         let result: any = await DB.Users.insert(user.firstname, user.lastname, user.preferredname, user.email, user.password);
