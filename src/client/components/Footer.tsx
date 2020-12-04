@@ -7,7 +7,6 @@ const Footer: React.FC<FooterProps> = (props) => {
   return (
 
     <footer className="footer">
-
       <div className="top-footer bg-gold justify-content-center">
         <div className="py-2 px-3 bg-yellow d-flex justify-content-between 
                         align-items-center text-center text-navy text-large">
@@ -58,7 +57,6 @@ const Footer: React.FC<FooterProps> = (props) => {
               <li className="my-2 text-muted">Website</li>
             </ul>
           </div>
-
           <div className="col-md-2 mx-auto mb-4">
             <h6 className="underline text-uppercase text-center font-weight-bold text-white">Contact</h6>
             <hr className="bg-dark mb-4 mt-0 d-inline block mx-auto style={{width: 75px; height: 2px}}" />
@@ -72,9 +70,11 @@ const Footer: React.FC<FooterProps> = (props) => {
           </div>
           
           <div className="col-md-3 mx-auto mb-4">
+      <Link to="/">
             <h6 className="underline text-uppercase text-center font-weight-bold text-white mr-5">Developer Notes</h6>
             <hr className="bg-dark mb-4 mt-0 d-inline block mx-auto style={{width: 125px; height: 2px}}" />
             <p className="mt-2 text-muted">The Innovate Birmingham Candidate Portal was designed, developed and deployed as a final project by software development candidates in the Fall of 2020. All the best from Cohort 12!</p>
+      </Link>
           </div>
 
         </div>

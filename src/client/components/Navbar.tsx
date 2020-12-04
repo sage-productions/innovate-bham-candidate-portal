@@ -13,8 +13,8 @@ const Navbar: React.FC<NavbarProps> = props => {
                 <img src="/assets/innovate-logo-med.png" alt="Innovate Bham Logo" className="logo-sm" />
 
                 <div className="d-none d-sm-flex flex-column text-center">
-                    <h5 className="text-dark p-2">Innovate Birmingham</h5>
-                    <h5 className="text-dark negative-margin">Candidate Portal</h5>
+                    <h5 className="text-midnight negative-margin-top p-2">Innovate Birmingham</h5>
+                    <h5 className="text-midnight negative-margin">Candidate Portal</h5>
                 </div>
 
                 <div className="d-xs-flex d-sm-none flex-column">
@@ -37,10 +37,10 @@ const Navbar: React.FC<NavbarProps> = props => {
                 <a className="dropdown-item" href="#">Another action</a>
             </div> */}
 
-            <div className="d-flex">
+            {/* <div className="d-flex">
                 <Link to="/" className="mx-2 text-dark">LOGIN</Link>
                 <Link to="/write" className="mx-2 text-dark">REGISTER</Link>
-            </div>
+            </div> */}
         </nav>
     )
 }

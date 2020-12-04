@@ -3,18 +3,23 @@
 // }
 
 .bg-img {
-    background-image: url('/assets/bham-skyline-railroad-park.jpg');
+    background-image: url('/assets/bham-skyline-railroad-park2.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
   
     position: relative;
-    // z-index: -10;
     top: -40;
   
     height: 80%;
     min-height: 750px;
     width: 100%;
+}
+
+.login-button {
+    position: absolute;
+    top: 30;
+    right: 10;
 }
 
 // .bg-img {
