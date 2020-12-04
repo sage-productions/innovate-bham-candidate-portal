@@ -34,7 +34,7 @@ const insert = async (
   password: string
 ) =>
   Query(
-    `INSERT INTO users (firstname, lastname, preferredname, email, password) VALUES (?,?,?,?,?)`,
+    `INSERT INTO users (firstname, lastname, preferredname, email, password) VALUES (?, ?, ?, ?, ?)`,
     [firstname, lastname, preferredname, email, password]
   );
 
