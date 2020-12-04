@@ -5,8 +5,8 @@ import apiRouter from "./api";
 
 const router = express.Router();
 
-router.use('/api', apiRouter)
-router.use('/auth', authRouter)
+router.use('/auth', authRouter);
+router.use('/api', apiRouter);
 
 
 export default router;
