@@ -9,17 +9,17 @@ export interface IElevatorPitches {
 
 const all = async () => Query(`SELECT * FROM elevatorpitches`);
 
-const one = async (id: number) =>
-  Query(`SELECT * FROM elevatorpitches WHERE id = ?`, [id]);
+const one = async (id: number) => Query(`
+  SELECT * FROM elevatorpitches 
+  WHERE id = ${id}`);
 
-const insert = async (userid: number, content: string) =>
-  Query(`INSERT INTO elevatorpitches (userid, content) VALUES (?,?)`, [
-    userid,
-    content,
-  ]);
+const insert = async (userid: number, content: string) => Query(`
+  INSERT INTO elevatorpitches (userid, content) 
+  VALUES (${userid}, '${content}')`);
 
-const destroy = async (id: number) =>
-  Query(`Delete from elevatorpitches where ID = ?`, [id]);
+const destroy = async (id: number) => Query(`
+  Delete from elevatorpitches 
+  where ID = ${id}`);
 
 export default {
   all,
