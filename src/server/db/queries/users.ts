@@ -35,27 +35,14 @@ const insert = async (
 ) =>
   Query(`INSERT INTO users (firstname, lastname, preferredname, email, password) VALUES ('${firstname}', '${lastname}', '${preferredname}', '${email}', '${password}')`);
 
-const update = (
-  firstname: string,
-  lastname: string,
-  preferredname: string,
-  email: string,
-  id: number
-) =>
-  Query(
-    `
-UPDATE users
-SET 
-firstname = ?, 
-lastname = ?,
-preferredname = ?, 
-email = ?, 
-WHERE users.id = ?`,
-    [firstname, lastname, preferredname, email, id]
-  );
+const update = (firstname: string, lastname: string, preferredname: string, email: string, id: number) => Query(`
+  UPDATE users
+  SET firstname = '${firstname}', lastname = '${lastname}',preferredname = '${preferredname}', email = '${email}', 
+  WHERE users.id = ?;
+`);
 
 const destroy = (id: number) =>
-  Query(`DELETE FROM users WHERE users.id = ?`, [id]);
+  Query(`DELETE FROM users WHERE users.id = '${id}'`);
 
 export default {
   all,
