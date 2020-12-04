@@ -9,43 +9,101 @@ $theme-colors: (
     'warning': #FFCF2B
 );
 
+// .bottom-row {
+//     margin-bottom: -500px;
+// }
 
 .container-fluid {
     align-items: center;
     justify-content: center;
+    margin-bottom: -400px
 }
 
-// .bottom-row {
-//     margin-bottom: -650px;
-// }
-
-// .middle-row {
-//     margin-top: 650px;
-// }
-
-.card-container {
+.container {
+    width: 200px;
+    height: 200px;
     position: relative;
-    max-width: 18rem;
     perspective: 200rem;
-    height: 412px;
+    align-items: center;
+    justify-content: center;
 }
 
-.card-container:hover .card-front {
-    transform: rotateY(180deg);
+.background-cards {
+    height: 40%;
+    background-color: #242135;
 }
 
-.card-container:hover .card-back {
-    transform: rotateY(0deg);
-}
-
-.card-back {
-    transform: rotateY(180deg);
+.btn-container {
+    padding: 2em;
 }
 
 .card {
+    height: 12rem;
+    width: 100%;
+}
+
+.card .card-header {
+    background-color: #FFCF2B;
+    height: 3em;
+}
+
+.card-front{
+    width: 100%;
+    height: 100%;    
+    top: 50;
+    left: 0;        
     position: absolute;
     transition: all 0.9s;
-    height: 50%;
-    width: 100%;
     backface-visibility: hidden;
+    overflow: scroll;
 }
+
+.card-back{
+    width: 100%;
+    height: 100%;      
+    top: 50;
+    left: 0;
+    position: absolute;
+    transition: all 0.9s;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    overflow: auto;
+}
+
+.deck1{
+    width: 100%;
+    height: 100%;    
+    top: 50;
+    left: 0;     
+    margin: 10px;   
+    position: absolute;
+}
+
+.deck2{
+    width: 100%;
+    height: 100%;    
+    top: 50;
+    left: 0;     
+    margin-left: 20px;  
+    margin-top: 20px;   
+    position: absolute;
+}
+
+.container:hover .card-front {
+    transform: rotateY(180deg);
+}
+
+.container:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+.btn-container-new-flashcard {
+    padding: 5em;
+}
+
+
+
+  
+// .card .card-body {
+//     background-color: #FFCF2B;
+// }

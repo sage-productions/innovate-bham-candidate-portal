@@ -20,17 +20,17 @@ const Home: React.FC<HomeProps> = props => {
 
                         <div className="col-sm-4 text-center text-midnight py-2">
                             <Link to="/profile/1">
-                                <img className="home-profile-pic" src="/assets/josh.jpg" alt="profile picture"/>
+                                <img className="home-profile-pic" src="/assets/gh.jpg" alt="profile picture"/>
                             </Link>
                             
                             <p className="click-to-edit text-muted">(click to edit profile)</p>
-                            <h4 className="user-name text-midnight mt-2">Josh the Hurn</h4>
+                            <h4 className="user-name text-midnight mt-2">Garrett from Jasper</h4>
                             <h5 className="neg-top-margin">Web Dev Instructor</h5>
                             <h5 className="neg-top-margin">Cohort 12 - Fall 2020</h5>
                             
                             <h6 className="mt-3">github.com/joshjosh</h6>
                             <h6>linkedin.com/joshjosh</h6>
-                            <h6>joshjosh@innovatebham.com</h6>
+                            <h6>stumpy@innovatebham.com</h6>
 
                         </div>
 
@@ -79,7 +79,7 @@ const Home: React.FC<HomeProps> = props => {
                                 <Link className="link" to="/flashcards" onMouseOver={(e) => e.preventDefault()}>
                                     <div className="link-boxes mx-1">
                                         <h5><strong>Flashcards</strong></h5>
-                                        <p className="mt-3">Brush up on your technical knowledge so that you can speak the langueage with potential employers</p>
+                                        <p className="mt-3">Brush up on your technical knowledge so that you can speak the language with potential employers</p>
                                     </div>
                                 </Link>
                                 
