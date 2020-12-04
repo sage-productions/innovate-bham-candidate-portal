@@ -1,4 +1,5 @@
 require('dotenv').config()
+
 import * as express from "express";
 import routes from "./routes";
 import * as morgan from "morgan"
@@ -27,7 +28,7 @@ app.use(morgan('dev'));
 app.use(passport.initialize());
 
 app.use(express.json());
-app.use(routes);
+app.use("/routes", routes);
 app.use(express.static("public"));
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/index.html"));

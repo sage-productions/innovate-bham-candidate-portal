@@ -7,7 +7,7 @@ const Template: React.FC<TemplateProps> = props => {
 
             <div className="row title-row">
                 <div className="col-12 text-center bg-midnight">
-                    <h2 className="text-gold text-center"><u>Template</u></h2>
+                    <h2 className="text-white text-center">Template</h2>
                 </div>
             </div>
 

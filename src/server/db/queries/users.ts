@@ -33,10 +33,7 @@ const insert = async (
   email: string,
   password: string
 ) =>
-  Query(
-    `INSERT INTO users (firstname, lastname, preferredname, email, password) VALUES (?,?,?,?,?)`,
-    [firstname, lastname, preferredname, email, password]
-  );
+  Query(`INSERT INTO users (firstname, lastname, preferredname, email, password) VALUES ('${firstname}', '${lastname}', '${preferredname}', '${email}', '${password}')`);
 
 const update = (
   firstname: string,
