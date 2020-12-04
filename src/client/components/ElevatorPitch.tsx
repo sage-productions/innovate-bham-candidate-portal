@@ -1,38 +1,61 @@
 import React, { useState, useEffect } from "react";
+import { RouteComponentProps } from "react-router";
 // import Sidebar from "./Sidebar"
 // import Timer from "./Timer";
 import "../scss/elevator-pitch.scss";
 import Recorder from "./recorder";
 
-const ElevatorPitch: React.FC<ElevatorProps> = (props) => {
+const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
+  const [content, setContent] = React.useState({
+    id: null,
+    content: "",
+  });
+
+  const handleContentChange = (e: React.ChangeEvent<HTMLInputElement>) =>
+    setContent({
+      id: content.id,
+      content: e.target.value,
+    });
+
+  const newPitch = async () => {
+    // const pitch = {
+    //    content: content,
+    //  };
+
+    let res = await fetch(`/routes/elevatorpitches/${props.match.params.id}`, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(content),
+    });
+    if (res.ok) {
+      console.log("Pitch successfully posted");
+      // history.push("/");
+    } else {
+      console.log("Pitch not posted");
+    }
+  };
+
   return (
     <React.Fragment>
       <div className="top-box bg-midnight">
-        <main className="container-fluid text-light">
+        <main className="container-fluid">
           <div className="row top-row">
             <div className="col-12 text-center bg-midnight">
-              <h1 className=" text-center">Let's Work On Our Elevator Pitch</h1>
+              <h1 className="display-4 text-center text-light">
+                Let's Work On Our Elevator Pitch
+              </h1>
             </div>
           </div>
 
-          <div className="row d-flex justify-content-center py-5">
-            <div className="col-4 text-center text-light">
-              <img className="profile-pic" src="/assets/josh.jpg" alt="josh" />
-              <h6>Josh Hurn</h6>
-              <h6>Web Development Candidate</h6>
-              <h6>Cohort 12</h6>
-              <h6 className="neg-top-margin"></h6>
-
-              <h6></h6>
-            </div>
-
-            <div className="elevator-div col-8 d-flex text-center text-midnight">
-              <img
-                className="elevator-pic"
-                src="/assets/elevator_pitch.jpg"
-                alt="elevator"
-              />
-            </div>
+          <div className="elevator-div d-flex justify-content-center text-center text-midnight">
+            <img
+              className="elevator-pic"
+              src="/assets/elevator_pitch.jpg"
+              alt="elevator"
+            />
           </div>
 
           <div className="body row display-flex justify-content-center align-items-center bg-light m-6 p-5">
@@ -59,9 +82,9 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props) => {
                 shortened version of that. Think about being in an elevator; you
                 have a very limited amount of time before you reach the next
                 floor and the hiring manager your talking to steps out. As a
-                Java Developer, your pitch should include a quick overview of
-                your technology skills and qualifications, notable companies and
-                roles you were/are involved in, tenure (if it applies),
+                Software Developer, your pitch should include a quick overview
+                of your technology skills and qualifications, notable companies
+                and roles you were/are involved in, tenure (if it applies),
                 significant accomplishments, and your next career move. You
                 don’t need to go too in depth, but give enough information to
                 make your point. You never know where a 60 second conversation
@@ -101,26 +124,26 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props) => {
                 placeholder="Type Practice Pitch Here"
                 aria-label="Large"
                 aria-describedby="inputGroup-sizing-sm"
+                value={content.content}
+                onChange={handleContentChange}
               ></input>
               <button
                 type="submit"
                 className="btn btn-lg btn-outline-secondary my-2"
+                onClick={newPitch}
               >
                 Save Pitch
               </button>
             </section>
           </div>
-
-          {/* <div className="link-box">
-            <Timer />
-          </div> */}
-          {/* </div> */}
         </main>
       </div>
     </React.Fragment>
   );
 };
 
-interface ElevatorProps {}
+interface ElevatorProps extends RouteComponentProps<{ id: string }> {
+  content: string;
+}
 
 export default ElevatorPitch;

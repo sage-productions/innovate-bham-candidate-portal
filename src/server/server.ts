@@ -1,3 +1,4 @@
+require('dotenv').config()
 import * as express from "express";
 import routes from "./routes";
 import * as morgan from "morgan"
@@ -12,7 +13,14 @@ import "./middleware/bearerstrategy";
 
 const app = express();
 
-app.use(helmet());
+app.use(
+  helmet.contentSecurityPolicy({
+    directives: {
+      defaultSrc: ["'self' blob: https://*.fontawesome.com/ https://*.googleapis.com/ https://*.gstatic.com 'unsafe-inline'"],
+    },
+  })
+);
+
 app.use(compression());
 // app.use(cors());
 app.use(morgan('dev'));
