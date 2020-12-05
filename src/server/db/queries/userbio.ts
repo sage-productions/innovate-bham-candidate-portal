@@ -23,7 +23,7 @@ const update = (city: string, bio: string, phone: string, linkedin: string, gith
     bio = '${bio}',
     phone = '${phone}',
     linkedin = '${linkedin}',
-    github = '${github}',
+    github = '${github}'
   WHERE userbio.id = ?`);
 
 const insert = async (userid: number, city: string, bio: string, phone: string, linkedin: string, github: string, id: number) => Query(`
