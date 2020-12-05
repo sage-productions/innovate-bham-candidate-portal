@@ -110,7 +110,7 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
                 during a phone screen, job interview, or networking event.
               </p></section>
             {/* </section> */}
-            <section className="bottom-section bg-light row d-flex justify-content-center">
+            <section className="bottom-section bg-white row d-flex justify-content-center">
             <div className=" py-5">
               <div className="recorder-div">
                 <Recorder />
