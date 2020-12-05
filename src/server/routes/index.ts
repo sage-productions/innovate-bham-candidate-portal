@@ -9,5 +9,4 @@ router.use('/auth', authRouter);
 router.use('/api', apiRouter);
 
 
-
 export default router;

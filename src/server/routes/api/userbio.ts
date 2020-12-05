@@ -24,7 +24,7 @@ router.get('/', async (req: express.Request, res: express.Response) => {
     }
 });
 
-router.get('/', async (req: express.Request, res: express.Response) => {
+router.get('/:id', async (req: express.Request, res: express.Response) => {
     try {
         const id = Number(req.params.id);
         const userBio = await db.UserBio.one(id);
