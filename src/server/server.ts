@@ -1,5 +1,4 @@
 require('dotenv').config()
-
 import * as express from "express";
 import routes from "./routes";
 import * as morgan from "morgan"
