@@ -7,28 +7,23 @@ export interface IProfilePictures {
   _created?: Date;
 }
 
-const one = async (id: number) =>
-  Query(`SELECT * FROM profilepictures WHERE id = ?`, [id]);
+const one = async (id: number) => Query(`
+  SELECT * FROM profilepictures 
+  WHERE id = ${id}`);
 
-const update = (filename: string, id:number ) =>
-  Query(
-    `
+const update = (filename: string, id:number ) => Query(`
   UPDATE profilepictures
-  SET 
-  filename = ?  
-  WHERE profilepictures.id = ?`,
-    [filename, id]
-  );
+  SET filename = '${filename}' 
+  WHERE profilepictures.id = ${id}`);
 
 
-const insert = async (userid: number, filename: string) =>
-  Query(`INSERT INTO profilepictures (userid, filename) VALUES (?,?)`, [
-    userid,
-    filename,
-  ]);
+const insert = async (userid: number, filename: string) => Query(`
+  INSERT INTO profilepictures (userid, filename) 
+  VALUES (${userid}, '${filename}')`);
 
-const destroy = async (id: number) =>
-  Query(`Delete from resumefeedback where ID = ?`, [id]);
+const destroy = async (id: number) => Query(`
+  Delete from resumefeedback 
+  where ID = ${id}`);
 
 export default {
   one,
