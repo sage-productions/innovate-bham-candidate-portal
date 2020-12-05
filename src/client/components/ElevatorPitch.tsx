@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { RouteComponentProps } from "react-router";
-// import Sidebar from "./Sidebar"
-// import Timer from "./Timer";
+// import Sidebar from "./Sidebar;
 import "../scss/elevator-pitch.scss";
 import Recorder from "./recorder";
 
@@ -40,11 +39,11 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
 
   return (
     <React.Fragment>
-      <div className="top-box bg-midnight">
+      <div className="top-box">
         <main className="container-fluid">
           <div className="row top-row">
-            <div className="col-12 text-center bg-midnight">
-              <h1 className="display-4 text-center text-light">
+            <div className="col-12 text-center">
+              <h1 className="display-4 bg-midnight text-center text-gold">
                 Let's Work On Our Elevator Pitch
               </h1>
             </div>
@@ -58,10 +57,11 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
             />
           </div>
 
-          <div className="body row display-flex justify-content-center align-items-center bg-light m-6 p-5">
-            <div className="paragraphs">
-              <h2 className="p1 text-midnight">What is an Elevator Pitch?</h2>
-              <p className="text-midnight">
+          <div className="body display-flex justify-content-center align-items-center">
+            {/* <section className="paragraphs bg-light text-center"> */}
+              <section className="p1 bg-light text-center text-midnight">
+              <h2 className="">What is an Elevator Pitch?</h2>
+              <p className="para1 pb-5 m-0">
                 A candidate elevator pitch is a professional summary of who you
                 are and what you do in a nutshell. It’s listing your values,
                 experiences, skills, and career goals in about 30-60 seconds.
@@ -70,12 +70,12 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
                 pitch is a great way to give a quick introduction of yourself to
                 hiring managers. This article gives key points on how to
                 construct your candidate elevator pitch and use it successfully.
-              </p>
-
-              <h2 className="p2 bg-light text-midnight">
+              </p></section>
+            <section className="p2 p-5 text-center text-midnight">
+              <h2 className="">
                 Elements You Should Include{" "}
               </h2>
-              <p className="text-midnight">
+              <p className="para-2 m-0">
                 In your candidate elevator pitch, you want to get the main point
                 across about who you are in your career. You don’t want to list
                 your entire resume and long-term career goals, but a very
@@ -89,13 +89,13 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
                 don’t need to go too in depth, but give enough information to
                 make your point. You never know where a 60 second conversation
                 leads you.
-              </p>
-
-              <h2 className="p3 bg-light text-midnight">
+              </p></section>
+              <section className="p3 p-5 bg-light py-3">
+              <h2 className="text-center text-midnight">
                 Constructing Your Candidate Elevator Pitch
               </h2>
 
-              <p className="text-midnight">
+              <p className="pb-5">
                 When constructing your elevator pitch as a Software Developer,
                 you should begin by writing it out. Don’t try to do it in your
                 head, because you are never going to get it the same every time.
@@ -108,15 +108,14 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
                 front of a mirror. You want to practice it so it sounds like it
                 comes naturally. Doing this makes it much easier to deliver
                 during a phone screen, job interview, or networking event.
-              </p>
-            </div>
-            <div className="row d-flex justify-content-center bg-light py-5">
+              </p></section>
+            {/* </section> */}
+            <section className="bottom-section bg-light row d-flex justify-content-center">
+            <div className=" py-5">
               <div className="recorder-div">
                 <Recorder />
-              </div>
-            </div>
-            <section className="input field px-5">
-              <div className="input-group"></div>
+
+                <div className="input-group bg-light"></div>
               <input
                 type="text"
                 className="form-control text-center"
@@ -127,13 +126,40 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
                 value={content.content}
                 onChange={handleContentChange}
               ></input>
+              <section>
               <button
                 type="submit"
+                // style={{height:100, width: 100}}
+                className="btn-pitch btn-lg btn-outline-secondary my-2"
+                onClick={newPitch}
+              >
+                Save Pitch
+              </button></section>
+
+
+              </div>
+            </div>
+            
+              {/* <div className="input-group"></div>
+              <input
+                type="text"
+                className="form-control text-center"
+                style={{ height: 250, width: 500 }}
+                placeholder="Type Practice Pitch Here"
+                aria-label="Large"
+                aria-describedby="inputGroup-sizing-sm"
+                value={content.content}
+                onChange={handleContentChange}
+              ></input>
+              <section>
+              <button
+                type="submit"
+                // style={{height:100, width: 100}}
                 className="btn btn-lg btn-outline-secondary my-2"
                 onClick={newPitch}
               >
                 Save Pitch
-              </button>
+              </button></section> */}
             </section>
           </div>
         </main>

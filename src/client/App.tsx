@@ -10,7 +10,7 @@ import Home from './components/Home';
 import Profile from './components/Profile';
 
 import Resume from './components/Resume';
-import Flashcards from './components/Flashcards';
+import Flashcards from './components/Flashcards-Alt';
 
 import AdminResumeView from './components/AdminResumeView';
 import ElevatorPitch from './components/ElevatorPitch';

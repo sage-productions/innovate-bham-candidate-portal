@@ -14,23 +14,26 @@
 }
 
 .elevator-div {
-    margin-top: 30px;
+    // background-color: rgb(88,88,88);
+    // margin-top: 30px;
     background:linear-gradient(rgba(11,26,66,.4),rgba(11,26,66,.4));
     // padding-right: 220px;
 }
 
 .body {
   text-align:center;
-  display:block;
-
-  .paragraphs {
-    max-width: 80%;
-  }
-
+//   display:block; 
 }
 
+//   .paragraphs {
+      
+//     // max-width: 80%;
+//   }
+
+
+
 .top-box {
-    margin-bottom: -620px;
+    margin-bottom: -200px;
 }
 
 
@@ -41,22 +44,31 @@
 }
 
 .p1 {
-    margin-top: 90px;
-    margin-bottom: 15px;
+    padding-top: 50px;
+    margin-left: -15px;
+    margin-right: -15px;
+    
 }
 
 
 .p2 {
-    margin-top: 90px;
-    margin-bottom: 15px;
+    background-color: rgb(216,216,216);
+    margin-left: -15px;
+    margin-right: -15px;
+    
+   
 }
 
 
 .p3 {
-    margin-top: 90px;
-    margin-bottom: 15px;
+    
+    margin-left: -15px;
+    margin-right: -15px;
+    
+    
 }
 
-.input-field {
-    padding-left: 50px;
-}
+// .bottom-section {
+//     // margin-bottom: -675px;
+// }
+
