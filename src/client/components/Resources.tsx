@@ -10,7 +10,9 @@ const Resources: React.FC<ResourcesProps> = props => {
                     <h2 className="text-gold text-center"><u>Resources</u></h2>
                 </div>
             </div>
-            <h4>Innovate Birmingham Staff</h4>
+            <div>
+                <h4 id="resource-title">Innovate Birmingham Staff</h4>
+            </div>
 
                 <div className="row py-5 page-row">
                                   
@@ -51,9 +53,9 @@ const Resources: React.FC<ResourcesProps> = props => {
                         <h5 className="neg-top-margin">Web Dev Instructor</h5>
                 
                             
-                        <h6>linkedin.com/garrett-harris-software</h6>
-                        <h6>Garrett@innovatebham.com</h6>
-                        <h6>gharris1362@gmail.com</h6>
+                        <h6>linkedin.com/</h6>
+                        <h6>@innovatebham.com</h6>
+                     
 
                     </div>
 
@@ -63,7 +65,7 @@ const Resources: React.FC<ResourcesProps> = props => {
                         <h5 className="neg-top-margin">Data Instructor</h5>
                 
                             
-                        <h6>linkedin.com/in/taylor-abney-a58441187</h6>
+                        <h6>linkedin.com/</h6>
                         <h6>@innovatebham.com</h6>
                         
 
@@ -75,9 +77,66 @@ const Resources: React.FC<ResourcesProps> = props => {
                         <h5 className="neg-top-margin">Data Instructor</h5>
                 
                             
-                        <h6>linkedin.com/in/reggiewhite</h6>
+                        <h6>linkedin.com/</h6>
+                        <h6>@thinkdatasolutions.com</h6>
+
+                    </div> 
+                    <div className="col-sm-4 text-center pb-5">
+
+                        <h4>Rachel Davis Smith</h4>
+                        <h5 className="neg-top-margin">Operations Coordinator</h5>
+
+                            
+                        <h6>linkedin.com/</h6>
+                        <h6>@innovatebham.com</h6>
 
                     </div>
+
+                    <div className="col-sm-4 text-center pb-5">
+
+                        <h4>Haley Hoppe</h4>
+                        <h5 className="neg-top-margin">Director Of Engagement</h5>
+
+                            
+                        <h6>linkedin.com/</h6>
+                        <h6>@innovatebham.com</h6>
+
+                    </div>
+
+                    <div className="col-sm-4 text-center pb-5">
+
+                        <h4>Brandie McGee</h4>
+                        <h5 className="neg-top-margin">Senior Case Manager</h5>
+
+                            
+                        <h6>@innovatebham.com</h6>
+
+                    </div>
+
+                    <div className="col-sm-4 text-center pb-5">
+
+                        <h4>Deva Dedios</h4>
+                        <h5 className="neg-top-margin">Marketing Srategist</h5>
+
+                            
+                        <h6>linkedin.com/</h6>
+                        <h6>info@innovatebham.com</h6>
+
+                    </div>    
+
+                    
+            <h4 id="resource-title2">Outreach Resources</h4>
+            <div className="col-sm-4 text-center pb-5">
+
+                <h5 className="neg-top-margin"></h5>
+
+    
+                <h6></h6>
+               
+
+            </div>
+
+
             </div>
 
         

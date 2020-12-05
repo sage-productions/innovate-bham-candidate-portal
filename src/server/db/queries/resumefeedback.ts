@@ -10,27 +10,21 @@ export interface IResumeFeedback {
 
 const all = async () => Query(`SELECT * FROM resumefeedback`);
 
-const one = async (id: number) =>
-  Query(`SELECT * FROM resumefeedback WHERE id = ?`, [id]);
+const one = async (id: number) => Query(`
+  SELECT * FROM resumefeedback 
+  WHERE id = ${id}`);
 
-const update = (content: string, id:number) =>
-  Query(
-    `
+const update = (content: string, id:number) => Query(`
   UPDATE resumefeedback
-  SET 
-  content = ?  
-  WHERE resumefeedback.id = ?`,
-    [content, id]
-  );
+  SET content = '${content}'  
+  WHERE resumefeedback.id = ${id}`);
 
-const insert = async (userid: number, resumeid: number, content: string) =>
-  Query(
-    `INSERT INTO resumefeedback (userid, resumeid, content) VALUES (?,?,?)`,
-    [userid, resumeid, content]
-  );
+const insert = async (userid: number, resumeid: number, content: string) => Query(`
+  INSERT INTO resumefeedback (userid, resumeid, content) 
+  VALUES (${userid} , ${resumeid}, '${content}')`);
 
-const destroy = async (id: number) =>
-  Query(`Delete from resumefeedback where ID = ?`, [id]);
+const destroy = async (id: number) => Query(`
+  Delete from resumefeedback where ID = ${id}`);
 
 export default {
   all,
