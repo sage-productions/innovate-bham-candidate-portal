@@ -40,7 +40,7 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
   return (
     <React.Fragment>
       <div className="top-box">
-        <main className="container-fluid">
+        <main className="body1 container-fluid">
           <div className="row top-row">
             <div className="col-12 text-center">
               <h1 className="display-4 bg-midnight text-center text-gold">
