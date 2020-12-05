@@ -26,10 +26,9 @@ const update = (city: string, bio: string, phone: string, linkedin: string, gith
     github = '${github}'
   WHERE userbio.id = ?`);
 
-const insert = async (userid: number, city: string, bio: string, phone: string, linkedin: string, github: string, id: number) => Query(`
+const insert = async (userid: number, city: string, bio: string, phone: string, linkedin: string, github: string) => Query(`
   INSERT INTO userbio (userid, city, bio, phone, linkedin, github) 
-  values ('${userid}', '${city}', '${bio}', '${phone}', '${linkedin}', '${github}')
-  WHERE id = ${id}`);
+  values ('${userid}', '${city}', '${bio}', '${phone}', '${linkedin}', '${github}')`);
 
 const destroy = async (id: number) => Query(`
   Delete from userbio where ID = ${id}`);
