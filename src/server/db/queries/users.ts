@@ -31,7 +31,7 @@ const insert = async (firstname: string, lastname: string, preferredname: string
 
 const update = (firstname: string, lastname: string, preferredname: string, email: string, id: number) => Query(`
   UPDATE users
-  SET firstname = '${firstname}', lastname = '${lastname}', preferredname = '${preferredname}', email = '${email}', 
+  SET firstname = '${firstname}', lastname = '${lastname}', preferredname = '${preferredname}', email = '${email}'
   WHERE users.id = ${id};
 `);
 
