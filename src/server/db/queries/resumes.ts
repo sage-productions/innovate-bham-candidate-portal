@@ -10,7 +10,7 @@ export interface IResumes {
 const all = () => Query(`Select * from resumes`);
 
 const one = async (id: number) => Query(`
-  SELECT * FROM resumes WHERE id = ${id}'`);
+  SELECT * FROM resumes WHERE id = ${id}`);
 
 const update = (filename: string, id: number) => Query(`
   UPDATE resumes
