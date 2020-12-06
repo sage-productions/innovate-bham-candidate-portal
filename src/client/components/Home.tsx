@@ -18,7 +18,7 @@ const Home: React.FC<HomeProps> = props => {
                     <div className="row py-5 page-row">
 
                         {/* USER PROFILE PICTURE AND INFO */}
-                        <div className="col-12 col-lg-4 text-center text-midnight py-2">
+                        <div className="col-12 col-lg-4 text-center text-midnight mb-5 py-2">
                             <Link to="/profile/1">
                                 <img className="home-profile-pic" src="/assets/gh.jpg" alt="profile picture"/>
                             </Link>
