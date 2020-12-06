@@ -7,6 +7,8 @@ const Footer: React.FC<FooterProps> = (props) => {
   return (
 
     <footer className="footer">
+
+      {/* YELLOW TOP FOOTER */}
       <div className="top-footer bg-gold justify-content-center">
         <div className="py-2 px-3 bg-yellow d-flex justify-content-between 
                         align-items-center text-center text-navy text-large">
@@ -36,95 +38,68 @@ const Footer: React.FC<FooterProps> = (props) => {
         </div>
       </div>
 
-
-
-      <div className="bottom-footer d-flex flex-column text-light py-0">
-
-
-      <div className="text-center text-md-left mt-5">
-        <div className="row">
-
-          <div className="col-md-1"></div>
-
-          <div className="col-md-2 mx-auto mb-4 text-center">
-            <h6 className="underline text-uppercase font-weight-bold text-white">Links</h6>
-            <hr className="bg-dark mb-4 mt-0 d-inline block mx-auto style={{width: 110px; height: 2px}}" />
-
-            <ul className="list-unstyled">
-              <li className="my-2 text-muted">Home</li>
-              <li className="my-2 text-muted">About</li>
-              <li className="my-2 text-muted">Contact</li>
-              <li className="my-2 text-muted">Website</li>
-            </ul>
-          </div>
-          <div className="col-md-2 mx-auto mb-4">
-            <h6 className="underline text-uppercase text-center font-weight-bold text-white">Contact</h6>
-            <hr className="bg-dark mb-4 mt-0 d-inline block mx-auto style={{width: 75px; height: 2px}}" />
-
-            <ul className="list-unstyled ml-4">
-              <li className="mt-2 mb-0 text-muted"><i className="fas fa-home"></i> 1500 1st Ave N</li>
-              <li className="mt-0 ml-4 text-muted">Bham, AL 35203</li>
-              <li className="my-2 text-muted"><i className="fas fa-envelope"></i>info@innovatebham.com</li>
-              <li className="my-2 text-muted"><i className="fas fa-phone"></i>205.555.5555</li> 
-            </ul>
-          </div>
-          
-          <div className="col-md-3 mx-auto mb-4">
-      <Link to="/">
-            <h6 className="underline text-uppercase text-center font-weight-bold text-white mr-5">Developer Notes</h6>
-            <hr className="bg-dark mb-4 mt-0 d-inline block mx-auto style={{width: 125px; height: 2px}}" />
-            <p className="mt-2 text-muted">The Innovate Birmingham Candidate Portal was designed, developed and deployed as a final project by software development candidates in the Fall of 2020. All the best from Cohort 12!</p>
-      </Link>
-          </div>
-
-        </div>
-      </div>
-
-      <div className="footer-copyright text-center py-3 text-muted">
-        <p>&copy; 2020 Innovate Birmingham by Sage Productions</p>
-      </div>
-
-
-        {/* <div className="container padding-container text-center px-5">
+      
+      {/* BLUE BOTTOM FOOTER */}
+      <div className="container-fluid bottom-footer d-flex flex-column text-light py-0">
+        <div className="text-center text-md-left mt-5">
           <div className="row">
 
-            <div className="col-4">
+            {/* EMPTY COLUMN FOR SPACING SINCE COLUMNS !== 12 ... YES IT'S WEIRD, BUT IT WORKS!! */}
+            <div className="col-md-1"></div>
 
-              <h6><strong className="underline">INNOVATE BHAM</strong></h6>
+            {/* CONTACT COLUMN */}
+            <div className="col-md-2 mx-auto mb-4">
+              <h6 className="underline text-uppercase text-center font-weight-bold text-white">Contact</h6>
 
-              <p className="m-0">footer</p>
-              <p className="m-0">footer</p>
-              <p className="m-0">footer</p>
-              <p className="m-0">footer</p>
+              <ul className="list-unstyled ">
 
+                <a className="href" href="https://www.google.com/maps/place/Innovate+Birmingham/@33.5119225,-86.8147297,17z/data=!3m1!4b1!4m5!3m4!1s0x88891b8d7a155555:0x215bf02a05530f62!8m2!3d33.5119225!4d-86.812541" target="_blank"
+                   onMouseOver={(e) => e.preventDefault()}>
+                  <li className="mt-2 mb-0 text-muted text-nowrap"><i className="fas fa-home"></i> 1500 1st Ave N</li>
+                  <li className="mt-0 ml-4 text-muted text-nowrap">Birmingham, AL 35203</li>  
+                </a>
+
+                <a href={"mailto: info@innovatebham.com"} className="text-decor-none">
+                  <li className="my-2 text-muted text-decor-none text-nowrap d-none d-lg-block"><i className="fas fa-envelope"></i> info@innovatebham.com</li>
+                  <li className="my-2 text-muted text-decor-none d-block d-lg-none"><i className="fas fa-envelope"></i> info@innovatebham.com</li>
+                </a>
+
+                <a className="href" href="https://www.innovatebham.com/" target="_blank"
+                   onMouseOver={(e) => e.preventDefault()}>
+                  <li className="my-2 text-muted text-nowrap"><i className="fas fa-globe"></i> innovatebham.com</li> 
+                </a>
+
+              </ul>
+            </div>
+            
+            {/* LINKS COLUMN */}
+            <div className="col-md-2 mx-auto mb-4 text-center">
+              <h6 className="underline text-uppercase font-weight-bold text-white">Links</h6>
+              <ul className="list-unstyled">
+
+                <Link to="/home" className="text-decor-none"><li className="my-2 text-muted">Back to Home</li></Link>
+                <Link to="/resources" className="text-decor-none"><li className="my-2 text-muted">Innovate Staff</li></Link>
+                <Link to="/resources" className="text-decor-none"><li className="my-2 text-muted">About the Program</li></Link>
+                <Link to="/resources" className="text-decor-none"><li className="my-2 text-muted">About the Website</li></Link>
+
+              </ul>
+            </div>
+            
+            {/* DEVELOPER NOTES COLUMN - REMOVE LINK TAGS ONCE WE ROUTE ANOTHER WAY BACK TO LOGIN */}
+            <div className="col-md-3 mx-auto mb-4">
+              <Link to="/">
+                <h6 className="underline text-uppercase text-center font-weight-bold text-white mr-md-5">Developer Notes</h6>
+                <p className="mt-2 text-muted">The Innovate Birmingham Candidate Portal was designed, developed and deployed as a final project by software development candidates in the Fall of 2020. All the best from Cohort 12!</p>
+              </Link>
             </div>
 
-            <div className="col-4">
-
-              <h6><strong className="underline">USEFUL LINKS</strong></h6>
-
-              <p className="m-0">footer</p>
-              <p className="m-0">footer</p>
-              <p className="m-0">footer</p>
-              <p className="m-0">footer</p>
-
-            </div>
-
-            <div className="col-4">
-
-              <h6><strong className="underline">CONTACT INFO</strong></h6>
-
-              <p className="m-0">footer</p>
-              <p className="m-0">footer</p>
-              <p className="m-0">footer</p>
-              <p className="m-0">footer</p>
-
-            </div>
           </div>
+        </div>
 
-          <p className="text-center mt-5 mb-0 py-0 text-muted">Copyright © 2020: Innovate Birmingham</p>
-
-        </div> */}
+        {/* COPYRIGHT */}
+        <div className="footer-copyright text-center py-3 text-muted">
+          <p>&copy; 2020 Innovate Birmingham by Sage Productions</p>
+        </div>
         
       </div>
     </footer>

@@ -12,17 +12,34 @@ const Navbar: React.FC<NavbarProps> = props => {
                 
                 <img src="/assets/innovate-logo-med.png" alt="Innovate Bham Logo" className="logo-sm" />
 
+                {/* WEBSITE TITLE - DESKTOP VIEW */}
                 <div className="d-none d-sm-flex flex-column text-center">
                     <h5 className="text-midnight negative-margin-top p-2">Innovate Birmingham</h5>
                     <h5 className="text-midnight negative-margin">Candidate Portal</h5>
                 </div>
 
-                <div className="d-xs-flex d-sm-none flex-column">
-                    <h5 className="text-dark">Candidate</h5>
+                {/* WEBSITE TITLE - MOBILE VIEW */}
+                <div className="d-xs-flex d-sm-none flex-column p-2">
+                    <h5 className="text-dar negative-margin-top">Candidate</h5>
                     <h5 className="text-dark negative-margin-top">Portal</h5>
                 </div>
 
             </Link>
+
+            <div className="mission-statement-option-1 d-none d-lg-flex pr-5">
+                <h6 className="mission-statement text-midnight">
+                    <i>"Fueling Tech Talent in the Heart of the Magic City"</i> 
+                </h6>
+            </div>
+
+            {/* <div className="mission-statement-option-2 d-none d-lg-flex flex-column pr-5 align-items-center">
+                <h6 className="mission-statement mission-statement-line-1 text-midnight">
+                    <i>Fueling Tech Talent</i> 
+                </h6>
+                <h6 className="mission-statement mission-statement-line-2 text-midnight">
+                    <i>in the Heart of the Magic City</i> 
+                </h6>
+            </div> */}
 
             {/* <div className="expand-container">
                 <button className="navbar-toggler" type="button" data-toggle="collapse"
