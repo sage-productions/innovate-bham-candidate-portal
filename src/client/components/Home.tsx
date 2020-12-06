@@ -5,7 +5,6 @@ import '../scss/home.scss'
 
 const Home: React.FC<HomeProps> = props => {
     return (
-        // <div className="bg-midnight">
 
             <main className="container-fluid text-midnight">
                 {/* <div className="page-container"> */}
@@ -18,7 +17,8 @@ const Home: React.FC<HomeProps> = props => {
 
                     <div className="row py-5 page-row">
 
-                        <div className="col-sm-4 text-center text-midnight py-2">
+                        {/* USER PROFILE PICTURE AND INFO */}
+                        <div className="col-12 col-lg-4 text-center text-midnight py-2">
                             <Link to="/profile/1">
                                 <img className="home-profile-pic" src="/assets/gh.jpg" alt="profile picture"/>
                             </Link>
@@ -34,10 +34,12 @@ const Home: React.FC<HomeProps> = props => {
 
                         </div>
 
-                        <div className="link-container col-sm-8 d-flex flex-wrap justify-content-around text-center">
+                        {/* BIG SQUARE LINKS */}
+                        <div className="link-container col-12 col-lg-8 d-flex flex-wrap justify-content-around text-center">
 
                             <div className="link-row flex-column">
                             
+                                {/* RESUME LINK */}
                                 <Link className="link" to="/resume/:id" onMouseOver={(e) => e.preventDefault()}>
                                     <div className="link-boxes mx-1">
                                         <h5><strong>Resume</strong></h5>
@@ -45,6 +47,7 @@ const Home: React.FC<HomeProps> = props => {
                                     </div>
                                 </Link>
                                 
+                                {/* HIDDEN INNOVATORS LINK */}
                                 <a className="href" href="https://hiddeninnovators.co/" target="_blank"
                                     onMouseOver={(e) => e.preventDefault()}>
                                     <div className="link-boxes mx-1 my-5">
@@ -57,6 +60,7 @@ const Home: React.FC<HomeProps> = props => {
                             
                             <div className="link-row flex-column">
                                 
+                                {/* INTERVIEW PREP / ELEVATOR PITCHES LINK */}
                                 <Link className="link" to="/elevatorpitch/1" onMouseOver={(e) => e.preventDefault()}>
                                     <div className="link-boxes mx-1">
                                         <h5><strong>Interview Prep</strong></h5>
@@ -64,6 +68,7 @@ const Home: React.FC<HomeProps> = props => {
                                     </div>
                                 </Link>
                                 
+                                {/* SIGAO STUDIOS LINK */}
                                 <a className="href" href="https://sigao.io/" target="_blank"
                                     onMouseOver={(e) => e.preventDefault()}>
                                     <div className="link-boxes mx-1 my-5">
@@ -76,6 +81,7 @@ const Home: React.FC<HomeProps> = props => {
 
                             <div className="link-row flex-column">
                                 
+                                {/* FLASHCARDS LINK */}
                                 <Link className="link" to="/flashcards" onMouseOver={(e) => e.preventDefault()}>
                                     <div className="link-boxes mx-1">
                                         <h5><strong>Flashcards</strong></h5>
@@ -83,6 +89,7 @@ const Home: React.FC<HomeProps> = props => {
                                     </div>
                                 </Link>
                                 
+                                {/* RESOURCES LINK */}
                                 <Link className="link" to="/resources" onMouseOver={(e) => e.preventDefault()}>
                                     <div className="link-boxes mx-1 my-5">
                                         <h5><strong>Resources</strong></h5>
@@ -91,19 +98,10 @@ const Home: React.FC<HomeProps> = props => {
                                 </Link>
 
                             </div>
-                            
-
                         </div>
-
                     </div>
-
                 {/* </div> */}
-                
             </main>
-
-        // </div>
-        
-      
     )
 }
 
