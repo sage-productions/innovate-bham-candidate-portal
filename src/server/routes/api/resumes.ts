@@ -55,7 +55,7 @@ router.post('/', upload.single('resume'), async (req: express.Request, res: expr
 
 router.put('/:id', upload.single('resume'), async (req: express.Request, res: express.Response) => {
     try {
-        const fileName = req.file;
+        const fileName = req.body.fileName;
         const id = Number(req.params.id);
 
         await db.Resumes.update(fileName, id);
