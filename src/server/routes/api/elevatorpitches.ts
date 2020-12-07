@@ -37,9 +37,10 @@ router.get('/:userid', async (req: express.Request, res: express.Response) => {
 router.post('/:userid', async (req: express.Request, res: express.Response) => {
     try{
         const elevatorPitch = req.body;
+// Add loop through to check for single quotes - escaping characters
 
         const newElevatorPitch = await db.ElevatorPitches.insert(req.params.userid, elevatorPitch.content);
-
+        
         res.json({message: 'Pitched!'});
         res.status(200).send(`Pitch created with id: ${newElevatorPitch.insertId}`)
     } catch (err) {

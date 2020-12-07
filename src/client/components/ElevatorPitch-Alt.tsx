@@ -1,7 +1,8 @@
 //@ts-nocheck
 import React, { useState, useEffect } from "react";
-import { RouteComponentProps } from "react-router";
+import { RouteComponentProps, useHistory } from "react-router";
 import { Link } from "react-router-dom";
+
 
 import "../scss/elevator-pitch-alt.scss";
 import Recorder from "./recorder";
@@ -14,6 +15,8 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
     content: "",
   });
 
+  
+
   const handleContentChange = (e: React.ChangeEvent<HTMLTextAreaElement>) =>
     setContent({
       userid: content.userid,
@@ -22,11 +25,11 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
 
   const newPitch = async () => {
     let res = await fetch(
-      `https://quiet-basin-68498.herokuapp.com/routes/api/elevatorpitches/`,
+      `https://quiet-basin-68498.herokuapp.com/routes/api/elevatorpitches/${props.match.params.userid}`,
       {
         method: "POST",
         headers: {
-          Accept: "application/json",
+          "Accept": "application/json",
           "Content-Type": "application/json",
         },
         body: JSON.stringify(content),
@@ -34,11 +37,13 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
     );
     if (res.ok) {
       console.log("Pitch successfully posted");
-      // history.push("/");
+      location.reload();
+      // props.history.push(`/elevatorpitch/${props.match.params.userid}`);
     } else {
       console.log("Pitch not posted");
     }
   };
+
 
   useEffect(() => {
     getPitches();
@@ -222,7 +227,7 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
           </div>
 
           <section className="row pitches">
-            {/* {pitches.map((pitch => (
+            {pitches.map((pitch => (
               <div
                 key={pitch.id}
                 className="card col-12"
@@ -232,7 +237,7 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
                   <p className="card-text">{pitch?.content}</p>
                 </div>
               </div>
-            )))} */}
+            )))}
           </section>
         </section>
       </div>
@@ -241,9 +246,6 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
 };
 
 interface ElevatorProps extends RouteComponentProps<{ userid: string }> {
-  id: number;
-  userid: number;
-  content: string;
 }
 
 export default ElevatorPitch;
