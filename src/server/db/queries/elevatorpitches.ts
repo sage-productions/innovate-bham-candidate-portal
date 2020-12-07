@@ -9,9 +9,9 @@ export interface IElevatorPitches {
 
 const all = async () => Query(`SELECT * FROM elevatorpitches`);
 
-const one = async (id: number) => Query(`
+const one = async (userid: number) => Query(`
   SELECT * FROM elevatorpitches 
-  WHERE id = ${id}`);
+  WHERE userid = ${userid}`);
 
 const insert = async (userid: number, content: string) => Query(`
   INSERT INTO elevatorpitches (userid, content) 

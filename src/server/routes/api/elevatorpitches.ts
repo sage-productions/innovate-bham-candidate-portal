@@ -23,10 +23,10 @@ router.get('/', async (req: express.Request, res: express.Response) => {
     }
 });
 
-router.get('/:id', async (req: express.Request, res: express.Response) => {
+router.get('/:userid', async (req: express.Request, res: express.Response) => {
     try{
-        const id = Number(req.params.id);
-        const elevatorPitch = await db.ElevatorPitches.one(id);
+        const userid = Number(req.params.userid);
+        const elevatorPitch = await db.ElevatorPitches.one(userid);
         res.json(elevatorPitch[0]);
     } catch (err) {
         console.log(err);

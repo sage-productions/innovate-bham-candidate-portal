@@ -1,3 +1,4 @@
+//@ts-nocheck
 import React, { useState, useEffect } from "react";
 import { RouteComponentProps } from "react-router";
 import { Link } from "react-router-dom";
@@ -22,7 +23,7 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
 
   const newPitch = async () => {
     
-    let res = await fetch(`https://quiet-basin-68498.herokuapp.com/routes/api/elevatorpitches/${props.match.params.id}`, {
+    let res = await fetch(`https://quiet-basin-68498.herokuapp.com/routes/api/elevatorpitches/`, {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -44,7 +45,7 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
 
   const getPitches = async () => {
     try {
-      let res = await fetch(`https://quiet-basin-68498.herokuapp.com/routes/api/elevatorpitches/`);
+      let res = await fetch(`https://quiet-basin-68498.herokuapp.com/routes/api/elevatorpitches/${req.params.match.userid}`);
       let pitches = await res.json();
       setPitches(pitches);
     } catch (err) {
@@ -224,7 +225,7 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
               {pitches.map((pitch) => (
                 <div key={pitch.id} className="card col-12" style={{ width: 200 }}>
                   <div className="card-body">
-                    <p className="card-text">{pitch.content}</p>
+                    <p className="card-text">{pitch?.content}</p>
                   </div>
                 </div>
               ))}
