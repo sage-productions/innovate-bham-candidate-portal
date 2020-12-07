@@ -34,7 +34,7 @@ router.get('/:userid', async (req: express.Request, res: express.Response) => {
     }
 });
 
-router.post('/', async (req: express.Request, res: express.Response) => {
+router.post('/:userid', async (req: express.Request, res: express.Response) => {
     try{
         const elevatorPitch = req.body.elevatorPitch;
 
