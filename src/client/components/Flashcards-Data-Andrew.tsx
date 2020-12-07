@@ -2,49 +2,49 @@
 
 import React, { useState, useEffect } from "react";
 import { RouteComponentProps } from "react-router-dom";
-import "../scss/flashcards-dev-andrew";
+import "../scss/flashcards-data-andrew";
 
 
 
-const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) => {
-    const [devCards, setDevCards] = React.useState({
+const FlashcardsData: React.FC<FlashcardsDataProps> = (props: FlashcardsDataProps) => {
+    const [dataCards, setDataCards] = React.useState({
         id: null,
         question: "",
         answer: "",
     });
     
-      const [devQuestion, nextDevQuestion] = React.useState({} as any);
+      const [dataQuestion, nextDataQuestion] = React.useState({} as any);
     
-      const [indexDev, changeDevIndex] = React.useState(0);
+      const [indexData, changeDataIndex] = React.useState(0);
     
-      const [devAnswer, showDevAnswer] = React.useState(false);
+      const [dataAnswer, showDataAnswer] = React.useState(false);
     
      useEffect(() => {
         (async () => {
-            let data = await fetch('https://quiet-basin-68498.herokuapp.com/routes/api/devflashcards');
+            let data = await fetch('https://quiet-basin-68498.herokuapp.com/routes/api/dataflashcards');
             console.log(data);
-            let devCards = await data.json();
-            setDevCards(devCards);
+            let dataCards = await data.json();
+            setDataCards(dataCards);
         })();
     }, [])
     
     
       useEffect(() => {
-        nextDevQuestion(devCards[indexDev]);
-      }, [indexDev, devCards.id]);
+        nextDataQuestion(dataCards[indexData]);
+      }, [indexData, dataCards.id]);
     
     
-      const seeDevAnswer = () => {
-        showDevAnswer(true);
+      const seeDataAnswer = () => {
+        showDataAnswer(true);
       };
     
     
-      const nextDevCard = () => {
-        showDevAnswer(false);
-        if (indexDev >= devCards.length - 1) {
-          changeDevIndex(0);
+      const nextDataCard = () => {
+        showDataAnswer(false);
+        if (indexData >= dataCards.length - 1) {
+          changeDataIndex(0);
         } else {
-          changeDevIndex(indexDev + 1);
+          changeDataIndex(indexData + 1);
         }
       };
 
@@ -64,42 +64,42 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
         
                 <div className="col-12">
 
-                    <div className={ devAnswer ? "card-front card-front-anim" : "card-front shadow" }>
+                    <div className={ dataAnswer ? "card-front card-front-anim" : "card-front shadow" }>
 
                         <div className="card text-center border-midnight shadow mt-5">
 
                             <div className="card-header">
-                                Web Development
+                                Web Dataelopment
                             </div>
 
                             <div className="card-body">
                                 <div className="card-text-question text-center">
-                                    { devQuestion?.question }
+                                    { dataQuestion?.question }
                                 </div>
                             </div>
                             
-                            <button onClick={ seeDevAnswer } className="btn btn-midnight btn-sm">
+                            <button onClick={ seeDataAnswer } className="btn btn-midnight btn-sm">
                                 See Answer
                             </button>
 
                         </div>
                     </div>
 
-                    <div className={ devAnswer ? "card-back card-back-anim" : "card-back shadow" }>
+                    <div className={ dataAnswer ? "card-back card-back-anim" : "card-back shadow" }>
 
                         <div className="card text-center border-midnight shadow mt-5">
                             
                             <div className="card-header">
-                                Web Development
+                                Web Dataelopment
                             </div>
                             
                             <div className="card-body">
                                 <div className="card-text-answer text-center">
-                                    { devQuestion?.answer }
+                                    { dataQuestion?.answer }
                                 </div>
                             </div>
                             
-                            <button onClick={nextDevCard} className="btn btn-midnight btn-sm">
+                            <button onClick={nextDataCard} className="btn btn-midnight btn-sm">
                                 Next Flashcard
                             </button>
 
@@ -113,6 +113,6 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
 };
 
 
-interface FlashcardsDevProps extends RouteComponentProps { }
+interface FlashcardsDataProps extends RouteComponentProps { }
 
-export default FlashcardsDev;
+export default FlashcardsData;
