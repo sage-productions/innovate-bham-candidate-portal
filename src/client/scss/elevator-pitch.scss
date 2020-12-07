@@ -9,16 +9,22 @@
 }
 
 .elevator-pic {
-    height:550px;
-    width:1200px;
+    background-size:cover;
 }
 
-.elevator-div {
-    // background-color: rgb(88,88,88);
-    // margin-top: 30px;
-    background:linear-gradient(rgba(11,26,66,.4),rgba(11,26,66,.4));
-    // padding-right: 220px;
+.display-4 {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
+
+// .elevator-div {
+//     // background-size:cover
+//     // background-color: rgb(88,88,88);
+//     // margin-top: 30px;
+//     // background:linear-gradient(rgba(11,26,66,.4),rgba(11,26,66,.4));
+//     // padding-right: 220px;
+// }
 
 .body {
   text-align:center;
@@ -37,6 +43,7 @@
 .recorder-div {
     width:500px;
     height: 500px;
+    display: inline-block;
     
 }
 
@@ -61,9 +68,10 @@
     
     margin-left: -15px;
     margin-right: -15px;
+    }
+
+
     
-    
-}
 
 // .bottom-section {
 //     // margin-bottom: -675px;
