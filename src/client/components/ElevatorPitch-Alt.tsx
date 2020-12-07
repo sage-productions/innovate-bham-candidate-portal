@@ -1,29 +1,28 @@
 import React, { useState, useEffect } from "react";
 import { RouteComponentProps } from "react-router";
 import { Link } from "react-router-dom";
-// import Sidebar from "./Sidebar;
+
 import "../scss/elevator-pitch-alt.scss";
 import Recorder from "./recorder";
 
 const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
-  const [pitches, setPitches] = React.useState<ElevatorProps[]>([]);
-  const [content, setContent] = React.useState({
+  const [pitches, setPitches] = useState<ElevatorProps[]>([]);
+  const [content, setContent] = useState({
     id: null,
+    userid: null,
     content: "",
   });
 
   const handleContentChange = (e: React.ChangeEvent<HTMLTextAreaElement>) =>
     setContent({
       id: content.id,
+      userid: content.userid,
       content: e.target.value,
     });
 
   const newPitch = async () => {
-    // const pitch = {
-    //    content: content,
-    //  };
-
-    let res = await fetch(`/routes/elevatorpitches/${props.match.params.id}`, {
+    
+    let res = await fetch(`https://quiet-basin-68498.herokuapp.com/routes/api/elevatorpitches/${props.match.params.id}`, {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -39,13 +38,13 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
     }
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     getPitches();
   }, []);
 
   const getPitches = async () => {
     try {
-      let res = await fetch(`/routes/elevatorpitches/${props.match.params.id}`);
+      let res = await fetch(`https://quiet-basin-68498.herokuapp.com/routes/api/elevatorpitches/`);
       let pitches = await res.json();
       setPitches(pitches);
     } catch (err) {
