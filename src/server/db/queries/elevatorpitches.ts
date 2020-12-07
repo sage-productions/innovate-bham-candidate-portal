@@ -7,11 +7,11 @@ export interface IElevatorPitches {
   _created?: Date;
 }
 
-const all = async () => Query(`SELECT * FROM elevatorpitches`);
+const all = async () => Query(`SELECT * FROM elevatorpitches join users on elevatorpitches.userid = users.id`);
 
 const one = async (userid: number) => Query(`
   SELECT * FROM elevatorpitches 
-  WHERE userid = ${userid}`);
+  join users WHERE userid = ${userid} and users.id = ${userid}`);
 
 const insert = async (userid: number, content: string) => Query(`
   INSERT INTO elevatorpitches (userid, content) 
