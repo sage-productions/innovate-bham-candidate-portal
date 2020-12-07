@@ -24,7 +24,7 @@ const Home: React.FC<HomeProps> = props => {
                     <div className="col-md-8 text-center text-white font-weight-bold mt-5 mb-4">
                         <div className="alert-window bg-aqua rounded">
                             Please have your updated resumes in tomorrow. 
-                            <br />Demo Day is in 5 days!! 
+                            <br />Demo Day is in 4 days!! 
                             <br />Looking forward to seeing everyone's final projects!
                         </div>
                     </div>

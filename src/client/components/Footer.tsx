@@ -78,7 +78,7 @@ const Footer: React.FC<FooterProps> = (props) => {
               <ul className="list-unstyled">
 
                 <Link to="/home" className="text-decor-none"><li className="my-2 text-muted">Back to Home</li></Link>
-                <Link to="/resources" className="text-decor-none"><li className="my-2 text-muted">Innovate Staff</li></Link>
+                <Link to="/staff" className="text-decor-none"><li className="my-2 text-muted">Innovate Staff</li></Link>
                 <Link to="/resources" className="text-decor-none"><li className="my-2 text-muted">About the Program</li></Link>
                 <Link to="/resources" className="text-decor-none"><li className="my-2 text-muted">About the Website</li></Link>
 

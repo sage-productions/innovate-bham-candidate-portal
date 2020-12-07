@@ -11,12 +11,14 @@ import Profile from './components/Profile';
 
 import Resume from './components/Resume';
 import Flashcards from './components/Flashcards-Alt';
+import ElevatorPitch from './components/ElevatorPitch-Alt';
+import CommonInterviewQs from './components/CommonInterviewQs';
 
 import AdminResumeView from './components/AdminResumeView';
-import ElevatorPitch from './components/ElevatorPitch';
 
 
-import Resources from './components/Resources';
+import Resources from './components/Resources-Alt';
+import Staff from './components/Staff';
 // import HiddenInnovators from './components/HiddenInnovators';
 // import IntroToAgileMethods from './components/IntroToAgileMethods';
 
@@ -38,9 +40,11 @@ const App: React.FC<AppProps> = props => {
 							<Route exact path="/profile/:id" component={ Profile } />
 							<Route exact path="/resume/:id" component={ Resume } />
 							<Route exact path="/elevatorpitch/:id" component={ ElevatorPitch } />
+							<Route exact path="/common-interview-Qs" component={ CommonInterviewQs } />
 							<Route exact path="/flashcards" component={ Flashcards } />
 
 							<Route exact path="/resources" component={ Resources } />
+							<Route exact path="/staff" component={ Staff } />
 							
 							<Route exact path="/adminresumeview" component={ AdminResumeView } />
 
