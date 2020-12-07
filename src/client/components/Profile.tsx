@@ -16,9 +16,9 @@ const Profile: React.FC<ProfileProps> = props => {
 
                 <div className="col-md-6 info-container">
 
-                    {/* <Link to="/profile/1"> */}
+                  
                         <img className="home-profile-pic ml-5" src="/assets/josh.jpg" alt="profile picture"/>
-                    {/* </Link> */}
+                    
                     <p className="click-to-edit text-muted ml-5">(change profile picture)</p>
 
                     <form action="/action_page.php">

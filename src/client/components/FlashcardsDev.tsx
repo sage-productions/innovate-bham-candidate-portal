@@ -99,6 +99,6 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
   );
 };
 
-interface FlashcardsDevProps extends RouteComponentProps {}
+interface FlashcardsDevProps extends RouteComponentProps { }
 
 export default FlashcardsDev;

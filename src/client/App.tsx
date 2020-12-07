@@ -10,7 +10,7 @@ import Home from './components/Home';
 import Profile from './components/Profile';
 
 import Resume from './components/Resume';
-import Flashcards from './components/Flashcards-Alt';
+import FlashcardsDev from './components/Flashcards-Dev-Andrew';
 import ElevatorPitch from './components/ElevatorPitch-Alt';
 import CommonInterviewQs from './components/CommonInterviewQs';
 
@@ -41,7 +41,7 @@ const App: React.FC<AppProps> = props => {
 							<Route exact path="/resume/:id" component={ Resume } />
 							<Route exact path="/elevatorpitch/:id" component={ ElevatorPitch } />
 							<Route exact path="/common-interview-Qs" component={ CommonInterviewQs } />
-							<Route exact path="/flashcards" component={ Flashcards } />
+							<Route exact path="/flashcards" component={ FlashcardsDev } />
 
 							<Route exact path="/resources" component={ Resources } />
 							<Route exact path="/staff" component={ Staff } />
