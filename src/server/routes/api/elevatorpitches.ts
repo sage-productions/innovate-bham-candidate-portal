@@ -27,7 +27,7 @@ router.get('/:userid', async (req: express.Request, res: express.Response) => {
     try{
         const userid = Number(req.params.userid);
         const elevatorPitch = await db.ElevatorPitches.one(userid);
-        res.json(elevatorPitch[0]);
+        res.json(elevatorPitch);
     } catch (err) {
         console.log(err);
         res.status(500).send(err);

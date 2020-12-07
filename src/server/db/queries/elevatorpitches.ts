@@ -7,17 +7,23 @@ export interface IElevatorPitches {
   _created?: Date;
 }
 
-const all = async () => Query(`SELECT * FROM elevatorpitches join users on elevatorpitches.userid = users.id`);
+const all = async () =>
+  Query(
+    `SELECT * FROM elevatorpitches join users on elevatorpitches.userid = users.id`
+  );
 
-const one = async (userid: number) => Query(`
+const one = async (userid: number) =>
+  Query(`
   SELECT * FROM elevatorpitches 
-  join users WHERE userid = ${userid} and users.id = ${userid}`);
+  WHERE userid = ${userid}`);
 
-const insert = async (userid: number, content: string) => Query(`
+const insert = async (userid: number, content: string) =>
+  Query(`
   INSERT INTO elevatorpitches (userid, content) 
   VALUES (${userid}, '${content}')`);
 
-const destroy = async (id: number) => Query(`
+const destroy = async (id: number) =>
+  Query(`
   Delete from elevatorpitches 
   where ID = ${id}`);
 
