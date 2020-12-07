@@ -49,7 +49,7 @@ const Staff: React.FC<StaffProps> = props => {
                 <div className="col-md-4 text-center pb-5">
                     <img className="resources-profile-pic" src=" assets/staff-pics/CL.jpg" alt="profile picture"/>
                     <h4> Carlton lewis</h4>
-                    <h5 className="neg-top-margin">Professional Development Coach </h5>
+                    <h5 className="neg-top-margin">Development Coach </h5>
                 </div> 
 
                 <div className="col-md-4 text-center pb-5">
@@ -80,26 +80,26 @@ const Staff: React.FC<StaffProps> = props => {
                 <div className="col-md-4 text-center pb-5">
                     <img className="resources-profile-pic" src=" assets/staff-pics/ad.jpg" alt="profile picture"/>
                     <h4>Adrian Drane</h4>
-                    <h5 className="neg-top-margin">Data Analytics Teching Assistant</h5>
+                    <h5 className="neg-top-margin">Data Analytics TA</h5>
                 </div>    
 
                 <div className="col-md-4 text-center pb-5">
                     <img className="resources-profile-pic" src=" assets/staff-pics/RW.png" alt="profile picture"/>
                     <h4>Reggie White</h4>
-                    <h5 className="neg-top-margin">Data Analytics Teching Assistant</h5>
+                    <h5 className="neg-top-margin">Data Analytics TA</h5>
 
                 </div>
 
                 <div className="col-md-4 text-center pb-5">
                     <img className="resources-profile-pic" src="/assets/staff-pics/garrett-harris.jpg" alt="profile picture"/>
                     <h4>Garrett Harris</h4>
-                    <h5 className="neg-top-margin">Web development Teaching Assistant</h5>
+                    <h5 className="neg-top-margin">Web development TA</h5>
                 </div>
 
                 <div className="col-md-4 text-center pb-5">
                     <img className="resources-profile-pic" src=" assets/staff-pics/JL.png" alt="profile picture"/>
                     <h4>Jake Lovett</h4>
-                    <h5 className="neg-top-margin">Web development Teaching Assistant</h5>
+                    <h5 className="neg-top-margin">Web development TA</h5>
 
                 </div>
 
