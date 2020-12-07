@@ -15,6 +15,7 @@ const isAdmin: RequestHandler = (req, res, next) => {
 
 router.get('/', async (req: express.Request, res: express.Response) => {
     try {
+        console.log("headers: ", res.getHeaders())
         const devFlashCards = await db.DevFlashCards.all();
         res.json(devFlashCards);
     } catch(err) {

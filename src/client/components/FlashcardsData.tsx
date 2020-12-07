@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "../scss/flashcards-alt";
-import FlashcardsData from "./FlashcardsData"
 
 
 const FlashcardsData: React.FC<FlashcardsDataProps> = (props: FlashcardsDataProps) => {

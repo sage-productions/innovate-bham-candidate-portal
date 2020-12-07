@@ -1,35 +1,31 @@
+// @ts-nocheck
+
 import React, { useState, useEffect } from "react";
 import "../scss/flashcards-alt";
-import FlashcardsData from "./FlashcardsData"
+// import FlashcardsData from "./FlashcardsData"
 
 
 const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) => {
-  const devCards = [
-    {
-      id: 1,
-      question: "What is JavaScript?",
-      answer:
-        "JavaScript is a lightweight, interpreted programming language with object-oriented capabilities that allows you to build interactivity into otherwise static HTML pages.",
-    },
-    {
-      id: 2,
-      question: "What is Callback?",
-      answer:
-        "A callback is a plain JavaScript function passed to some method as an argument or option. It is a function that is to be executed after another function has finished executing, hence the name ‘call back‘.",
-    },
-    {
-      id: 3,
-      question: "What is NaN in JavaScript?",
-      answer: "NaN is a short form of Not a Number.",
-    },
-  ];
+  const [devCards, setDevCards] = React.useState({
+    id: null,
+    question: "",
+    answer: "",
+});
 
-
-  const [devquestion, nextDevQuestion] = React.useState({} as any);
+  const [devQuestion, nextDevQuestion] = React.useState({} as any);
 
   const [indexDev, changeDevIndex] = React.useState(0);
 
   const [devAnswer, showDevAnswer] = React.useState(false);
+
+ useEffect(() => {
+    (async () => {
+        let data = await fetch('https://quiet-basin-68498.herokuapp.com/routes/api/dataflashcards');
+        console.log(data);
+        let devCards = await data.json();
+        setDevCards(devCards);
+    })();
+}, [])
 
 
   useEffect(() => {
@@ -67,7 +63,7 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
               <div className="card-header">Web Development</div>
               <div className="card-body">
                 <div className="card-text-question text-center">
-                  {devquestion.question}
+                  {devQuestion.question}
                 </div>
               </div>
               <button
@@ -88,7 +84,7 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
               <div className="card-header">Web Development</div>
               <div className="card-body">
                 <div className="card-text-answer text-center">
-                  {devquestion.answer}
+                  {devQuestion.answer}
                 </div>
               </div>
               <button onClick={nextDevCard} className="btn btn-midnight btn-sm">
@@ -98,9 +94,9 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
           </div>
         </div>
 
-        <div className="col-6">
+        {/* <div className="col-6">
         <FlashcardsData />
-        </div>
+        </div> */}
 
       </div>
     </main>
