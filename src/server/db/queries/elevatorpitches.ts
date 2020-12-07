@@ -18,9 +18,7 @@ const one = async (userid: number) =>
   WHERE userid = ${userid}`);
 
 const insert = async (userid: number, content: string) =>
-  Query(`
-  INSERT INTO elevatorpitches (userid, content) 
-  VALUES (${userid}, '${content}')`);
+  Query(`INSERT INTO elevatorpitches (userid, content) VALUES (${userid}, '${content}')`);
 
 const destroy = async (id: number) =>
   Query(`
