@@ -36,9 +36,9 @@ router.get('/:userid', async (req: express.Request, res: express.Response) => {
 
 router.post('/:userid', async (req: express.Request, res: express.Response) => {
     try{
-        const elevatorPitch = req.body.elevatorPitch;
+        const elevatorPitch = req.body;
 
-        const newElevatorPitch = await db.ElevatorPitches.insert(elevatorPitch.userid, elevatorPitch.content);
+        const newElevatorPitch = await db.ElevatorPitches.insert(req.params.userid, elevatorPitch.content);
 
         res.json({message: 'Pitched!'});
         res.status(200).send(`Pitch created with id: ${newElevatorPitch.insertId}`)
