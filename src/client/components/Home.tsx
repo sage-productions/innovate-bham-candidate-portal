@@ -35,17 +35,17 @@ const Home: React.FC<HomeProps> = props => {
                     {/* USER PROFILE PICTURE AND INFO - ALL SCREEN SIZES UP TO 1231 */}
                     <div className="home-profile-container-col-12 col-12 text-center text-midnight mb-5 py-2">
                         <Link to="/profile/1">
-                            <img className="home-profile-pic" src="/assets/gh.jpg" alt="profile picture"/>
+                            <img className="home-profile-pic" src="/assets/gumby.jpg" alt="profile picture"/>
                         </Link>
                         
                         <p className="click-to-edit text-muted">(click to edit profile)</p>
-                        <h4 className="user-name text-midnight mt-2">Garrett from Jasper</h4>
+                        <h4 className="user-name text-midnight mt-2">Gumby</h4>
                         <h5 className="neg-top-margin">Web Dev Candidate</h5>
                         <h5 className="neg-top-margin">Cohort 12 - Fall 2020</h5>
                         
                         <h6 className="mt-3">github.com/candidate</h6>
                         <h6>linkedin.com/candidate</h6>
-                        <h6>candidate@gmail.com</h6>
+                        <h6>candidate@gumby.com</h6>
 
                     </div>
 
@@ -54,17 +54,17 @@ const Home: React.FC<HomeProps> = props => {
                     {/* USER PROFILE PICTURE AND INFO - SCREEN SIZE 1232 AND UP */}
                     <div className="home-profile-container-col-4 col-4 text-center text-midnight mb-5 py-2">
                         <Link to="/profile/1">
-                            <img className="home-profile-pic" src="/assets/gh.jpg" alt="profile picture"/>
+                            <img className="home-profile-pic" src="/assets/gumby.jpg" alt="profile picture"/>
                         </Link>
                         
                         <p className="click-to-edit text-muted">(click to edit profile)</p>
-                        <h4 className="user-name text-midnight mt-2">Garrett from Jasper</h4>
+                        <h4 className="user-name text-midnight mt-2">Gumby</h4>
                         <h5 className="neg-top-margin">Web Dev Candidate</h5>
                         <h5 className="neg-top-margin">Cohort 12 - Fall 2020</h5>
                         
                         <h6 className="mt-3">github.com/candidate</h6>
                         <h6>linkedin.com/candidate</h6>
-                        <h6>candidate@gmail.com</h6>
+                        <h6>candidate@gumby.com</h6>
 
                     </div>
 
