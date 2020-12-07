@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { RouteComponentProps } from "react-router-dom";
 import "../scss/flashcards-alt";
 
 
@@ -101,6 +102,6 @@ const FlashcardsData: React.FC<FlashcardsDataProps> = (props: FlashcardsDataProp
   );
 };
 
-interface FlashcardsDataProps {}
+interface FlashcardsDataProps extends RouteComponentProps {}
 
 export default FlashcardsData;

@@ -1,8 +1,8 @@
 // @ts-nocheck
 
 import React, { useState, useEffect } from "react";
+import { RouteComponentProps } from "react-router-dom";
 import "../scss/flashcards-alt";
-// import FlashcardsData from "./FlashcardsData"
 
 
 const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) => {
@@ -20,7 +20,7 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
 
  useEffect(() => {
     (async () => {
-        let data = await fetch('https://quiet-basin-68498.herokuapp.com/routes/api/dataflashcards');
+        let data = await fetch('https://quiet-basin-68498.herokuapp.com/routes/api/devflashcards');
         console.log(data);
         let devCards = await data.json();
         setDevCards(devCards);
@@ -53,7 +53,7 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
       <div className="row bg-white bottom-row">
         
 
-        <div className="col-6">
+        <div className="col-12">
           <div
             className={
               devAnswer ? "card-front card-front-anim" : "card-front shadow"
@@ -63,7 +63,7 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
               <div className="card-header">Web Development</div>
               <div className="card-body">
                 <div className="card-text-question text-center">
-                  {devQuestion.question}
+                  {devQuestion?.question}
                 </div>
               </div>
               <button
@@ -84,7 +84,7 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
               <div className="card-header">Web Development</div>
               <div className="card-body">
                 <div className="card-text-answer text-center">
-                  {devQuestion.answer}
+                  {devQuestion?.answer}
                 </div>
               </div>
               <button onClick={nextDevCard} className="btn btn-midnight btn-sm">
@@ -94,15 +94,11 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
           </div>
         </div>
 
-        {/* <div className="col-6">
-        <FlashcardsData />
-        </div> */}
-
       </div>
     </main>
   );
 };
 
-interface FlashcardsDevProps {}
+interface FlashcardsDevProps extends RouteComponentProps {}
 
 export default FlashcardsDev;
