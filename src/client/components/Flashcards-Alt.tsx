@@ -1,7 +1,12 @@
+// @ts-nocheck
+
 import React, { useState, useEffect } from "react";
 import "../scss/flashcards-alt";
-import FlashcardsDev from "./FlashcardsDev"
-import FlashcardsData from "./FlashcardsData"
+import FlashcardsDev from "./FlashcardsDev";
+import { RouteComponentProps } from "react-router-dom";
+
+import FlashcardsData from "./FlashcardsData";
+
 
 
 const Flashcards: React.FC<FlashcardsProps> = (props: FlashcardsProps) => {
