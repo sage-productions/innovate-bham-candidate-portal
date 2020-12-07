@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../scss/flashcards";
-import text from "./utilities/types";
+// import text from "./utilities/types";
 
 const Flashcards: React.FC<FlashcardsProps> = (props) => {
   const sampleFlashcards = [
