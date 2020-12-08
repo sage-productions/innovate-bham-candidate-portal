@@ -42,7 +42,7 @@ const Home: React.FC<HomeProps> = props => {
                     {/* USER PROFILE PICTURE AND INFO - ALL SCREEN SIZES UP TO 1231 */}
                     <div className="home-profile-container-col-12 col-12 text-center text-midnight mb-5 py-2">
                         <Link to="/profile/1">
-                            <img className="home-profile-pic" src="/assets/gumby.jpg" alt="profile picture"/>
+                            <img className="home-profile-pic" src="/assets/jakesLittleFriend-small.png" alt="profile picture"/>
                         </Link>
                         
                         <p className="click-to-edit text-muted">(click to edit profile)</p>
@@ -61,7 +61,7 @@ const Home: React.FC<HomeProps> = props => {
                     {/* USER PROFILE PICTURE AND INFO - SCREEN SIZE 1232 AND UP */}
                     <div className="home-profile-container-col-4 col-4 text-center text-midnight mb-5 py-2">
                         <Link to="/profile/1">
-                            <img className="home-profile-pic" src="/assets/gumby.jpg" alt="profile picture"/>
+                            <img className="home-profile-pic" src="/assets/jakesLittleFriend-small.png" alt="profile picture"/>
                         </Link>
                         
                         <p className="click-to-edit text-muted">(click to edit profile)</p>
