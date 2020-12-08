@@ -18,7 +18,7 @@ const Login: React.FC<LoginProps> = (props: LoginProps) => {
   });
 
   useEffect(() => {
-    if(User && User.role === ('admin' || 'candidate')) {
+    if(User && User.role === 'admin' || User.role === 'candidate') {
       alert('You are already logged in!');
       props.history.push('/home');
     }
