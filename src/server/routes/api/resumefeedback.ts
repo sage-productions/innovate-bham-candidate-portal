@@ -28,7 +28,7 @@ router.get('/:userid', async (req: express.Request, res: express.Response) => {
         const userid = Number(req.params.userid);
         const resumeFeedback = await db.ResumeFeedback.one(userid);
 
-        res.json(resumeFeedback);
+        res.json(resumeFeedback[0]);
     } catch (err) {
         console.log(err);
         res.status(500).send(err);
