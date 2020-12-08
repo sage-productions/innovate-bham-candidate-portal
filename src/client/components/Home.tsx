@@ -1,9 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, RouteComponentProps } from 'react-router-dom';
 import '../scss/home.scss'
 
 
 const Home: React.FC<HomeProps> = props => {
+
+    // useEffect(() => {
+    //     if(!User || User.userid === null || User.role !== 'admin') {
+    //       props.history.replace('/')
+    //     }
+    //   }, [])
+
     return (
 
         <main className="container-fluid text-midnight">
@@ -348,6 +355,6 @@ const Home: React.FC<HomeProps> = props => {
     )
 }
 
-interface HomeProps { }
+interface HomeProps extends RouteComponentProps { }
 
 export default Home;

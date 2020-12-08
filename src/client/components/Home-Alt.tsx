@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { RouteComponentProps, Link } from "react-router-dom";
 import "../scss/home-alt.scss";
 
 const Home: React.FC<HomeProps> = (props) => {
@@ -155,6 +155,6 @@ const Home: React.FC<HomeProps> = (props) => {
   );
 };
 
-interface HomeProps {}
+interface HomeProps extends RouteComponentProps {}
 
 export default Home;
