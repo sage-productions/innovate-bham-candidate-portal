@@ -38,7 +38,12 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
         showDevAnswer(true);
       };
     
+
+      const showDevQuestion = () => {
+        showDevAnswer(!showDevAnswer);
+      }
     
+        
       const nextDevCard = () => {
         showDevAnswer(false);
         if (indexDev >= devCards.length - 1) {
@@ -47,6 +52,15 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
           changeDevIndex(indexDev + 1);
         }
       };
+
+
+      const prevDevCard = () => {
+        showDevAnswer(false);
+        changeDevIndex(indexDev - 1);
+        if (indexDev == 0) {
+          changeDevIndex(devCards.length - 1);
+        }
+      }
 
 
     return (
@@ -68,7 +82,7 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
                 </Link>
             </div>
             
-            <div className="row bottom-row">
+            <div className="row dev-bottom-row">
         
                 <div className="col-12">
 
@@ -78,6 +92,9 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
 
                             <div className="card-header">
                                 Web Development
+                                <div className="float-right" onClick={showDevAnswer}>
+                                    <i className="fas fa-reply"></i>
+                                </div>
                             </div>
 
                             <div className="card-body">
@@ -86,9 +103,9 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
                                 </div>
                             </div>
                             
-                            <button onClick={ seeDevAnswer } className="btn btn-midnight btn-sm">
-                                See Answer
-                            </button>
+                            <div className="bg-midnight text-white font-sm">
+                                Innovate Birmingham Dev Cards
+                            </div>
 
                         </div>
                     </div>
@@ -99,6 +116,9 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
                             
                             <div className="card-header">
                                 Web Development
+                                <div className="float-right" onClick={showDevQuestion}>
+                                    <i className="fas fa-reply"></i>
+                                </div>
                             </div>
                             
                             <div className="card-body">
@@ -107,15 +127,25 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
                                 </div>
                             </div>
                             
-                            <button onClick={nextDevCard} className="btn btn-midnight btn-sm">
-                                Next Flashcard
-                            </button>
+                            <div className="bg-midnight text-white font-sm">
+                                Innovate Birmingham Dev Cards
+                            </div>
 
                         </div>
 
                     </div>
                 </div>
             </div>
+
+            <div className="row d-flex justify-content-center text-white">
+                <button className="next-card-btn btn btn-midnight mx-1" onClick={prevDevCard}>
+                    Prev Card
+                </button>
+                <button className="next-card-btn btn btn-midnight mx-1" onClick={nextDevCard}>
+                    Next Card
+                </button>
+            </div>
+
         </main>
     );
 };

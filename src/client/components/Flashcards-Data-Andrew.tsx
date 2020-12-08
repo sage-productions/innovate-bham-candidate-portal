@@ -37,6 +37,11 @@ const FlashcardsData: React.FC<FlashcardsDataProps> = (props: FlashcardsDataProp
       const seeDataAnswer = () => {
         showDataAnswer(true);
       };
+
+    
+      const showDataQuestion = () => {
+        showDataAnswer(!showDataAnswer);
+      }
     
     
       const nextDataCard = () => {
@@ -47,6 +52,15 @@ const FlashcardsData: React.FC<FlashcardsDataProps> = (props: FlashcardsDataProp
           changeDataIndex(indexData + 1);
         }
       };
+
+
+      const prevDataCard = () => {
+        showDataAnswer(false);
+        changeDataIndex(indexData - 1);
+        if (indexData == 0) {
+          changeDataIndex(dataCards.length - 1);
+        }
+      }
 
 
     return (
@@ -62,13 +76,14 @@ const FlashcardsData: React.FC<FlashcardsDataProps> = (props: FlashcardsDataProp
 
             <div className="row d-flex justify-content-center text-white">
                 <Link to="/flashcards-dev">
-                    <button className="btn btn-midnight mt-2 mb-5">
+                    <button className="btn btn-midnight mx-1 mt-2 mb-5">
                         Switch to Dev Cards
                     </button>
                 </Link>
             </div>
 
-            <div className="row bottom-row">
+
+            <div className="row data-bottom-row">
         
                 <div className="col-12">
 
@@ -78,6 +93,9 @@ const FlashcardsData: React.FC<FlashcardsDataProps> = (props: FlashcardsDataProp
 
                             <div className="card-header">
                                 Data Analytics
+                                <div className="float-right" onClick={showDataAnswer}>
+                                    <i className="fas fa-reply"></i>
+                                </div>
                             </div>
 
                             <div className="card-body">
@@ -86,19 +104,22 @@ const FlashcardsData: React.FC<FlashcardsDataProps> = (props: FlashcardsDataProp
                                 </div>
                             </div>
                             
-                            <button onClick={ seeDataAnswer } className="btn btn-midnight btn-sm">
-                                See Answer
-                            </button>
+                            <div className="bg-midnight text-white font-sm">
+                                Innovate Birmingham Data Cards
+                            </div>
 
                         </div>
                     </div>
 
-                    <div className={ dataAnswer ? "card-back card-back-anim" : "card-back shadow" }>
+                    <div className={ dataAnswer ? "card-back card-back-anim shadow" : "card-back shadow" }>
 
                         <div className="card text-center border-midnight shadow">
                             
                             <div className="card-header">
                                 Data Analytics
+                                <div className="float-right" onClick={showDataQuestion}>
+                                    <i className="fas fa-reply"></i>
+                                </div>
                             </div>
                             
                             <div className="card-body">
@@ -107,15 +128,25 @@ const FlashcardsData: React.FC<FlashcardsDataProps> = (props: FlashcardsDataProp
                                 </div>
                             </div>
                             
-                            <button onClick={nextDataCard} className="btn btn-midnight btn-sm">
-                                Next Flashcard
-                            </button>
+                            <div className="bg-midnight text-white font-sm">
+                                Innovate Birmingham Data Cards
+                            </div>
 
                         </div>
 
                     </div>
                 </div>
             </div>
+
+            <div className="row d-flex justify-content-center text-white">
+                <button className="next-card-btn btn btn-midnight mx-1" onClick={prevDataCard}>
+                    Prev Card
+                </button>
+                <button className="next-card-btn btn btn-midnight mx-1" onClick={nextDataCard}>
+                    Next Card
+                </button>
+            </div>
+
         </main>
     );
 };

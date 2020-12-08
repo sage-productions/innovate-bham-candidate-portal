@@ -9,9 +9,9 @@ $theme-colors: (
     'warning': #FFCF2B
 );
 
-// .bottom-row {
-//     margin-bottom: -200px;
-// }
+.dev-bottom-row {
+    margin-bottom: -250px;
+}
 
 // .container-fluid {
 //     align-items: center;
@@ -60,9 +60,9 @@ $theme-colors: (
     left: 0;
     right: 0;
     text-align: center;
-    transition: all 0.9s;
     backface-visibility: hidden;
     // overflow: auto;
+    transition: all 0.9s;
     transform: rotateY(180deg);
     max-width: 40rem;
 }
@@ -117,7 +117,10 @@ $theme-colors: (
 
 
 
-
+.next-card-btn {
+    position: relative;
+    top: 500;
+}
 
 
 
