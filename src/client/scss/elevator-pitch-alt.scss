@@ -10,13 +10,17 @@
 .recorder-div {
     width:500px;
     height: 500px;
-    display: inline-block;
+    // display: inline-block;
+    display:flex;
+    justify-content: center;
 }
 
 .recorder-div-small-screen {
     width:375px;
     height: 375px;
-    display: inline-block;
+    display:flex;
+    justify-content: center;
+    // display: inline-block;
 }
 
 .p1 {
@@ -32,5 +36,5 @@
 }
 
 .pitches{
-    margin-top:300px;
+    margin-top:40px;
 }
