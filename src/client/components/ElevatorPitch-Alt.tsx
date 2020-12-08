@@ -170,7 +170,7 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
 
         {/* </section> */}
         <section className="row bottom-section bg-white d-flex justify-content-center align-items-center">
-          <div className="col-12 py-5">
+          <div className="recorder-cont col-12 py-5">
             <div className="recorder-div d-none d-sm-block">
               <Recorder />
 
@@ -230,10 +230,11 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
             {pitches.map((pitch => (
               <div
                 key={pitch.id}
-                className="card col-12"
-                style={{ width: 200 }}
+                className="card shadow col-12"
+                style={{ width: "18rem"}}
               >
                 <div className="card-body">
+                <h5 className="card-title">Saved Pitch</h5>
                   <p className="card-text">{pitch?.content}</p>
                 </div>
               </div>
