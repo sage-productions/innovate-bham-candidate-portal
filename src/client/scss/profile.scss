@@ -12,7 +12,6 @@
 
 .profile-modal {
   max-height: 80vh;
-  // overflow-y: auto;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -20,7 +19,7 @@
 
   border: 1px solid #000000;
   background: #161929BF;
-  min-width: 500;
+  min-width: 400;
   overflow: auto;
   border-radius: 10px;
   outline: none;
