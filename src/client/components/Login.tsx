@@ -17,12 +17,12 @@ const Login: React.FC<LoginProps> = (props: LoginProps) => {
     password: null
   });
 
-  useEffect(() => {
-    if(User && User.role === ('admin' || 'candidate')) {
-      alert('You are already logged in!');
-      props.history.push('/home');
-    }
-  }, [])
+  // useEffect(() => {
+  //   if(User && User.role === 'admin' || User.role === 'candidate') {
+  //     alert('You are already logged in!');
+  //     props.history.push('/home');
+  //   }
+  // }, []);
 
   const toggleModal = () => {
     setIsOpen(!isOpen);

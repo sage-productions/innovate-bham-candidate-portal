@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Link, RouteComponentProps } from 'react-router-dom';
-import '../scss/home.scss'
+import '../scss/home.scss';
+import { User } from '../utils/api';
 
 
 const Home: React.FC<HomeProps> = props => {
 
-    // useEffect(() => {
-    //     if(!User || User.userid === null || User.role !== 'admin') {
-    //       props.history.replace('/')
-    //     }
-    //   }, [])
+    useEffect(() => {
+        if(!User || User.userid === null) {
+          props.history.replace('/')
+        }
+      }, []);
 
     return (
 
