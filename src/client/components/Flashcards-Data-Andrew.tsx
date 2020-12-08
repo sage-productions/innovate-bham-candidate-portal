@@ -74,7 +74,7 @@ const FlashcardsData: React.FC<FlashcardsDataProps> = (props: FlashcardsDataProp
 
                     <div className={ dataAnswer ? "card-front card-front-anim" : "card-front shadow" }>
 
-                        <div className="card text-center border-midnight shadow mt-5">
+                        <div className="card text-center border-midnight shadow">
 
                             <div className="card-header">
                                 Data Analytics
@@ -95,7 +95,7 @@ const FlashcardsData: React.FC<FlashcardsDataProps> = (props: FlashcardsDataProp
 
                     <div className={ dataAnswer ? "card-back card-back-anim" : "card-back shadow" }>
 
-                        <div className="card text-center border-midnight shadow mt-5">
+                        <div className="card text-center border-midnight shadow">
                             
                             <div className="card-header">
                                 Data Analytics

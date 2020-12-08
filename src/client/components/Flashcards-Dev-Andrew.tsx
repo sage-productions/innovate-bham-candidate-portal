@@ -74,7 +74,7 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
 
                     <div className={ devAnswer ? "card-front card-front-anim" : "card-front shadow" }>
 
-                        <div className="card text-center border-midnight shadow mt-5">
+                        <div className="card text-center border-midnight shadow">
 
                             <div className="card-header">
                                 Web Development
@@ -95,7 +95,7 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
 
                     <div className={ devAnswer ? "card-back card-back-anim" : "card-back shadow" }>
 
-                        <div className="card text-center border-midnight shadow mt-5">
+                        <div className="card text-center border-midnight shadow">
                             
                             <div className="card-header">
                                 Web Development
