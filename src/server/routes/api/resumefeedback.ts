@@ -23,10 +23,10 @@ router.get('/', async (req: express.Request, res: express.Response) => {
     }
 });
 
-router.get('/:id', async (req: express.Request, res: express.Response) => {
+router.get('/:userid', async (req: express.Request, res: express.Response) => {
     try{
-        const id = Number(req.params.id);
-        const resumeFeedback = await db.ResumeFeedback.one(id);
+        const userid = Number(req.params.userid);
+        const resumeFeedback = await db.ResumeFeedback.one(userid);
 
         res.json(resumeFeedback[0]);
     } catch (err) {
@@ -35,9 +35,9 @@ router.get('/:id', async (req: express.Request, res: express.Response) => {
     }
 });
 
-router.post('/', async (req: express.Request, res: express.Response) => {
+router.post('/:userid', async (req: express.Request, res: express.Response) => {
     try {
-        const resumeFeedback = req.body.resumeFeedback;
+        const resumeFeedback = req.body;
 
         const newResumeFeedback = await db.ResumeFeedback.insert(
             resumeFeedback.userid,
