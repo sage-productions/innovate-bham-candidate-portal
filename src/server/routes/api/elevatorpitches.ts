@@ -23,23 +23,24 @@ router.get('/', async (req: express.Request, res: express.Response) => {
     }
 });
 
-router.get('/:id', async (req: express.Request, res: express.Response) => {
+router.get('/:userid', async (req: express.Request, res: express.Response) => {
     try{
-        const id = Number(req.params.id);
-        const elevatorPitch = await db.ElevatorPitches.one(id);
-        res.json(elevatorPitch[0]);
+        const userid = Number(req.params.userid);
+        const elevatorPitch = await db.ElevatorPitches.one(userid);
+        res.json(elevatorPitch);
     } catch (err) {
         console.log(err);
         res.status(500).send(err);
     }
 });
 
-router.post('/', async (req: express.Request, res: express.Response) => {
+router.post('/:userid', async (req: express.Request, res: express.Response) => {
     try{
-        const elevatorPitch = req.body.elevatorPitch;
+        const elevatorPitch = req.body;
+// Add loop through to check for single quotes - escaping characters
 
-        const newElevatorPitch = await db.ElevatorPitches.insert(elevatorPitch.userid, elevatorPitch.content);
-
+        const newElevatorPitch = await db.ElevatorPitches.insert(req.params.userid, elevatorPitch.content);
+        
         res.json({message: 'Pitched!'});
         res.status(200).send(`Pitch created with id: ${newElevatorPitch.insertId}`)
     } catch (err) {

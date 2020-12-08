@@ -15,22 +15,12 @@ const Resources: React.FC<ResourcesProps> = props => {
 
             <div className="row page-row">
 
-                {/* Re-order these so they are in the same order as on innovate's staff page */}
-
-                {/* Add Robin Hunt and whoever else we're missing - Ask Josh, Garrett or Jake... */}
-                    {/* put whoever you add in the order wherever it makes the most sense */}
-
-                {/* Add a profile pic to each... */}
-                    {/* for each person, choose the best pic from either innovate's page or slack */}
-
-
-
-                {/* Partner Websites Title */}
+               
+              
                 <div className="col-12 text-center text-midnight mt-5">
                     <h4><u>Links to Partner Websites</u></h4>    
                 </div>
 
-                {/* Partner Links */}
                 <div className="col-12 text-center mt-1">
                     <a className="href" href=" https://hiddeninnovators.co/ " target="_blank">
                         <h3 className="text-midnight">Hidden Innovators</h3>
@@ -38,14 +28,14 @@ const Resources: React.FC<ResourcesProps> = props => {
                 </div>
 
                 <div className="col-12 text-center mt-1">
-                    <a className="href" href="..." target="_blank">
-                        <h3 className="text-midnight"> ... </h3>
+                    <a className="href" href="https://2rvns.com/" target="_blank">
+                        <h3 className="text-midnight">2 Ravens </h3>
                     </a>
                 </div>
 
                 <div className="col-12 text-center mt-1">
-                    <a className="href" href="..." target="_blank">
-                        <h3 className="text-midnight"> ... </h3>
+                    <a className="href" href="https://sigao.io/" target="_blank">
+                        <h3 className="text-midnight"> Sigao Studios </h3>
                     </a>
                 </div>
 
@@ -53,33 +43,33 @@ const Resources: React.FC<ResourcesProps> = props => {
 
 
 
-                {/* ... Title */}
+               
                 <div className="col-12 text-center text-midnight mt-5">
-                    <h4><u>Links to ... </u></h4>    
+                    <h4><u>colaboration / organization</u></h4>    
                 </div>
 
-                {/* ... Links */}
+              
                 <div className="col-12 text-center mt-1">
-                    <a className="href" href=" ... " target="_blank">
-                        <h3 className="text-midnight"> ... </h3>
+                    <a className="href" href=" https://www.figma.com/ " target="_blank">
+                        <h3 className="text-midnight">figma</h3>
                     </a>
                 </div>
 
                 <div className="col-12 text-center mt-1">
-                    <a className="href" href=" ... " target="_blank">
-                        <h3 className="text-midnight"> ... </h3>
+                    <a className="href" href=" https://trello.com/ " target="_blank">
+                        <h3 className="text-midnight"> trello </h3>
                     </a>
                 </div>
 
                 <div className="col-12 text-center mt-1">
-                    <a className="href" href=" ... " target="_blank">
-                        <h3 className="text-midnight"> ... </h3>
+                    <a className="href" href=" https://kumu.io/ " target="_blank">
+                        <h3 className="text-midnight"> Kumu </h3>
                     </a>
                 </div>
 
                 <div className="col-12 text-center mt-1">
-                    <a className="href" href=" ... " target="_blank">
-                        <h3 className="text-midnight"> ... </h3>
+                    <a className="href" href=" https://miro.com/ " target="_blank">
+                        <h3 className="text-midnight"> Miro </h3>
                     </a>
                 </div>
 
@@ -87,27 +77,26 @@ const Resources: React.FC<ResourcesProps> = props => {
 
 
 
-                {/* ... Title */}
+               
                 <div className="col-12 text-center text-midnight mt-5">
-                    <h4><u>Links to ... </u></h4>    
+                    <h4><u> Job Sites </u></h4>    
                 </div>
 
-                {/* ... Links */}
                 <div className="col-12 text-center mt-1">
-                    <a className="href" href=" ... " target="_blank">
-                        <h3 className="text-midnight"> ... </h3>
+                    <a className="href" href=" https://www.goodjob.io/" target="_blank">
+                        <h3 className="text-midnight">Goodjob</h3>
                     </a>
                 </div>
 
                 <div className="col-12 text-center mt-1">
-                    <a className="href" href=" ... " target="_blank">
-                        <h3 className="text-midnight"> ... </h3>
+                    <a className="href" href=" https://onboardbirmingham.com/" target="_blank">
+                        <h3 className="text-midnight"> OnBoard Bham - info tech </h3>
                     </a>
                 </div>
 
                 <div className="col-12 text-center mt-1">
-                    <a className="href" href=" ... " target="_blank">
-                        <h3 className="text-midnight"> ... </h3>
+                    <a className="href" href="https://boulosolutions.com/talent/" target="_blank">
+                        <h3 className="text-midnight"> Boulo Solutions </h3>
                     </a>
                 </div>
 
@@ -115,32 +104,36 @@ const Resources: React.FC<ResourcesProps> = props => {
 
 
 
-                {/* ... Title */}
+               
                 <div className="col-12 text-center text-midnight mt-5">
-                    <h4><u>Links to ... </u></h4>    
+                    <h4><u>Bham Tech Groups</u></h4>    
                 </div>
 
-                {/* ... Links */}
+               
                 <div className="col-12 text-center mt-1">
-                    <a className="href" href=" ... " target="_blank">
-                        <h3 className="text-midnight"> ... </h3>
+                    <a className="href" href="http://magiccitytech.org/" target="_blank">
+                        <h3 className="text-midnight"> Magic City Tech </h3>
                     </a>
                 </div>
 
                 <div className="col-12 text-center mt-1">
-                    <a className="href" href=" ... " target="_blank">
-                        <h3 className="text-midnight"> ... </h3>
+                    <a className="href" href=" https://twitter.com/bhmblacktechies?lang=en " target="_blank">
+                        <h3 className="text-midnight"> Birmingham Black Techies </h3>
                     </a>
                 </div>
 
                 <div className="col-12 text-center mt-1">
-                    <a className="href" href=" ... " target="_blank">
-                        <h3 className="text-midnight"> ... </h3>
+                    <a className="href" href=" https://women-in-tech.org/ " target="_blank">
+                        <h3 className="text-midnight"> Women in Tech </h3>
                     </a>
                 </div>
 
 
-
+                <div className="col-12 text-center mt-1">
+                    <a className="href" href=" https://www.birminghambusinessalliance.com/" target="_blank">
+                        <h3 className="text-midnight"> Birmingham business alliance </h3>
+                    </a>
+                </div>
                 
                 
             </div>

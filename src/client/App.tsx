@@ -9,8 +9,13 @@ import Login from './components/Login';
 import Home from './components/Home';
 import Profile from './components/Profile';
 
+<<<<<<< HEAD
 import Resume from './components/ResumeAlt';
 import Flashcards from './components/Flashcards-Alt';
+=======
+import Resume from './components/Resume';
+import FlashcardsDev from './components/Flashcards-Dev-Andrew';
+>>>>>>> 74e2a6e313483c72b32e8caafe8c5bbe50b9f130
 import ElevatorPitch from './components/ElevatorPitch-Alt';
 import CommonInterviewQs from './components/CommonInterviewQs';
 
@@ -39,9 +44,9 @@ const App: React.FC<AppProps> = props => {
 							<Route exact path="/home" component={ Home } />
 							<Route exact path="/profile/:id" component={ Profile } />
 							<Route exact path="/resume/:id" component={ Resume } />
-							<Route exact path="/elevatorpitch/:id" component={ ElevatorPitch } />
+							<Route exact path="/elevatorpitch/:userid" component={ ElevatorPitch } />
 							<Route exact path="/common-interview-Qs" component={ CommonInterviewQs } />
-							<Route exact path="/flashcards" component={ Flashcards } />
+							<Route exact path="/flashcards" component={ FlashcardsDev } />
 
 							<Route exact path="/resources" component={ Resources } />
 							<Route exact path="/staff" component={ Staff } />

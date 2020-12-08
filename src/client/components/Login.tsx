@@ -1,18 +1,61 @@
 import React, { useState, useEffect } from 'react';
+import { RouteComponentProps } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Modal from 'react-modal';
+import { json, SetAccessToken, User } from '../utils/api';
 
 import "../scss/login";
 
 
 Modal.setAppElement("#root");
 
-const Login: React.FC<LoginProps> = props => {
+const Login: React.FC<LoginProps> = (props: LoginProps) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const [guest, setGuest] = useState({
+    email: null,
+    password: null
+  });
+
+  useEffect(() => {
+    if(User && User.role === ('admin' || 'candidate')) {
+      alert('You are already logged in!');
+      props.history.push('/home');
+    }
+  }, [])
 
   const toggleModal = () => {
     setIsOpen(!isOpen);
-  }
+  };
+
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => setGuest({
+    email: e.target.value,
+    password: guest.password
+  });
+
+  const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => setGuest({
+    email: guest.email,
+    password: e.target.value
+  });
+
+  const handleLoginSubmit = async () => {
+    try {
+      let result = await json('/routes/auth/login', 'POST', guest);
+      if(result) {
+        SetAccessToken(result.token, { userid: result.userid, role: result.role });
+        if(result.role === 'admin' || result.role === 'candidate') {
+          props.history.push('/home');
+        } else {
+          props.history.push('/');
+        }
+      } else {
+        //possible check for login status
+      }
+    } catch(err) {
+      console.log(err);
+      throw err;
+    }
+  };
 
   return (
     <>
@@ -46,14 +89,14 @@ const Login: React.FC<LoginProps> = props => {
               <div className="input-group-prepend">
                 <span className="input-group-text"><i className="fas fa-user"></i></span>
               </div>
-              <input type="text" className="form-control" placeholder="username" />
+              <input type="text" className="form-control" placeholder="email" onChange={handleEmailChange} />
             </div>
 
             <div className="input-group form-group">
               <div className="input-group-prepend">
                 <span className="input-group-text"><i className="fas fa-key"></i></span>
               </div>
-              <input type="password" className="form-control" placeholder="password" />
+              <input type="password" className="form-control" placeholder="password" onChange={handlePasswordChange} />
             </div>
 
             <div className="row align-items-center remember ml-1">
@@ -63,7 +106,7 @@ const Login: React.FC<LoginProps> = props => {
             {/* LOGIN(SUBMIT) & CANCEL BUTTONS*/}
             <div className="row float-right mt-2">
               <Link to="./home">
-                <input className="btn btn-sm btn-warning mx-2" type="submit" value="Login" />
+                <input className="btn btn-sm btn-warning mx-2" type="submit" value="Login" onClick={handleLoginSubmit} />
               </Link>
               <button className="btn btn-sm btn-warning mr-3" type="button" data-dismiss="modal"
                   onClick={toggleModal}>Close</button>
@@ -97,6 +140,6 @@ const Login: React.FC<LoginProps> = props => {
 }
 
 
-interface LoginProps { }
+interface LoginProps extends RouteComponentProps { }
 
 export default Login;
