@@ -10,11 +10,7 @@ import Home from './components/Home';
 import Profile from './components/Profile';
 
 import Resume from './components/ResumeAlt';
-<<<<<<< HEAD
-import Flashcards from './components/Flashcards';
-=======
 import Flashcards from './components/Flashcards-Dev-Andrew';
->>>>>>> b09280b4ed1ef0d433f0dd33e556c88fcf8d3df0
 import ElevatorPitch from './components/ElevatorPitch-Alt';
 import CommonInterviewQs from './components/CommonInterviewQs';
 
