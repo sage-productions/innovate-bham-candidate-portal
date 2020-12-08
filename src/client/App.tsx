@@ -9,7 +9,7 @@ import Login from './components/Login';
 import Home from './components/Home';
 import Profile from './components/Profile';
 
-import Resume from './components/Resume';
+import Resume from './components/ResumeAlt';
 import Flashcards from './components/Flashcards-Alt';
 import ElevatorPitch from './components/ElevatorPitch-Alt';
 import CommonInterviewQs from './components/CommonInterviewQs';
