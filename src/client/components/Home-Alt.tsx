@@ -1,16 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { RouteComponentProps, Link } from "react-router-dom";
 import "../scss/home-alt.scss";
-import { User } from "../utils/api";
 
 const Home: React.FC<HomeProps> = (props) => {
-
-  // useEffect(() => {
-  //   if(!User || User.userid === null || User.role !== 'admin') {
-  //     props.history.replace('/')
-  //   }
-  // }, [])
-
   return (
     <main className="container-fluid text-midnight">
       <div className="row title-row">
