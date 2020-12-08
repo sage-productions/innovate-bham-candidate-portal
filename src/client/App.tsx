@@ -38,8 +38,7 @@ const App: React.FC<AppProps> = props => {
 						
 							<Route exact path="/" component={ Login } />
 							<Route exact path="/home" component={ Home } />
-
-<!-- 							<Route exact path="/profile/:id" component={ Profile } /> -->
+						
 
 							<Route exact path="/profile/:userid" component={ Profile } />
 
