@@ -1,7 +1,7 @@
 // @ts-nocheck
 
 import React, { useState, useEffect } from "react";
-import { RouteComponentProps } from "react-router-dom";
+import { RouteComponentProps, Link } from "react-router-dom";
 import "../scss/flashcards-dev-andrew";
 
 
@@ -38,7 +38,12 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
         showDevAnswer(true);
       };
     
+
+      const showDevQuestion = () => {
+        showDevAnswer(!showDevAnswer);
+      }
     
+        
       const nextDevCard = () => {
         showDevAnswer(false);
         if (indexDev >= devCards.length - 1) {
@@ -47,6 +52,15 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
           changeDevIndex(indexDev + 1);
         }
       };
+
+
+      const prevDevCard = () => {
+        showDevAnswer(false);
+        changeDevIndex(indexDev - 1);
+        if (indexDev == 0) {
+          changeDevIndex(devCards.length - 1);
+        }
+      }
 
 
     return (
@@ -60,16 +74,27 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
             </div>
 
 
-            <div className="row bg-white bottom-row">
+            <div className="row d-flex justify-content-center text-white">
+                <Link to="/flashcards-data">
+                    <button className="btn btn-midnight mt-2 mb-5">
+                        Switch to Data Cards
+                    </button>
+                </Link>
+            </div>
+            
+            <div className="row dev-bottom-row">
         
                 <div className="col-12">
 
                     <div className={ devAnswer ? "card-front card-front-anim" : "card-front shadow" }>
 
-                        <div className="card text-center border-midnight shadow mt-5">
+                        <div className="card text-center border-midnight shadow">
 
                             <div className="card-header">
                                 Web Development
+                                <div className="float-right" onClick={showDevAnswer}>
+                                    <i className="fas fa-reply"></i>
+                                </div>
                             </div>
 
                             <div className="card-body">
@@ -78,19 +103,22 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
                                 </div>
                             </div>
                             
-                            <button onClick={ seeDevAnswer } className="btn btn-midnight btn-sm">
-                                See Answer
-                            </button>
+                            <div className="bg-midnight text-white font-sm">
+                                Innovate Birmingham Dev Cards
+                            </div>
 
                         </div>
                     </div>
 
                     <div className={ devAnswer ? "card-back card-back-anim" : "card-back shadow" }>
 
-                        <div className="card text-center border-midnight shadow mt-5">
+                        <div className="card text-center border-midnight shadow">
                             
                             <div className="card-header">
                                 Web Development
+                                <div className="float-right" onClick={showDevQuestion}>
+                                    <i className="fas fa-reply"></i>
+                                </div>
                             </div>
                             
                             <div className="card-body">
@@ -99,15 +127,25 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
                                 </div>
                             </div>
                             
-                            <button onClick={nextDevCard} className="btn btn-midnight btn-sm">
-                                Next Flashcard
-                            </button>
+                            <div className="bg-midnight text-white font-sm">
+                                Innovate Birmingham Dev Cards
+                            </div>
 
                         </div>
 
                     </div>
                 </div>
             </div>
+
+            <div className="row d-flex justify-content-center text-white">
+                <button className="next-card-btn btn btn-midnight mx-1" onClick={prevDevCard}>
+                    Prev Card
+                </button>
+                <button className="next-card-btn btn btn-midnight mx-1" onClick={nextDevCard}>
+                    Next Card
+                </button>
+            </div>
+
         </main>
     );
 };

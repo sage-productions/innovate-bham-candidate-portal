@@ -9,12 +9,13 @@ import Login from './components/Login';
 import Home from './components/Home';
 import Profile from './components/Profile';
 
-import Resume from './components/Resume';
+import Resume from './components/ResumeAlt';
 import FlashcardsDev from './components/Flashcards-Dev-Andrew';
+import FlashcardsData from './components/Flashcards-Data-Andrew';
 import ElevatorPitch from './components/ElevatorPitch-Alt';
 import CommonInterviewQs from './components/CommonInterviewQs';
 
-import AdminResumeView from './components/AdminResumeView';
+import AdminResumeView from './components/AdminResumeView'; 
 
 
 import Resources from './components/Resources-Alt';
@@ -37,11 +38,16 @@ const App: React.FC<AppProps> = props => {
 						
 							<Route exact path="/" component={ Login } />
 							<Route exact path="/home" component={ Home } />
-							<Route exact path="/profile/:id" component={ Profile } />
+
+<!-- 							<Route exact path="/profile/:id" component={ Profile } /> -->
+
+							<Route exact path="/profile/:userid" component={ Profile } />
+
 							<Route exact path="/resume/:userid" component={ Resume } />
 							<Route exact path="/elevatorpitch/:userid" component={ ElevatorPitch } />
 							<Route exact path="/common-interview-Qs" component={ CommonInterviewQs } />
-							<Route exact path="/flashcards" component={ FlashcardsDev } />
+							<Route exact path="/flashcards-dev" component={ FlashcardsDev } />
+							<Route exact path="/flashcards-data" component={ FlashcardsData } />
 
 							<Route exact path="/resources" component={ Resources } />
 							<Route exact path="/staff" component={ Staff } />

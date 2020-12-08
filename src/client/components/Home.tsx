@@ -75,7 +75,7 @@ const Home: React.FC<HomeProps> = props => {
                         <div className="link-row flex-column">
                         
                             {/* RESUME LINK */}
-                            <Link className="link" to="/resume/:id" onMouseOver={(e) => e.preventDefault()}>
+                            <Link className="link" to="/resume/:userid" onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes">
                                     <h5><strong>Resume</strong></h5>
                                     <p className="mt-3">Upload your resumes to keep them all in one place and receive feedback from PD staff members</p>
@@ -117,7 +117,7 @@ const Home: React.FC<HomeProps> = props => {
                         <div className="link-row flex-column">
                             
                             {/* FLASHCARDS LINK */}
-                            <Link className="link" to="/flashcards" onMouseOver={(e) => e.preventDefault()}>
+                            <Link className="link" to="/flashcards-dev" onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes">
                                     <h5><strong>Flashcards</strong></h5>
                                     <p className="mt-3">Brush up on your technical knowledge so that you can speak the language with potential employers</p>
@@ -146,7 +146,7 @@ const Home: React.FC<HomeProps> = props => {
                         <div className="link-row flex-column">
                         
                             {/* RESUME LINK */}
-                            <Link className="link" to="/resume/:id" onMouseOver={(e) => e.preventDefault()}>
+                            <Link className="link" to="/resume/:userid" onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes">
                                     <h5><strong>Resume</strong></h5>
                                     <p className="mt-3">Upload your resumes to keep them all in one place and receive feedback from PD staff members</p>
@@ -188,7 +188,7 @@ const Home: React.FC<HomeProps> = props => {
                         <div className="link-row flex-column">
                             
                             {/* FLASHCARDS LINK */}
-                            <Link className="link" to="/flashcards" onMouseOver={(e) => e.preventDefault()}>
+                            <Link className="link" to="/flashcards-dev" onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes">
                                     <h5><strong>Flashcards</strong></h5>
                                     <p className="mt-3">Brush up on your technical knowledge so that you can speak the language with potential employers</p>
@@ -214,7 +214,7 @@ const Home: React.FC<HomeProps> = props => {
                         <div className="link-row flex-column">
                         
                             {/* RESUME LINK */}
-                            <Link className="link" to="/resume/:id" onMouseOver={(e) => e.preventDefault()}>
+                            <Link className="link" to="/resume/:userid" onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes">
                                     <h5><strong>Resume</strong></h5>
                                     <p className="mt-3">Upload your resumes to keep them all in one place and receive feedback from PD staff members</p>
@@ -256,7 +256,7 @@ const Home: React.FC<HomeProps> = props => {
                         <div className="link-row flex-column">
                             
                             {/* FLASHCARDS LINK */}
-                            <Link className="link" to="/flashcards" onMouseOver={(e) => e.preventDefault()}>
+                            <Link className="link" to="/flashcards-dev" onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes">
                                     <h5><strong>Flashcards</strong></h5>
                                     <p className="mt-3">Brush up on your technical knowledge so that you can speak the language with potential employers</p>
@@ -283,7 +283,7 @@ const Home: React.FC<HomeProps> = props => {
                         <div className="link-row flex-column">
                         
                             {/* RESUME LINK */}
-                            <Link className="link" to="/resume/:id" onMouseOver={(e) => e.preventDefault()}>
+                            <Link className="link" to="/resume/:userid" onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes">
                                     <h5><strong>Resume</strong></h5>
                                     <p className="mt-3">Upload your resumes to keep them all in one place and receive feedback from PD staff members</p>
@@ -325,7 +325,7 @@ const Home: React.FC<HomeProps> = props => {
                         <div className="link-row flex-column">
                             
                             {/* FLASHCARDS LINK */}
-                            <Link className="link" to="/flashcards" onMouseOver={(e) => e.preventDefault()}>
+                            <Link className="link" to="/flashcards-dev" onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes">
                                     <h5><strong>Flashcards</strong></h5>
                                     <p className="mt-3">Brush up on your technical knowledge so that you can speak the language with potential employers</p>
