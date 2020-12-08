@@ -1,7 +1,7 @@
 // @ts-nocheck
 
 import React, { useState, useEffect } from "react";
-import { RouteComponentProps } from "react-router-dom";
+import { RouteComponentProps, Link } from "react-router-dom";
 import "../scss/flashcards-dev-andrew";
 
 
@@ -60,7 +60,15 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
             </div>
 
 
-            <div className="row bg-white bottom-row">
+            <div className="row d-flex justify-content-center text-white">
+                <Link to="/flashcards-data">
+                    <button className="btn btn-midnight mt-2 mb-5">
+                        Switch to Data Cards
+                    </button>
+                </Link>
+            </div>
+            
+            <div className="row bottom-row">
         
                 <div className="col-12">
 
