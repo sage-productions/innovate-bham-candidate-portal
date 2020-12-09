@@ -6,11 +6,11 @@ import { User } from '../utils/api';
 
 const Home: React.FC<HomeProps> = props => {
 
-    useEffect(() => {
-        if(!User || User.userid === null) {
-          props.history.replace('/')
-        }
-      }, []);
+    // useEffect(() => {
+    //     if(!User || User.userid === null) {
+    //       props.history.replace('/')
+    //     }
+    //   }, []);
 
     return (
 
