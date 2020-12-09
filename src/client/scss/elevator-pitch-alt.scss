@@ -1,5 +1,29 @@
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 
+.elevator-bg-img {
+    background-image: url('/assets/bham-skyline-railroad-park.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    z-index: -100;
+  
+    height: 100%;
+    min-height: 750px;
+    width: 100%;
+
+  }
+
+  .placeholder {
+      color: white;
+  }
+
 .elevator-pic {
     width: 100%;
     background-size: cover;
@@ -29,9 +53,9 @@
     padding-top: 50px;
 }
 
-.p2 {
-    background-color: #D8D8D8;
-}
+// .p2 {
+//     background-color: #D8D8D8;
+// }
 
 .p4 {
     margin: 0 20%;
@@ -47,6 +71,15 @@
     padding:15px;
 }
 
-.btn-pitch {
-    color:red;
+.bg-filter-elevator {
+    position: relative;
+    top: 0;
+    left:103;
+    
+    background-color: #161929BB;
+    // border-radius: 10px;
+    // height: 100%;
+    width: 90%;
+
+    padding-bottom:5em;
 }

@@ -62,30 +62,37 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
   };
 
   return (
+    
     <main className="container-fluid text-midnight">
       {/* <div className="page-container"> */}
+
+      {/* BACKGROUND IMAGE */}
+      <div className="home-img-wrapper">
+          <div className="elevator-bg-img">
+      </div>
+
 
       <div className="row title-row">
         <div className="col-12 text-center bg-midnight">
           <h2 className="text-white text-center">Interview Prep</h2>
         </div>
       </div>
-
+<div className="bg-filter-elevator">
       <div className="row">
         <div className="col-12 d-flex justify-content-center my-2 mx-2">
-          <Link to="/elevatorpitch/1" className="text-midnight href mr-2 ml-4">
+          <Link to="/elevatorpitch/1" className="text-white href mr-2 ml-4">
             <h5>Elevator Pitches</h5>
           </Link>
 
           <div className="text-midnight mx-2">|</div>
 
-          <Link to="/common-interview-Qs" className="text-midnight href mx-2">
+          <Link to="/common-interview-Qs" className="text-white href mx-2">
             <h5>Common Interview Qs</h5>
           </Link>
 
           <div className="text-midnight mx-2">|</div>
 
-          <Link to="/custom-interview-Qs" className="text-midnight href mx-2">
+          <Link to="/custom-interview-Qs" className="text-white href mx-2">
             <h5>Custom Interview Qs</h5>
           </Link>
         </div>
@@ -106,7 +113,7 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
       <div className="row body display-flex justify-content-center align-items-center">
         {/* <section className="paragraphs bg-light text-center"> */}
 
-        <section className="col-12 p1 text-center text-midnight bg-light p-5">
+        <section className="col-12 p1 text-center text-white p-5">
           <h2 className="">What is an Elevator Pitch?</h2>
           <p className="para1 mx-md-3 mx-lg-5">
             An elevator pitch is a professional summary of who you are and what
@@ -120,7 +127,7 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
           </p>
         </section>
 
-        <section className="col-12 p2 text-center text-midnight p-5">
+        <section className="col-12 p2 text-center text-white p-3">
           <h2 className="">Elements You Should Include</h2>
           <p className="para-2 mx-md-3 mx-lg-5">
             In your elevator pitch, you want to get the main point across about
@@ -138,7 +145,7 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
           </p>
         </section>
 
-        <section className="col-12 p3 text-center text-midnight bg-light p-5">
+        <section className="col-12 p3 text-center text-white p-3">
           <h2>Developing Your Elevator Pitch</h2>
           <p className="mx-md-3 mx-lg-5">
             When constructing your elevator pitch as a Software Developer, you
@@ -157,10 +164,10 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
         </section>
 
         <section className="col-12">
-          <h2 className="pt-5 px-5 text-center text-midnight">
+          <h2 className="pt-3 px-5 text-center text-white">
             Practicing Your Elevator Pitch
           </h2>
-          <p className="p4">
+          <p className="p4 text-white">
             Below you will find a video recorder for practicing and timing your
             pitch, and an input field for typing out what you want to say.
             Clicking the button will save the pitch so you can access what you
@@ -169,15 +176,15 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
         </section>
 
         {/* </section> */}
-        <section className="row bottom-section bg-white d-flex justify-content-center align-items-center">
+        <section className="row bottom-section  d-flex justify-content-center align-items-center">
           <div className="recorder-cont col-12 py-5">
             <div className="recorder-div d-none d-sm-block">
               <Recorder />
 
-              <div className="input-group bg-light pt-2"></div>
+              <div className="input-group pt-2"></div>
               <textarea
                 className="form-control text-center"
-                style={{ height: 250, width: 500 }}
+                style={{ height: 250, width: 500, backgroundColor:'#161929CB', color: 'white' }}
                 placeholder="Type Practice Pitch Here"
                 aria-label="Large"
                 aria-describedby="inputGroup-sizing-sm"
@@ -189,7 +196,7 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
                 <button
                   type="submit"
                   // style={{height:100, width: 100}}
-                  className="btn-pitch btn-lg btn-outline-secondary my-2"
+                  className="btn-pitch btn text-midnight btn-lg btn-warning my-2"
                   onClick={newPitch}
                 >
                   Save Pitch
@@ -202,9 +209,9 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
             <div className="recorder-div-small-screen d-block d-sm-none">
               <Recorder />
 
-              <div className="input-group bg-light pt-2"></div>
+              <div className="input-group pt-2"></div>
               <textarea
-                className="small-screen-pitch-textarea form-control text-center"
+                className="small-screen-pitch-textarea form-control text-white text-center"
                 style={{ height: 250, width: 375 }}
                 placeholder="Type Practice Pitch Here"
                 aria-label="Large"
@@ -231,7 +238,7 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
               <div
                 key={pitch.id}
                 className="card shadow col-12"
-                style={{ width: "18rem"}}
+                style={{ width: "28rem", backgroundColor: '#161929CB', color: 'white'}}
               >
                 <div className="card-body">
                 <h5 className="card-title">Saved Pitch</h5>
@@ -242,7 +249,10 @@ const ElevatorPitch: React.FC<ElevatorProps> = (props: ElevatorProps) => {
           </section>
         </section>
       </div>
+      </div>
+      </div>
     </main>
+    
   );
 };
 

@@ -9,7 +9,7 @@ const AdminResumeView: React.FC<AdminResumeViewProps> = (props) => {
 
       {/* BACKGROUND IMAGE */}
       <div className="home-img-wrapper">
-          <div className="admin-resume-bg-img"></div>
+          <div className="admin-resume-bg-img">
       </div>
 
       {/* PAGE TITLE */}
@@ -18,9 +18,9 @@ const AdminResumeView: React.FC<AdminResumeViewProps> = (props) => {
           <h2 className="text-white text-center">Cohort 13 Resumes</h2>
         </div>
       </div>
-
-      <h1 className="webdev font-weight-light text-center pb-5">
-        Web Development
+      <div className="bg-filter-admin">
+      <h1 className="webdev font-weight-light text-center pt-3 pb-5">
+        ----Web Development----
       </h1>
       {/* <div className="row page-row mt-5"> */}
       <div className="row webdevrow">
@@ -84,7 +84,7 @@ const AdminResumeView: React.FC<AdminResumeViewProps> = (props) => {
       </div>
 
       <h1 className="data-h1 font-weight-light text-center pb-5">
-        Data Analytics
+        ----Data Analytics----
       </h1>
 
       <div className="row datarow">
@@ -141,9 +141,9 @@ const AdminResumeView: React.FC<AdminResumeViewProps> = (props) => {
           />
           <h4>Carlos Louis</h4>
         </div>
-      </div>
+      </div></div>
       {/* </div> */}
-    
+    </div>
     </main>
 
     {/* BACKGROUND IMAGE */}
