@@ -9,7 +9,7 @@ const Navbar: React.FC<NavbarProps> = props => {
         <div className="home-wrapper">
 
         
-        <nav className="navbar navbar-expanded-lg navbar-light bg-stone justify-content-between">
+        <nav className="navbar navbar-expanded-lg navbar-light justify-content-between">
 
             <Link to='/home' className="navbar-brand d-flex">
                 
