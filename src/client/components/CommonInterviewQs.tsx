@@ -25,7 +25,7 @@ const CommonInterviewQs: React.FC<CommonInterviewQsProps> = props => {
             <div className="row dark-row common-Qs-footer-fix d-flex justify-content-center">
 
                 {/* YOU KNOW... THE SCHPEELE */}
-                <div className="col-12 bg-midnight border-midnight round text-left text-white mt-5 mb-4 px-5 py-2">
+                <div className=" commonq border-midnight text-center text-white mt-5 mb-4 py-2">
                     <h6>There are many common questions asked by hiring managers, but for the most
                     most part, what they really want to know boils down to who you are, what
                     you're good at and why you'd be a good fit for the job. The trick is to 
@@ -44,7 +44,7 @@ const CommonInterviewQs: React.FC<CommonInterviewQsProps> = props => {
 
 
                 {/* QUESTIONS AND SUCH */}
-                <div className="col-6 text-left text-white border-midnight rounded my-1 px-5 py-2">
+                <div className="tellme text-white border-midnight text-center rounded my-1 py-2">
                     <h4><u>Tell me about yourself</u></h4>
                     <p>
                         This question seems simple, so many people fail to prepare for it, but it’s crucial. 
@@ -57,7 +57,7 @@ const CommonInterviewQs: React.FC<CommonInterviewQsProps> = props => {
                     </p>
                 </div>
 
-                <div className="col-6 text-left text-white border-midnight rounded my-1 py-2 px-5">
+                <div className="commonq text-center text-white border-midnight rounded pb-5 my-1 py-2">
                     <h4><u>How Did You Hear About This Position</u></h4>
                     <p>
                         Another seemingly innocuous interview question, this is actually a perfect opportunity 
