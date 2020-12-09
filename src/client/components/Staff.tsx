@@ -6,6 +6,12 @@ const Staff: React.FC<StaffProps> = props => {
     return (
         <main className="container-fluid text-midnight">
 
+            {/* BACKGROUND IMAGE */}
+            <div className="staff-img-wrapper">
+                <div className="staff-bg-img"></div>
+            </div>
+
+
             <div className="row title-row">
                 <div className="col-12 text-center bg-midnight">
                     <h2 className="text-white text-center">Staff</h2>
@@ -13,13 +19,11 @@ const Staff: React.FC<StaffProps> = props => {
             </div>
 
 
-            {/* BACKGROUND IMAGE */}
-            <div className="home-img-wrapper">
-                <div className="home-bg-img"></div>
-            </div>
+            <div className="row staff-page-fix bg-filter text-white mt-5 pt-5">
 
-            <div className="row staff-page-row bg-filter text-white mt-5">
-
+                <div className="col-12 d-flex justify-content-center text-center text-white mb-5">
+                    <h3><u>Innovate Birmingham</u></h3>
+                </div>
 
                 <div className="col-md-4 text-center pb-5">
                     <img className="resources-profile-pic" src=" assets/staff-pics/DB.Jpg" alt="profile picture"/>
@@ -64,35 +68,9 @@ const Staff: React.FC<StaffProps> = props => {
                 </div>
 
                 <div className="col-md-4 text-center pb-5">
-                    <img className="resources-profile-pic" src=" assets/staff-pics/RH.jpg" alt="profile picture"/>
-                    <h4>Robin Hunt</h4>
-                    <h5 className="neg-top-margin">Founder ThinkData</h5>
-
-                </div>
-
-                <div className="col-md-4 text-center pb-5">
-                    <img className="resources-profile-pic" src="assets/staff-pics/TA.png" alt="profile picture"/>
-                    <h4>Taylor Abney</h4>
-                    <h5 className="neg-top-margin">Data Instructor</h5>
-                </div>
-
-                <div className="col-md-4 text-center pb-5">
                     <img className="resources-profile-pic" src="assets/staff-pics/Josh.jpg" alt="profile picture"/>
                     <h4>Josh Hurn</h4>
                     <h5 className="neg-top-margin">Web Dev Instructor</h5>
-                </div>
-
-                <div className="col-md-4 text-center pb-5">
-                    <img className="resources-profile-pic" src=" assets/staff-pics/ad.jpg" alt="profile picture"/>
-                    <h4>Adrian Drane</h4>
-                    <h5 className="neg-top-margin">Data Analytics TA</h5>
-                </div>    
-
-                <div className="col-md-4 text-center pb-5">
-                    <img className="resources-profile-pic" src=" assets/staff-pics/RW.png" alt="profile picture"/>
-                    <h4>Reggie White</h4>
-                    <h5 className="neg-top-margin">Data Analytics TA</h5>
-
                 </div>
 
                 <div className="col-md-4 text-center pb-5">
@@ -105,19 +83,36 @@ const Staff: React.FC<StaffProps> = props => {
                     <img className="resources-profile-pic" src=" assets/staff-pics/JL.png" alt="profile picture"/>
                     <h4>Jake Lovett</h4>
                     <h5 className="neg-top-margin">Web Dev TA</h5>
-
                 </div>
 
-                <div className="col-12 d-flex justify-content-center text-center text-white">
+                <div className="col-12 d-flex justify-content-center text-center text-white mb-5">
                     <h3><u>ThinkData</u></h3>
                 </div>
 
-                
+                <div className="col-md-4 text-center pb-5">
+                    <img className="resources-profile-pic" src=" assets/staff-pics/RH.jpg" alt="profile picture"/>
+                    <h4>Robin Hunt</h4>
+                    <h5 className="neg-top-margin">Founder ThinkData</h5>
+                </div>
 
-                
+                <div className="col-md-4 text-center pb-5">
+                    <img className="resources-profile-pic" src="assets/staff-pics/TA.png" alt="profile picture"/>
+                    <h4>Taylor Abney</h4>
+                    <h5 className="neg-top-margin">Data Instructor</h5>
+                </div>
 
+                <div className="col-md-4 text-center pb-5">
+                    <img className="resources-profile-pic" src=" assets/staff-pics/RW.png" alt="profile picture"/>
+                    <h4>Reggie White</h4>
+                    <h5 className="neg-top-margin">Data Analytics TA</h5>
+                </div>
+
+                <div className="col-md-4 text-center pb-5">
+                    <img className="resources-profile-pic" src=" assets/staff-pics/ad.jpg" alt="profile picture"/>
+                    <h4>Adrian Drane</h4>
+                    <h5 className="neg-top-margin">Data Analytics TA</h5>
+                </div>
             </div>
-
         </main>
     )
 }

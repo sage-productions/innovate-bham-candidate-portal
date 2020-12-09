@@ -54,7 +54,7 @@ const Home: React.FC<HomeProps> = props => {
                         
                         <p className="click-to-edit">(click to edit profile)</p>
                         <h4 className="user-name mt-2">John Candidate</h4>
-                        <h5 className="neg-top-margin">Web Dev Candidate</h5>
+                        <h5 className="neg-top-margin">Web Development</h5>
                         <h5 className="neg-top-margin">Cohort 12 - Fall 2020</h5>
                         
                         <h6 className="mt-3">github.com/candidate</h6>
@@ -73,7 +73,7 @@ const Home: React.FC<HomeProps> = props => {
                         
                         <p className="click-to-edit">(click to edit profile)</p>
                         <h4 className="user-name mt-2">John Candidate</h4>
-                        <h5 className="neg-top-margin">Web Dev Candidate</h5>
+                        <h5 className="neg-top-margin">Web Development</h5>
                         <h5 className="neg-top-margin">Cohort 12 - Fall 2020</h5>
                         
                         <h6 className="mt-3">github.com/candidate</h6>
@@ -93,7 +93,7 @@ const Home: React.FC<HomeProps> = props => {
                         <div className="link-row flex-column">
                         
                             {/* RESUME LINK */}
-                            <Link className="link" to="/resume/:userid" onMouseOver={(e) => e.preventDefault()}>
+                            <Link className="link" to="/adminresumeview" onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes">
                                     <h5><strong>Resume</strong></h5>
                                     <p className="mt-3">Upload your resumes to keep them all in one place and receive feedback from the Professional Development staff</p>
@@ -164,7 +164,7 @@ const Home: React.FC<HomeProps> = props => {
                         <div className="link-row flex-column">
                         
                             {/* RESUME LINK */}
-                            <Link className="link" to="/resume/:userid" onMouseOver={(e) => e.preventDefault()}>
+                            <Link className="link" to="/adminresumeview" onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes">
                                     <h5><strong>Resume</strong></h5>
                                     <p className="mt-3">Upload your resumes to keep them all in one place and receive feedback from the Professional Development staff</p>
@@ -232,7 +232,7 @@ const Home: React.FC<HomeProps> = props => {
                         <div className="link-row flex-column">
                         
                             {/* RESUME LINK */}
-                            <Link className="link" to="/resume/:userid" onMouseOver={(e) => e.preventDefault()}>
+                            <Link className="link" to="/adminresumeview" onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes">
                                     <h5><strong>Resume</strong></h5>
                                     <p className="mt-3">Upload your resumes to keep them all in one place and receive feedback from the Professional Development staff</p>
@@ -301,7 +301,7 @@ const Home: React.FC<HomeProps> = props => {
                         <div className="link-row flex-column">
                         
                             {/* RESUME LINK */}
-                            <Link className="link" to="/resume/:userid" onMouseOver={(e) => e.preventDefault()}>
+                            <Link className="link" to="/adminresumeview" onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes">
                                     <h5><strong>Resume</strong></h5>
                                     <p className="mt-3">Upload your resumes to keep them all in one place and receive feedback from the Professional Development staff</p>

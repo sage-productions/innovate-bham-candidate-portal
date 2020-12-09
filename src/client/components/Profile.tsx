@@ -12,7 +12,7 @@ const Profile: React.FC<ProfileProps> = props => {
     const [lastName, setLastName] = useState("Candidate");
     const [preferredName, setPreferredName] = useState("Johnny");
     const [fullName, setFullName] = useState(`${firstName} ${lastName}`);
-    const [role, setRole] = useState("Software Development");
+    const [role, setRole] = useState("Web Development");
     const [cohort, setCohort] = useState("Cohort 12 - Fall 2020");
     const [userCity, setUserCity] = useState("Birmingham");
     const [userState, setUserState] = useState("AL");
@@ -242,7 +242,10 @@ const Profile: React.FC<ProfileProps> = props => {
                     {/* INPUT FIELDS FORM */}
                     <form action="">
                         <div className="form-group">
-                            <textarea name="message" placeholder="" rows={17} cols={75}></textarea>
+                            <textarea name="message" placeholder={bio} value={bio} rows={17} cols={75}
+                                      onChange={e => setUserState(e.target.value)}>
+                                        
+                            </textarea>
                         </div>
                     </form>
 

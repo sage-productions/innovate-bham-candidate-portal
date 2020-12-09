@@ -5,7 +5,14 @@ import "../scss/admin-resume-view.scss";
 const AdminResumeView: React.FC<AdminResumeViewProps> = (props) => {
   return (
     <>
-    <main className="container-fluid text-midnight">
+    <main className="container-fluid text-white">
+
+      {/* BACKGROUND IMAGE */}
+      <div className="home-img-wrapper">
+          <div className="admin-resume-bg-img"></div>
+      </div>
+
+      {/* PAGE TITLE */}
       <div className="row title-row">
         <div className="col-12 text-center bg-midnight">
           <h2 className="text-white text-center">Cohort 13 Resumes</h2>
