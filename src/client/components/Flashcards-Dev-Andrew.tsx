@@ -67,6 +67,11 @@ const FlashcardsDev: React.FC<FlashcardsDevProps> = (props: FlashcardsDevProps) 
 
         <main className="container-fluid text-midnight">
 
+            {/* BACKGROUND IMAGE */}
+            <div className="home-img-wrapper">
+                <div className="fc-dev-bg-img"></div>
+            </div>
+
             <div className="row title-row">
                 <div className="col-12 text-center bg-midnight">
                     <h2 className="text-white text-center">Flashcards</h2>
