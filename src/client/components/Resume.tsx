@@ -5,20 +5,25 @@ pdfjs.GlobalWorkerOptions.workerSrc = `/js/app.worker.js`;
 import '../scss/resume.scss'
 
 const Resume: React.FC<ResumeProps> = (props) => {
-    const [file, setFile] = useState("/assets/samplepdfv2.pdf");
+    const [file, setFile] = useState("/assets/Junior_software_developer.pdf");
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
 
     const sampleComments = [
         {
             id: 1,
-            name: "TJ",
-            message: "Looks great!"
+            name: "Salma Khan",
+            message: "I updated my key skills section. I also fixed some formatting issues I was having. "
         },
         {
             id: 2,
-            name: "Garrett",
-            message: "That's bomb yo!"
+            name: "Innovate Administrator",
+            message: "Great job! This is a well done resume. You should now look to shorten the length of your document a little."
+        },
+        {
+            id: 3,
+            name: "Salma Khan",
+            message: "Will do. What types of soft skills do employers like to see on our resume for the IT field?"
         }
     ]
 
@@ -45,7 +50,7 @@ const Resume: React.FC<ResumeProps> = (props) => {
 
             <div className="row title-row">
                 <div className="col-12 text-center bg-midnight">
-                    <h2 className="text-white text-center">Candidate Resume Development</h2>
+                    <h2 className="text-white text-center">Candidate Resume</h2>
                 </div>
             </div>
 
