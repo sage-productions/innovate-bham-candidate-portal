@@ -9,7 +9,7 @@ import Login from './components/Login';
 import Home from './components/Home';
 import Profile from './components/Profile';
 
-import Resume from './components/ResumeAlt';
+import Resume from './components/Resume';
 import FlashcardsDev from './components/Flashcards-Dev-Andrew';
 import FlashcardsData from './components/Flashcards-Data-Andrew';
 import ElevatorPitch from './components/ElevatorPitch-Alt';

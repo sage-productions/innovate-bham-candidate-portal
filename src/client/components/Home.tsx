@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link, RouteComponentProps } from 'react-router-dom';
-import '../scss/home.scss';
-import { User } from '../utils/api';
+import '../scss/home.scss'
 
 
 const Home: React.FC<HomeProps> = props => {
 
     // useEffect(() => {
-    //     if(!User || User.userid === null) {
+    //     if(!User || User.userid === null || User.role !== 'admin') {
     //       props.history.replace('/')
     //     }
-    //   }, []);
+    //   }, [])
 
     return (
 
@@ -62,7 +61,7 @@ const Home: React.FC<HomeProps> = props => {
                     {/* USER PROFILE PICTURE AND INFO - SCREEN SIZE 1232 AND UP */}
                     <div className="home-profile-container-col-4 col-4 text-center text-midnight mb-5 py-2">
                         <Link to="/profile/1">
-                            <img className="home-profile-pic" src="/assets/jakesLittleFriend-small.png" alt="profile picture"/>
+                            <img className="home-profile-pic" src="/assets/gumby.jpg" alt="profile picture"/>
                         </Link>
                         
                         <p className="click-to-edit text-muted">(click to edit profile)</p>
@@ -83,7 +82,7 @@ const Home: React.FC<HomeProps> = props => {
                         <div className="link-row flex-column">
                         
                             {/* RESUME LINK */}
-                            <Link className="link" to={`/resume/${User.userid}`} onMouseOver={(e) => e.preventDefault()}>
+                            <Link className="link" to="/resume/:userid" onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes">
                                     <h5><strong>Resume</strong></h5>
                                     <p className="mt-3">Upload your resumes to keep them all in one place and receive feedback from PD staff members</p>
@@ -154,7 +153,7 @@ const Home: React.FC<HomeProps> = props => {
                         <div className="link-row flex-column">
                         
                             {/* RESUME LINK */}
-                            <Link className="link" to={`/resume/${User.userid}`} onMouseOver={(e) => e.preventDefault()}>
+                            <Link className="link" to="/resume/:userid" onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes">
                                     <h5><strong>Resume</strong></h5>
                                     <p className="mt-3">Upload your resumes to keep them all in one place and receive feedback from PD staff members</p>
@@ -222,7 +221,7 @@ const Home: React.FC<HomeProps> = props => {
                         <div className="link-row flex-column">
                         
                             {/* RESUME LINK */}
-                            <Link className="link" to={`/resume/${User.userid}`} onMouseOver={(e) => e.preventDefault()}>
+                            <Link className="link" to="/resume/:userid" onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes">
                                     <h5><strong>Resume</strong></h5>
                                     <p className="mt-3">Upload your resumes to keep them all in one place and receive feedback from PD staff members</p>
@@ -291,7 +290,7 @@ const Home: React.FC<HomeProps> = props => {
                         <div className="link-row flex-column">
                         
                             {/* RESUME LINK */}
-                            <Link className="link" to={`/resume/${User.userid}`} onMouseOver={(e) => e.preventDefault()}>
+                            <Link className="link" to="/resume/:userid" onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes">
                                     <h5><strong>Resume</strong></h5>
                                     <p className="mt-3">Upload your resumes to keep them all in one place and receive feedback from PD staff members</p>
