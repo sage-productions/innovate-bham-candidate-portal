@@ -48,6 +48,11 @@ const Resume: React.FC<ResumeProps> = (props) => {
         <Fragment>
         <main className="container-fluid">
 
+            {/* BACKGROUND IMAGE */}
+            <div className="home-img-wrapper">
+                <div className="candidate-resume-bg-img"></div>
+            </div>
+
             <div className="row title-row">
                 <div className="col-12 text-center bg-midnight">
                     <h2 className="text-white text-center">Candidate Resume</h2>
@@ -78,7 +83,7 @@ const Resume: React.FC<ResumeProps> = (props) => {
 
             <div className="row justify-content-center">
                 <button
-                    className="btn btn-outline-dark mx-2"
+                    className="btn btn-warning mx-2"
                     type="button"
                     disabled={pageNumber <= 1}
                     onClick={previousPage}
@@ -86,7 +91,7 @@ const Resume: React.FC<ResumeProps> = (props) => {
                     Previous
                 </button>
                 <button
-                    className="btn btn-outline-dark mx-2"
+                    className="btn btn-warning mx-2"
                     type="button"
                     disabled={pageNumber >= numPages}
                     onClick={nextPage}
@@ -96,12 +101,14 @@ const Resume: React.FC<ResumeProps> = (props) => {
             </div>
 
 
-            <div className="container border p-3 mt-3 page-row">
+            <div className="container border rounded p-3 mt-5 page-row">
                 <div className="container">
                     {sampleComments.map(comment => (
                         <div className="row mt-3 mb-3">
-                            <div className="card shadow" style={{ width: '18rem' }}>
-                                <div className="card-body mt-3">
+                            <div className="card shadow rounded" style={{
+                                 width: '100%', backgroundColor: '#161929CB', color: 'white' 
+                            }}>
+                                <div className="card-body">
                                     <h5 className="card-title">{comment.name}</h5>
                                     <p className="card-text">{comment.message}</p>
                                 </div>
@@ -111,12 +118,12 @@ const Resume: React.FC<ResumeProps> = (props) => {
                 </div>
 
 
-                <div className="container-sm mt-3">
+                <div className="container-sm">
                     <div className="row">
                         <div className="input-group">
                             <input type="text" className="form-control" placeholder="Leave a comment?" />
                             <div className="input-group-append">
-                                <button className="btn btn-outline-dark inputBtn">Send</button>
+                                <button className="btn btn-warning inputBtn ml-2">Send</button>
                             </div>
                         </div>
                     </div>

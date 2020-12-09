@@ -13,7 +13,12 @@ const Staff: React.FC<StaffProps> = props => {
             </div>
 
 
-            <div className="row page-row mt-5">
+            {/* BACKGROUND IMAGE */}
+            <div className="home-img-wrapper">
+                <div className="home-bg-img"></div>
+            </div>
+
+            <div className="row page-row bg-filter text-white mt-5">
 
 
                 <div className="col-md-4 text-center pb-5">
