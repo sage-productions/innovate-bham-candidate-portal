@@ -21,6 +21,7 @@ const Home: React.FC<HomeProps> = props => {
                     <div className="home-bg-img"></div>
                 </div>
 
+                {/* PAGE TITLE */}
                 <div className="row title-row">
                     <div className="col-12 text-center bg-midnight">
                         <h2 className="text-white text-center">Home</h2>
@@ -33,7 +34,7 @@ const Home: React.FC<HomeProps> = props => {
                 {/* INDIVIDUAL USERS SHOULD BE ABLE TO CLEAR THE MSG FOR THEIR PORTAL, BUT NOT EVERYONE'S */}
                 {/* CAN WE MAKE IT SO IT POPS UP WITHOUT A PAGE REFRESH */}
                 <div className="row alert-row justify-content-center">
-                    <div className="col-md-8 text-center text-white font-weight-bold mt-5 mb-4">
+                    <div className="col-md-5 text-center text-white font-weight-bold mt-5 mb-4">
                         <div className="alert-window bg-aqua rounded">
                             Demo day is upon us!!
                             <br />Please have your updated resumes in today
@@ -48,7 +49,7 @@ const Home: React.FC<HomeProps> = props => {
                     <div className="home-profile-container-col-12 col-12 text-center text-white mb-5">
 
                         <Link to="/profile/1">
-                            <img className="home-profile-pic" src="/assets/staff-pics/CL.png" alt="profile picture"/>
+                            <img className="home-profile-pic" src="/assets/staff-pics/CL.jpg" alt="profile picture"/>
                         </Link>
                         
                         <p className="click-to-edit">(click to edit profile)</p>
