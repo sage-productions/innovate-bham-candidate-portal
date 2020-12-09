@@ -18,7 +18,7 @@ const Staff: React.FC<StaffProps> = props => {
                 <div className="home-bg-img"></div>
             </div>
 
-            <div className="row page-row bg-filter text-white mt-5">
+            <div className="row staff-page-row bg-filter text-white mt-5">
 
 
                 <div className="col-md-4 text-center pb-5">
@@ -54,7 +54,7 @@ const Staff: React.FC<StaffProps> = props => {
                 <div className="col-md-4 text-center pb-5">
                     <img className="resources-profile-pic" src=" assets/staff-pics/CL.jpg" alt="profile picture"/>
                     <h4> Carlton lewis</h4>
-                    <h5 className="neg-top-margin">Development Coach </h5>
+                    <h5 className="neg-top-margin">Professional Development</h5>
                 </div> 
 
                 <div className="col-md-4 text-center pb-5">
@@ -66,7 +66,7 @@ const Staff: React.FC<StaffProps> = props => {
                 <div className="col-md-4 text-center pb-5">
                     <img className="resources-profile-pic" src=" assets/staff-pics/RH.jpg" alt="profile picture"/>
                     <h4>Robin Hunt</h4>
-                    <h5 className="neg-top-margin">Co-founder of ThinkData</h5>
+                    <h5 className="neg-top-margin">Founder ThinkData</h5>
 
                 </div>
 
@@ -79,7 +79,7 @@ const Staff: React.FC<StaffProps> = props => {
                 <div className="col-md-4 text-center pb-5">
                     <img className="resources-profile-pic" src="assets/staff-pics/Josh.jpg" alt="profile picture"/>
                     <h4>Josh Hurn</h4>
-                    <h5 className="neg-top-margin">Web Development Instructor</h5>
+                    <h5 className="neg-top-margin">Web Dev Instructor</h5>
                 </div>
 
                 <div className="col-md-4 text-center pb-5">
@@ -98,15 +98,21 @@ const Staff: React.FC<StaffProps> = props => {
                 <div className="col-md-4 text-center pb-5">
                     <img className="resources-profile-pic" src="/assets/staff-pics/garrett-harris.jpg" alt="profile picture"/>
                     <h4>Garrett Harris</h4>
-                    <h5 className="neg-top-margin">Web development TA</h5>
+                    <h5 className="neg-top-margin">Web Dev TA</h5>
                 </div>
 
                 <div className="col-md-4 text-center pb-5">
                     <img className="resources-profile-pic" src=" assets/staff-pics/JL.png" alt="profile picture"/>
                     <h4>Jake Lovett</h4>
-                    <h5 className="neg-top-margin">Web development TA</h5>
+                    <h5 className="neg-top-margin">Web Dev TA</h5>
 
                 </div>
+
+                <div className="col-12 d-flex justify-content-center text-center text-white">
+                    <h3><u>ThinkData</u></h3>
+                </div>
+
+                
 
                 
 

@@ -12,12 +12,16 @@ const Resources: React.FC<ResourcesProps> = props => {
                 </div>
             </div>
 
+            <div className="home-img-wrapper">
+                <div className="resources-bg-img"></div>
+            </div>
+
 
             <div className="row page-row">
 
                
               
-                <div className="col-12 text-center text-midnight mt-5">
+                {/* <div className="col-12 text-center text-midnight mt-5">
                     <h4><u>Links to Partner Websites</u></h4>    
                 </div>
 
@@ -37,7 +41,7 @@ const Resources: React.FC<ResourcesProps> = props => {
                     <a className="href" href="https://sigao.io/" target="_blank">
                         <h3 className="text-midnight"> Sigao Studios </h3>
                     </a>
-                </div>
+                </div> */}
 
 
 
@@ -51,13 +55,13 @@ const Resources: React.FC<ResourcesProps> = props => {
               
                 <div className="col-12 text-center mt-1">
                     <a className="href" href=" https://www.figma.com/ " target="_blank">
-                        <h3 className="text-midnight">figma</h3>
+                        <h3 className="text-midnight">Figma</h3>
                     </a>
                 </div>
 
                 <div className="col-12 text-center mt-1">
                     <a className="href" href=" https://trello.com/ " target="_blank">
-                        <h3 className="text-midnight"> trello </h3>
+                        <h3 className="text-midnight"> Trello </h3>
                     </a>
                 </div>
 
@@ -117,21 +121,21 @@ const Resources: React.FC<ResourcesProps> = props => {
                 </div>
 
                 <div className="col-12 text-center mt-1">
-                    <a className="href" href=" https://twitter.com/bhmblacktechies?lang=en " target="_blank">
-                        <h3 className="text-midnight"> Birmingham Black Techies </h3>
+                    <a className="href" href=" https://women-in-tech.org/ " target="_blank">
+                        <h3 className="text-midnight"> Women in Tech </h3>
                     </a>
                 </div>
 
                 <div className="col-12 text-center mt-1">
-                    <a className="href" href=" https://women-in-tech.org/ " target="_blank">
-                        <h3 className="text-midnight"> Women in Tech </h3>
+                    <a className="href" href=" https://twitter.com/bhmblacktechies?lang=en " target="_blank">
+                        <h3 className="text-midnight"> Birmingham Black Techies </h3>
                     </a>
                 </div>
 
 
                 <div className="col-12 text-center mt-1">
                     <a className="href" href=" https://www.birminghambusinessalliance.com/" target="_blank">
-                        <h3 className="text-midnight"> Birmingham business alliance </h3>
+                        <h3 className="text-midnight"> Birmingham Business Alliance </h3>
                     </a>
                 </div>
                 

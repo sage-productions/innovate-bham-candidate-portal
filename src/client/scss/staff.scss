@@ -2,11 +2,21 @@
     border: 2px solid black;
     border-radius: 50%;
 
-
     height: 75px;
     width: 75px;
 }
 
-// .bg-filter {
+.bg-filter {
+    position: absolute;
+    top: 150;
+    left: 75;
+    
+    background-color: #161929BB;
+    border-radius: 10px;
+    height: 90%;
+    width: 90%;
+}
 
-// }
+.staff-page-row {
+    margin-bottom: -475px;
+}
