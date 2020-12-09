@@ -45,7 +45,7 @@ const Resume: React.FC<ResumeProps> = (props) => {
 
             <div className="row title-row">
                 <div className="col-12 text-center bg-midnight">
-                    <h2 className="text-white text-center">Resume</h2>
+                    <h2 className="text-white text-center">Candidate Resume Development</h2>
                 </div>
             </div>
 
