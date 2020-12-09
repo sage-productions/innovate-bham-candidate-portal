@@ -10,17 +10,60 @@
 //     border: 2px solid #191262;
 // }
 
-.page-row {
-    margin-bottom: -650px;
+
+.home-bg-img {
+    background-image: url('/assets/bham-skyline-railroad-park.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: -100;
+  
+    height: 100%;
+    min-height: 750px;
+    width: 100%;
+}
+
+.home-footer-fix {
+    margin-bottom: -550px;
+}
+
+.home-profile-container-col-3, .home-profile-container-col-12 {
+    background-color: #161929CB;
+    border-radius: 10px;
+    justify-content: center;
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 20px;
+    top: -27px;
 }
 
 .home-profile-pic {
-    border: 3px solid #161929;
+    box-shadow: 0 0 0 3pt #161929;
     border-radius: 50%;
+
+    min-height: 125;
+    min-width: 125;
+    max-height: 200;
+    max-width: 200;
+}
+
+.home-profile-pic:hover {
+    box-shadow: 0 0 0 1pt #FFCF2B;
 }
 
 .click-to-edit {
     margin-bottom: 0;
+
+    color: #FFFFFFCC
 }
 
 .user-name {
@@ -32,12 +75,49 @@
 }
 
 
+.link-boxes {
+    position: relative;
+    top: 15px;
+    height: 12em;
+    width: 17em;
+    // border: 4px solid #161929;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #161929CB;
+    color: #FFFFFF;
+    padding: 20px;
+    margin: 10px;
+}
+
+.link-boxes:hover {
+    background-color: #161929ee;
+    box-shadow: 0 0 0 1pt #FFCF2B;
+    top: 5px;
+}
+
+.header-text {
+    font-size: 20px;
+}
+
+.href:hover, .link:hover {
+    text-decoration: none;
+}
+
+.name-text {
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #43B7E8;
+    font-weight: 1000;
+}
+
+
 
 // -----------------------------------------
 // BREAK DISPLAY AT SCREEN WIDTH RATHER THAN USING PRESETS WITH BOOTSTRAP
 // HIDE 4 COLUMN USER PROFILE FROM SMALLEST SCREEN SIZE THROUGH 1231.9px 
 @media only screen and (max-width: 1231.9px) {
-    .home-profile-container-col-4 {
+    .home-profile-container-col-3 {
         display: none;
     }
 }
@@ -112,7 +192,7 @@
 
 // DISPLAY FROM SCREEN SIZE 1232 AND UP
 @media only screen and (max-width: 1232px) {
-    .link-container-xl-from-screen-size-1232 {
+    .link-container-xl-from-screen-size-1232, .spacing-column {
         display: none;
     }
 }
@@ -129,39 +209,4 @@
 }
 // -----------------------------------------
 
-
-
-.link-boxes {
-    position: relative;
-    top: 15px;
-    height: 12em;
-    width: 15em;
-    // border: 4px solid #161929;
-    border-radius: 10px;
-    text-decoration: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #161929;
-    color: #FFFFFF;
-    padding: 20px;
-    margin: 10px;
-}
-
-.link-boxes:hover {
-    box-shadow: 0 0 0 3pt #FFCF2B;
-    top: 5px;
-}
-
-.header-text {
-    font-size: 20px;
-}
-
-.href:hover, .link:hover {
-    text-decoration: none;
-}
-
-.name-text {
-    font-size: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #43B7E8;
-    font-weight: 1000;
-}
+    

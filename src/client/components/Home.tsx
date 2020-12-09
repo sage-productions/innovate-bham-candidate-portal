@@ -16,6 +16,11 @@ const Home: React.FC<HomeProps> = props => {
         <main className="container-fluid text-midnight">
             {/* <div className="page-container"> */}
 
+                {/* BACKGROUND IMAGE */}
+                <div className="home-img-wrapper">
+                    <div className="home-bg-img"></div>
+                </div>
+
                 <div className="row title-row">
                     <div className="col-12 text-center bg-midnight">
                         <h2 className="text-white text-center">Home</h2>
@@ -30,50 +35,55 @@ const Home: React.FC<HomeProps> = props => {
                 <div className="row alert-row justify-content-center">
                     <div className="col-md-8 text-center text-white font-weight-bold mt-5 mb-4">
                         <div className="alert-window bg-aqua rounded">
-                            Please have your updated resumes in tomorrow. 
-                            <br />Demo Day is in 4 days!! 
+                            Demo day is upon us!!
+                            <br />Please have your updated resumes in today
                             <br />Looking forward to seeing everyone's final projects!
                         </div>
                     </div>
                 </div>
 
-                <div className="row py-5 page-row">
+                <div className="row py-5 home-footer-fix">
 
                     {/* USER PROFILE PICTURE AND INFO - ALL SCREEN SIZES UP TO 1231 */}
-                    <div className="home-profile-container-col-12 col-12 text-center text-midnight mb-5 py-2">
+                    <div className="home-profile-container-col-12 col-12 text-center text-white mb-5">
+
                         <Link to="/profile/1">
-                            <img className="home-profile-pic" src="/assets/jakesLittleFriend-small.png" alt="profile picture"/>
+                            <img className="home-profile-pic" src="/assets/staff-pics/CL.png" alt="profile picture"/>
                         </Link>
                         
-                        <p className="click-to-edit text-muted">(click to edit profile)</p>
-                        <h4 className="user-name text-midnight mt-2">Gumby</h4>
+                        <p className="click-to-edit">(click to edit profile)</p>
+                        <h4 className="user-name mt-2">John Candidate</h4>
                         <h5 className="neg-top-margin">Web Dev Candidate</h5>
                         <h5 className="neg-top-margin">Cohort 12 - Fall 2020</h5>
                         
                         <h6 className="mt-3">github.com/candidate</h6>
                         <h6>linkedin.com/candidate</h6>
-                        <h6>candidate@gumby.com</h6>
+                        <h6>candidate@email.com</h6>
 
                     </div>
-
 
 
                     {/* USER PROFILE PICTURE AND INFO - SCREEN SIZE 1232 AND UP */}
-                    <div className="home-profile-container-col-4 col-4 text-center text-midnight mb-5 py-2">
+                    <div className="home-profile-container-col-3 col-3 text-center text-white">
+
                         <Link to="/profile/1">
-                            <img className="home-profile-pic" src="/assets/gumby.jpg" alt="profile picture"/>
+                            <img className="home-profile-pic" src="/assets/staff-pics/CL.jpg" alt="profile picture"/>
                         </Link>
                         
-                        <p className="click-to-edit text-muted">(click to edit profile)</p>
-                        <h4 className="user-name text-midnight mt-2">Gumby</h4>
+                        <p className="click-to-edit">(click to edit profile)</p>
+                        <h4 className="user-name mt-2">John Candidate</h4>
                         <h5 className="neg-top-margin">Web Dev Candidate</h5>
                         <h5 className="neg-top-margin">Cohort 12 - Fall 2020</h5>
                         
                         <h6 className="mt-3">github.com/candidate</h6>
                         <h6>linkedin.com/candidate</h6>
-                        <h6>candidate@gumby.com</h6>
+                        <h6>candidate@email.com</h6>
 
                     </div>
+
+
+                    {/* FOR SPACING ONLY */}
+                    <div className="col-1 spacing-column"></div>
 
 
                     {/* BIG SQUARE LINKS - MOBILE VIEW UP TO SCREEN WIDTH 826 */}
@@ -85,7 +95,7 @@ const Home: React.FC<HomeProps> = props => {
                             <Link className="link" to="/resume/:userid" onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes">
                                     <h5><strong>Resume</strong></h5>
-                                    <p className="mt-3">Upload your resumes to keep them all in one place and receive feedback from PD staff members</p>
+                                    <p className="mt-3">Upload your resumes to keep them all in one place and receive feedback from the Professional Development staff</p>
                                 </div>
                             </Link>
                             
@@ -106,7 +116,7 @@ const Home: React.FC<HomeProps> = props => {
                             <Link className="link" to="/elevatorpitch/1" onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes">
                                     <h5><strong>Interview Prep</strong></h5>
-                                    <p className="mt-3">Work on your elevator pitch and review common interview questions</p>
+                                    <p className="mt-3">Work on your elevator pitch and review common interview questions as you prepare to enter the workplace</p>
                                 </div>
                             </Link>
                             
@@ -115,7 +125,7 @@ const Home: React.FC<HomeProps> = props => {
                                 onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes my-5">
                                     <h5><strong>Sigao Studios</strong></h5>
-                                    <p className="mt-3">Sigao Studios is an Agile coaching and software development firm</p>
+                                    <p className="mt-3">Sigao Studios is an Agile coaching and software development firm in Bham. Click here to learn more</p>
                                 </div>
                             </a>
 
@@ -156,7 +166,7 @@ const Home: React.FC<HomeProps> = props => {
                             <Link className="link" to="/resume/:userid" onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes">
                                     <h5><strong>Resume</strong></h5>
-                                    <p className="mt-3">Upload your resumes to keep them all in one place and receive feedback from PD staff members</p>
+                                    <p className="mt-3">Upload your resumes to keep them all in one place and receive feedback from the Professional Development staff</p>
                                 </div>
                             </Link>
                             
@@ -177,7 +187,7 @@ const Home: React.FC<HomeProps> = props => {
                             <Link className="link" to="/elevatorpitch/1" onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes">
                                     <h5><strong>Interview Prep</strong></h5>
-                                    <p className="mt-3">Work on your elevator pitch and review common interview questions</p>
+                                    <p className="mt-3">Work on your elevator pitch and review common interview questions as you prepare to enter the workplace</p>
                                 </div>
                             </Link>
                             
@@ -186,7 +196,7 @@ const Home: React.FC<HomeProps> = props => {
                                 onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes my-5">
                                     <h5><strong>Sigao Studios</strong></h5>
-                                    <p className="mt-3">Sigao Studios is an Agile coaching and software development firm</p>
+                                    <p className="mt-3">Sigao Studios is an Agile coaching and software development firm in Bham. Click here to learn more</p>
                                 </div>
                             </a>
 
@@ -224,7 +234,7 @@ const Home: React.FC<HomeProps> = props => {
                             <Link className="link" to="/resume/:userid" onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes">
                                     <h5><strong>Resume</strong></h5>
-                                    <p className="mt-3">Upload your resumes to keep them all in one place and receive feedback from PD staff members</p>
+                                    <p className="mt-3">Upload your resumes to keep them all in one place and receive feedback from the Professional Development staff</p>
                                 </div>
                             </Link>
                             
@@ -245,7 +255,7 @@ const Home: React.FC<HomeProps> = props => {
                             <Link className="link" to="/elevatorpitch/1" onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes">
                                     <h5><strong>Interview Prep</strong></h5>
-                                    <p className="mt-3">Work on your elevator pitch and review common interview questions</p>
+                                    <p className="mt-3">Work on your elevator pitch and review common interview questions as you prepare to enter the workplace</p>
                                 </div>
                             </Link>
                             
@@ -254,7 +264,7 @@ const Home: React.FC<HomeProps> = props => {
                                 onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes my-5">
                                     <h5><strong>Sigao Studios</strong></h5>
-                                    <p className="mt-3">Sigao Studios is an Agile coaching and software development firm</p>
+                                    <p className="mt-3">Sigao Studios is an Agile coaching and software development firm in Bham. Click here to learn more</p>
                                 </div>
                             </a>
 
@@ -293,7 +303,7 @@ const Home: React.FC<HomeProps> = props => {
                             <Link className="link" to="/resume/:userid" onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes">
                                     <h5><strong>Resume</strong></h5>
-                                    <p className="mt-3">Upload your resumes to keep them all in one place and receive feedback from PD staff members</p>
+                                    <p className="mt-3">Upload your resumes to keep them all in one place and receive feedback from the Professional Development staff</p>
                                 </div>
                             </Link>
                             
@@ -314,7 +324,7 @@ const Home: React.FC<HomeProps> = props => {
                             <Link className="link" to="/elevatorpitch/1" onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes">
                                     <h5><strong>Interview Prep</strong></h5>
-                                    <p className="mt-3">Work on your elevator pitch and review common interview questions</p>
+                                    <p className="mt-3">Work on your elevator pitch and review common interview questions as you prepare to enter the workplace</p>
                                 </div>
                             </Link>
                             
@@ -323,7 +333,7 @@ const Home: React.FC<HomeProps> = props => {
                                 onMouseOver={(e) => e.preventDefault()}>
                                 <div className="link-boxes my-5">
                                     <h5><strong>Sigao Studios</strong></h5>
-                                    <p className="mt-3">Sigao Studios is an Agile coaching and software development firm</p>
+                                    <p className="mt-3">Sigao Studios is an Agile coaching and software development firm in Bham. Click here to learn more</p>
                                 </div>
                             </a>
 

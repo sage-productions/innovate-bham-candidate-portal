@@ -31,7 +31,7 @@ const App: React.FC<AppProps> = props => {
 			
 			<Navbar />
 
-			{/* <div className="bg-img"> */}
+			{/* <div className="app-bg-img"> */}
 				{/* <main className="container-fluid"> */}
 
 						<Switch>

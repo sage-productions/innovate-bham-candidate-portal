@@ -6,7 +6,10 @@ import "../scss/navbar";
 const Navbar: React.FC<NavbarProps> = props => {
     return (
 
-        <nav className="navbar navbar-expanded-lg navbar-light bg-white justify-content-between">
+        <div className="home-wrapper">
+
+        
+        <nav className="navbar navbar-expanded-lg navbar-light bg-stone justify-content-between">
 
             <Link to='/home' className="navbar-brand d-flex">
                 
@@ -59,6 +62,7 @@ const Navbar: React.FC<NavbarProps> = props => {
                 <Link to="/write" className="mx-2 text-dark">REGISTER</Link>
             </div> */}
         </nav>
+        </div> 
     )
 }
 

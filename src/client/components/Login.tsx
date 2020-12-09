@@ -132,7 +132,7 @@ const Login: React.FC<LoginProps> = (props: LoginProps) => {
 
       {/* BACKGROUND IMAGE */}
       <div className="img-wrapper">
-        <div className="bg-img"></div>
+        <div className="login-bg-img"></div>
       </div>
 
     </>
