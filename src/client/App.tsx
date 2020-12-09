@@ -15,7 +15,7 @@ import FlashcardsData from './components/Flashcards-Data-Andrew';
 import ElevatorPitch from './components/ElevatorPitch-Alt';
 import CommonInterviewQs from './components/CommonInterviewQs';
 
-import AdminResumeView from './components/AdminResumeView'; 
+import AdminResumeView from './components/AdminResumeList'; 
 
 
 import Resources from './components/Resources-Alt';
