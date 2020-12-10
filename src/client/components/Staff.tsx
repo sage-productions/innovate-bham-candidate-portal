@@ -26,7 +26,7 @@ const Staff: React.FC<StaffProps> = props => {
                 </div>
                 
                 <div className="col-md-4 text-center pb-5">
-                    <img className="resources-profile-pic" src=" assets/staff-pics/DB.Jpg" alt="profile picture"/>
+                    <img className="resources-profile-pic" src=" assets/staff-pics/DB.jpg" alt="profile picture"/>
                     <h4>Denita Bearden</h4>
                     <h5 className="neg-top-margin">Director of Operations</h5>
                 </div>
@@ -68,7 +68,7 @@ const Staff: React.FC<StaffProps> = props => {
                 </div>
 
                 <div className="col-md-4 text-center pb-5">
-                    <img className="resources-profile-pic" src="assets/staff-pics/Josh.jpg" alt="profile picture"/>
+                    <img className="resources-profile-pic" src="assets/staff-pics/josh.jpg" alt="profile picture"/>
                     <h4>Josh Hurn</h4>
                     <h5 className="neg-top-margin">Web Dev Instructor</h5>
                 </div>
