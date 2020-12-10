@@ -5,24 +5,27 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-  
+
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-  
+
     z-index: -100;
-  
+
     height: 100%;
     min-height: 750px;
     width: 100%;
+}
 
-  }
+.elevator-footer-fix {
+    margin-bottom: -500;
+}
 
-  .placeholder {
-      color: white;
-  }
+.placeholder {
+    color: white;
+}
 
 .elevator-pic {
     width: 100%;
@@ -30,7 +33,7 @@
 }
 
 .body {
-  text-align:center;
+  text-align: center;
 }
 
 .recorder-div {
@@ -67,19 +70,19 @@
 }
 
 .pitches {
-    margin-top:200px;
-    padding:15px;
+    background-color: transparent;
+    margin-top:179px;
+    // width: 97%;
+    padding: 0 15px;
 }
 
 .bg-filter-elevator {
     position: relative;
-    top: 0;
-    left:103;
+    left: 5%;
+    width: 90%;
     
     background-color: #161929BB;
     // border-radius: 10px;
-    // height: 100%;
-    width: 90%;
 
-    padding-bottom:5em;
+    // padding-bottom:5em;
 }

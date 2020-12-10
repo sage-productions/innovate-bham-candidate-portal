@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Login from './components/Login';
 import Home from './components/Home';
+import HomeAlert from './components/Home copy';
 import Profile from './components/Profile';
 
 import Resume from './components/Resume';
@@ -38,6 +39,7 @@ const App: React.FC<AppProps> = props => {
 						
 							<Route exact path="/" component={ Login } />
 							<Route exact path="/home" component={ Home } />
+							<Route exact path="/home-" component={ HomeAlert } />
 						
 
 							<Route exact path="/profile/:userid" component={ Profile } />

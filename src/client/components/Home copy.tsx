@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, RouteComponentProps } from 'react-router-dom';
-// import Alert from './Alert';
+import Alert from './Alert';
 import '../scss/home.scss'
 
 
@@ -23,29 +23,13 @@ const Home: React.FC<HomeProps> = props => {
                 </div>
 
                 {/* PAGE TITLE */}
-                <div className="row title-row mb-5">
+                <div className="row title-row">
                     <div className="col-12 text-center bg-midnight">
                         <h2 className="text-white text-center">Home</h2>
                     </div>
                 </div>
 
-                {/* ALERT WINDOW - DOESN'T SHOW UNLESS THERE'S TEXT IN IT */}
-                {/* FUTURE FUNCTIONALTIY */}
-                {/* ADMIN SHOULD BE ABLE TO ADD MSG TO ONLY CANDIDATES, TO ALUM, TO ALL, ETC */}
-                {/* INDIVIDUAL USERS SHOULD BE ABLE TO CLEAR THE MSG FOR THEIR PORTAL, BUT NOT EVERYONE'S */}
-                {/* CAN WE MAKE IT SO IT POPS UP WITHOUT A PAGE REFRESH */}
-
-                {/* <Alert /> */}
-
-                {/* <div className="row alert-row justify-content-center">
-                    <div className="col-md-5 text-center text-midnight font-weight-bold mt-5 mb-4">
-                        <div className="alert-window bg-warning rounded">
-                            Demo day here!!
-                            <br />Please have your updated resumes in today
-                            <br />Looking forward to seeing everyone's final projects!
-                        </div>
-                    </div>
-                </div> */}
+                <Alert />
 
                 <div className="row py-5 home-footer-fix">
 

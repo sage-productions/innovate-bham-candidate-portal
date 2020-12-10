@@ -55,7 +55,7 @@ const Footer: React.FC<FooterProps> = (props) => {
 
                 <a className="href" href="https://www.google.com/maps/place/Innovate+Birmingham/@33.5119225,-86.8147297,17z/data=!3m1!4b1!4m5!3m4!1s0x88891b8d7a155555:0x215bf02a05530f62!8m2!3d33.5119225!4d-86.812541" target="_blank"
                    onMouseOver={(e) => e.preventDefault()}>
-                  <li className="mt-2 mb-0 text-muted text-nowrap"><i className="fas fa-home"></i> 1500 1st Ave N</li>
+                  <li className="mt-2 mb-0 text-muted text-nowrap"><i className="fas fa-home"></i> 1500 1st Ave North</li>
                   <li className="mt-0 ml-4 text-muted text-nowrap">Birmingham, AL 35203</li>  
                 </a>
 
@@ -77,7 +77,7 @@ const Footer: React.FC<FooterProps> = (props) => {
               <h6 className="underline text-uppercase font-weight-bold text-white">Links</h6>
               <ul className="list-unstyled">
 
-                <Link to="/home" className="text-decor-none"><li className="my-2 text-muted">Back to Home</li></Link>
+                <Link to="/home-" className="text-decor-none"><li className="my-2 text-muted">Back to Home</li></Link>
                 <Link to="/staff" className="text-decor-none"><li className="my-2 text-muted">Innovate Staff</li></Link>
                 <Link to="/resources" className="text-decor-none"><li className="my-2 text-muted">About the Program</li></Link>
                 <Link to="/resources" className="text-decor-none"><li className="my-2 text-muted">About the Website</li></Link>
