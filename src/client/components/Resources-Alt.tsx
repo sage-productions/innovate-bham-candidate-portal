@@ -16,13 +16,13 @@ const Resources: React.FC<ResourcesProps> = props => {
                 <div className="resources-bg-img"></div>
             </div>
 
+            <div className="Resource-container-row-5 col-10 mt-20 bg-filter text-white">
+                <div className="row page-row">
 
-            <div className="row page-row">
 
-               
-              
-                {/* <div className="col-12 text-center text-midnight mt-5">
-                    <h4><u>Links to Partner Websites</u></h4>    
+
+                    {/* <div className="col-12 text-center text-midnight mt-5">
+                    <h4>Links to Partner Websites</u></h4>    
                 </div>
 
                 <div className="col-12 text-center mt-1">
@@ -43,106 +43,104 @@ const Resources: React.FC<ResourcesProps> = props => {
                     </a>
                 </div> */}
 
+                    <div className="href col-12 text-center mt-1">
+                        <h4>--Colaboration--</h4>
+                    </div>
+
+
+                    <div className="col-12 text-center mt-3">
+                        <a className="href" href=" https://www.figma.com/ " target="_blank">
+                            <h3 className="text-white">Figma</h3>
+                        </a>
+                    </div>
+
+                    <div className="col-12 text-center mt-1">
+                        <a className="href" href=" https://trello.com/ " target="_blank">
+                            <h3 className="text-white"> Trello </h3>
+                        </a>
+                    </div>
+
+                    <div className="col-12 text-center mt-1">
+                        <a className="href" href=" https://kumu.io/ " target="_blank">
+                            <h3 className="text-white"> Kumu </h3>
+                        </a>
+                    </div>
+
+                    <div className="col-12 text-center mt-1">
+                        <a className="href" href=" https://miro.com/ " target="_blank">
+                            <h3 className="text-white"> Miro </h3>
+                        </a>
+                    </div>
 
 
 
 
-               
-                <div className="col-12 text-center text-midnight mt-5">
-                    <h4><u>colaboration / organization</u></h4>    
+
+
+                    <div className="href col-12 text-center  mt-3">
+                        <h4>--Job Sites--</h4>
+                    </div>
+
+                    <div className="col-12 text-center mt-1">
+                        <a className="href" href=" https://www.goodjob.io/" target="_blank">
+                            <h3 className="text-white">Goodjob</h3>
+                        </a>
+                    </div>
+
+                    <div className="col-12 text-center mt-1">
+                        <a className="href" href=" https://onboardbirmingham.com/" target="_blank">
+                            <h3 className="text-white"> OnBoard Bham - info tech </h3>
+                        </a>
+                    </div>
+
+                    <div className="col-12 text-center mt-1">
+                        <a className="href" href="https://boulosolutions.com/talent/" target="_blank">
+                            <h3 className="text-white"> Boulo Solutions </h3>
+                        </a>
+                    </div>
+
+
+
+
+
+
+                    <div className="href col-12 text-center  mt-3">
+                        <h4>--Bham Tech Groups--</h4>
+                    </div>
+
+
+                    <div className="col-12 text-center mt-1">
+                        <a className="href" href="http://magiccitytech.org/" target="_blank">
+                            <h3 className="text-white"> Magic City Tech </h3>
+                        </a>
+                    </div>
+
+                    <div className="col-12 text-center mt-1">
+                        <a className="href" href=" https://women-in-tech.org/ " target="_blank">
+                            <h3 className="text-white"> Women in Tech </h3>
+                        </a>
+                    </div>
+
+                    <div className="col-12 text-center mt-1">
+                        <a className="href" href=" https://twitter.com/bhmblacktechies?lang=en " target="_blank">
+                            <h3 className="text-white"> Birmingham Black Techies </h3>
+                        </a>
+                    </div>
+
+
+                    <div className="col-12 text-center mt-1">
+                        <a className="href" href=" https://www.birminghambusinessalliance.com/" target="_blank">
+                            <h3 className="text-white"> Birmingham Business Alliance </h3>
+                        </a>
+                    </div>
+
+
+
                 </div>
-
-              
-                <div className="col-12 text-center mt-1">
-                    <a className="href" href=" https://www.figma.com/ " target="_blank">
-                        <h3 className="text-midnight">Figma</h3>
-                    </a>
-                </div>
-
-                <div className="col-12 text-center mt-1">
-                    <a className="href" href=" https://trello.com/ " target="_blank">
-                        <h3 className="text-midnight"> Trello </h3>
-                    </a>
-                </div>
-
-                <div className="col-12 text-center mt-1">
-                    <a className="href" href=" https://kumu.io/ " target="_blank">
-                        <h3 className="text-midnight"> Kumu </h3>
-                    </a>
-                </div>
-
-                <div className="col-12 text-center mt-1">
-                    <a className="href" href=" https://miro.com/ " target="_blank">
-                        <h3 className="text-midnight"> Miro </h3>
-                    </a>
-                </div>
-
-
-
-
-
-               
-                <div className="col-12 text-center text-midnight mt-5">
-                    <h4><u> Job Sites </u></h4>    
-                </div>
-
-                <div className="col-12 text-center mt-1">
-                    <a className="href" href=" https://www.goodjob.io/" target="_blank">
-                        <h3 className="text-midnight">Goodjob</h3>
-                    </a>
-                </div>
-
-                <div className="col-12 text-center mt-1">
-                    <a className="href" href=" https://onboardbirmingham.com/" target="_blank">
-                        <h3 className="text-midnight"> OnBoard Bham - info tech </h3>
-                    </a>
-                </div>
-
-                <div className="col-12 text-center mt-1">
-                    <a className="href" href="https://boulosolutions.com/talent/" target="_blank">
-                        <h3 className="text-midnight"> Boulo Solutions </h3>
-                    </a>
-                </div>
-
-
-
-
-
-               
-                <div className="col-12 text-center text-midnight mt-5">
-                    <h4><u>Bham Tech Groups</u></h4>    
-                </div>
-
-               
-                <div className="col-12 text-center mt-1">
-                    <a className="href" href="http://magiccitytech.org/" target="_blank">
-                        <h3 className="text-midnight"> Magic City Tech </h3>
-                    </a>
-                </div>
-
-                <div className="col-12 text-center mt-1">
-                    <a className="href" href=" https://women-in-tech.org/ " target="_blank">
-                        <h3 className="text-midnight"> Women in Tech </h3>
-                    </a>
-                </div>
-
-                <div className="col-12 text-center mt-1">
-                    <a className="href" href=" https://twitter.com/bhmblacktechies?lang=en " target="_blank">
-                        <h3 className="text-midnight"> Birmingham Black Techies </h3>
-                    </a>
-                </div>
-
-
-                <div className="col-12 text-center mt-1">
-                    <a className="href" href=" https://www.birminghambusinessalliance.com/" target="_blank">
-                        <h3 className="text-midnight"> Birmingham Business Alliance </h3>
-                    </a>
-                </div>
-                
-                
             </div>
-                    
-               
+
+
+
 
         </main>
     )

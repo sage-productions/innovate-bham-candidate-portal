@@ -22,9 +22,9 @@ const Staff: React.FC<StaffProps> = props => {
             <div className="row staff-page-fix bg-filter text-white mt-5 pt-5">
 
                 <div className="col-12 d-flex justify-content-center text-center text-white mb-5">
-                    <h3><u>Innovate Birmingham</u></h3>
+                    <h3>--Innovate Birmingham--</h3>
                 </div>
-
+                
                 <div className="col-md-4 text-center pb-5">
                     <img className="resources-profile-pic" src=" assets/staff-pics/DB.Jpg" alt="profile picture"/>
                     <h4>Denita Bearden</h4>
@@ -86,7 +86,7 @@ const Staff: React.FC<StaffProps> = props => {
                 </div>
 
                 <div className="col-12 d-flex justify-content-center text-center text-white mb-5">
-                    <h3><u>ThinkData</u></h3>
+                    <h3>--ThinkData--</h3>
                 </div>
 
                 <div className="col-md-4 text-center pb-5">

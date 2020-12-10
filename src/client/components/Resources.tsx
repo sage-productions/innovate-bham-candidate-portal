@@ -7,7 +7,7 @@ const Resources: React.FC<ResourcesProps> = props => {
 
             <div className="row title-row">
                 <div className="col-12 text-center bg-midnight">
-                    <h2 className="text-gold text-center"><u>Resources</u></h2>
+                    <h2 className="text-gold text-center">Resources</h2>
                 </div>
             </div>
             <div>
