@@ -21,8 +21,8 @@ const Staff: React.FC<StaffProps> = props => {
 
             <div className="row staff-page-fix bg-filter text-white mt-5 pt-5">
 
-                <div className="col-12 d-flex justify-content-center text-center text-white mb-5">
-                    <h3>--Innovate Birmingham--</h3>
+                <div className="col-12 d-flex justify-content-center text-center text-white mb-4">
+                    <h3>-- Innovate Birmingham --</h3>
                 </div>
                 
                 <div className="col-md-4 text-center pb-5">
@@ -85,8 +85,16 @@ const Staff: React.FC<StaffProps> = props => {
                     <h5 className="neg-top-margin">Web Dev TA</h5>
                 </div>
 
-                <div className="col-12 d-flex justify-content-center text-center text-white mb-5">
-                    <h3>--ThinkData--</h3>
+                <div className="col-md-4 text-center pb-5">
+                    <img className="resources-profile-pic" src=" assets/staff-pics/ad.jpg" alt="profile picture"/>
+                    <h4>Adrian Drane</h4>
+                    <h5 className="neg-top-margin">Data Analytics TA</h5>
+                </div>
+
+
+                {/* ThinkData */}
+                <div className="col-12 d-flex justify-content-center text-center text-white mt-5 mb-4">
+                    <h3>-- ThinkData --</h3>
                 </div>
 
                 <div className="col-md-4 text-center pb-5">
@@ -107,11 +115,6 @@ const Staff: React.FC<StaffProps> = props => {
                     <h5 className="neg-top-margin">Data Analytics TA</h5>
                 </div>
 
-                <div className="col-md-4 text-center pb-5">
-                    <img className="resources-profile-pic" src=" assets/staff-pics/ad.jpg" alt="profile picture"/>
-                    <h4>Adrian Drane</h4>
-                    <h5 className="neg-top-margin">Data Analytics TA</h5>
-                </div>
             </div>
         </main>
     )
