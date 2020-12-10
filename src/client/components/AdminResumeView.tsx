@@ -27,7 +27,7 @@ const AdminResumeView: React.FC<AdminResumeViewProps> = (props) => {
         <div className="col text-center font-weight-light pb-5">
           <img
             className="admin-page-pic"
-            src="assets/guy.Jpeg"
+            src="assets/manman.Jpeg"
             alt="profile picture"
           />
 
