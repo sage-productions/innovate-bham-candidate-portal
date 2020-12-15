@@ -29,6 +29,8 @@ const Profile: React.FC<ProfileProps> = props => {
         A slight clarification of the above: I’m actually a philosophy student cleverly disguised as a successful web developer. Since it was relatively clear early on that it would be slightly more than difficult to make a living sitting under a tree while reading Kant, I’ve focused my energies on the web, which happily has proven itself to be a wonderful decision.`
     );
 
+    useEffect(() => {setFirstName(firstName)}, [firstName])
+    useEffect(() => {setBio(bio)}, [bio])
     useEffect(() => {setFullName(`${firstName} ${lastName}`)}, [firstName, lastName])
     useEffect(() => {setLocation(`${userCity}, ${userState}`)}, [userCity, userState])
     
@@ -51,11 +53,15 @@ const Profile: React.FC<ProfileProps> = props => {
 
         <main className="container-fluid text-midnight">
 
+            {/* TITLE ROW */}
             <div className="row title-row">
                 <div className="col-12 text-center bg-midnight">
                     <h2 className="text-white text-center">Profile</h2>
                 </div>
             </div>
+
+
+
 
             {/* BACKGROUND IMAGE */}
             <div className="home-img-wrapper">
@@ -63,9 +69,11 @@ const Profile: React.FC<ProfileProps> = props => {
             </div>
 
 
+
+
             {/* EDIT USER INFO MODAL*/}
             <Modal isOpen={isOpenPersonal} onRequestClose={toggleModalPersonal} contentLabel="login-dialog"
-                    className="profile-modal px-3" overlayClassName="modal-overlay" closeTimeoutMS={250}>
+                    className="profile-modals px-3" overlayClassName="modal-overlay" closeTimeoutMS={250}>
 
                 {/* MODAL HEADER AND 'X' BUTTON */}
                 <div className="modal-header">
@@ -156,8 +164,8 @@ const Profile: React.FC<ProfileProps> = props => {
             
             
             {/* EDIT CONTACT INFO MODAL*/}
-            <Modal isOpen={isOpenContact} onRequestClose={toggleModalContact} contentLabel="login-dialog"
-                    className="profile-modal px-3" overlayClassName="modal-overlay" closeTimeoutMS={250}>
+            <Modal isOpen={isOpenContact} onRequestClose={toggleModalContact} contentLabel="contact-dialog"
+                    className="profile-modals px-3" overlayClassName="modal-overlay" closeTimeoutMS={250}>
 
                 {/* MODAL HEADER AND 'X' BUTTON */}
                 <div className="modal-header">
@@ -178,51 +186,54 @@ const Profile: React.FC<ProfileProps> = props => {
                             <div className="input-group-prepend">
                                 <span className="input-group-text"><i className="fas fa-user"></i></span>
                             </div>
-                            <input type="text" className="form-control" placeholder={phone} />
+                            <input type="text" className="form-control" placeholder={phone} 
+                                    onChange={e => setPhone(e.target.value)}></input>
                         </div>
 
                         <div className="input-group form-group">
                             <div className="input-group-prepend">
                                 <span className="input-group-text"><i className="fas fa-user"></i></span>
                             </div>
-                            <input type="text" className="form-control" placeholder={githubUrl} />
+                            <input type="text" className="form-control" placeholder={githubUrl} 
+                                    onChange={e => setGithubUrl(e.target.value)}></input>
                         </div>
 
                         <div className="input-group form-group">
                             <div className="input-group-prepend">
                                 <span className="input-group-text"><i className="fas fa-user"></i></span>
                             </div>
-                            <input type="text" className="form-control" placeholder={linkedinUrl} />
+                            <input type="text" className="form-control" placeholder={linkedinUrl} 
+                                    onChange={e => setLinkedinUrl(e.target.value)}></input>
                         </div>
 
                         <div className="input-group form-group">
                             <div className="input-group-prepend">
                                 <span className="input-group-text"><i className="fas fa-user"></i></span>
                             </div>
-                            <input type="text" className="form-control" placeholder={email} />
+                            <input type="text" className="form-control" placeholder={email} 
+                                    onChange={e => setEmail(e.target.value)}></input>
                         </div>
 
                         {/* SUBMIT BUTTON*/}
                         <div className="row float-right mt-2">
-                            <button className="btn btn-sm btn-warning mr-3" type="submit" data-dismiss="modal"
+                            <button className="btn btn-sm btn-warning mr-3" type="button" data-dismiss="modal"
                                     onClick={toggleModalContact}>Submit</button>
                         </div>
 
                     </form>
                 </div>
 
-                {/* MODAL FOOTER - ADDS BOTTOM VERTICAL LINE IN LOGIN MODAL */}
-                <div className="modal-footer mt-1">
+                {/* MODAL FOOTER - ADDS BOTTOM VERTICAL LINE */}
+                {/* <div className="modal-footer mt-1"></div> */}
 
-
-                </div>
             </Modal>
 
 
 
+
             {/* EDIT BIO MODAL*/}
-            <Modal isOpen={isOpenBio} onRequestClose={toggleModalBio} contentLabel="login-dialog"
-                    className="profile-modal px-3" overlayClassName="modal-overlay" closeTimeoutMS={250}>
+            <Modal isOpen={isOpenBio} onRequestClose={toggleModalBio} contentLabel="bio"
+                    className="profile-modals px-3" overlayClassName="modal-overlay" closeTimeoutMS={250}>
 
                 {/* MODAL HEADER AND 'X' BUTTON */}
                 <div className="modal-header">
@@ -242,9 +253,8 @@ const Profile: React.FC<ProfileProps> = props => {
                     {/* INPUT FIELDS FORM */}
                     <form action="">
                         <div className="form-group">
-                            <textarea name="message" placeholder={bio} value={bio} rows={17} cols={75}
-                                      onChange={e => setUserState(e.target.value)}>
-                                        
+                            <textarea name="bio-message" placeholder={bio} value={bio} rows={17} cols={75}
+                                      onChange={e => setBio(e.target.value)}>
                             </textarea>
                         </div>
                     </form>
