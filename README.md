@@ -32,7 +32,7 @@
   
   
 ### INTENT
-#### The Candidate Portal is being designed as a suppliment to the education of future candidates and will focus primarily on supporting the professional development training already provided by the Innovate Birmingham staff.  
+#### The Candidate Portal is being designed as a supplement to the education of future candidates and will focus primarily on supporting the professional development training already provided by the Innovate Birmingham staff.  
   
   
 ### TECHNICAL
