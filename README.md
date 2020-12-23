@@ -6,7 +6,7 @@
   
 - **Christopher Cobb**
     - Back End Development, Authentication, Routing, Database Management, Front End Support & Content
-    - link to Chris's github
+    - [github.com/ChristopherCobb](https://github.com/christophercobb)
   
 - **Sparrow Estes**
     - Front End Development, UI/UX, Design, Styling & Content
